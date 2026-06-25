@@ -8,8 +8,8 @@ from mitmproxy import ctx, http
 
 
 BASE_DIR = Path(__file__).resolve().parent
-LANG_FILE = Path(os.environ.get("FIGCN_LANG_FILE", BASE_DIR / "lang" / "zh.json"))
-REMOTE_LANG_URL = os.environ.get("FIGCN_LANG_URL", "").strip()
+LANG_FILE = Path(os.environ.get("FigmaCN_LANG_FILE", BASE_DIR / "lang" / "zh.json"))
+REMOTE_LANG_URL = os.environ.get("FigmaCN_LANG_URL", "").strip()
 CAPTURE_FILE = BASE_DIR / "latest" / "captured_language_urls.txt"
 
 FIGMA_LANG_PATTERN = re.compile(
@@ -23,7 +23,7 @@ ANY_FIGMA_EN_JSON_PATTERN = re.compile(
 
 
 def _is_enabled() -> bool:
-    raw = os.environ.get("FIGCN_ENABLE_LOCALIZATION", "1").strip().lower()
+    raw = os.environ.get("FigmaCN_ENABLE_LOCALIZATION", "1").strip().lower()
     return raw not in {"0", "false", "no", "off"}
 
 
@@ -53,7 +53,7 @@ class LocalFigmaLanguagePack:
 
     def load(self, loader):
         if not self.enabled:
-            ctx.log.info("[Runtime] 中文包替换已禁用: FIGCN_ENABLE_LOCALIZATION=0")
+            ctx.log.info("[Runtime] 中文包替换已禁用: FigmaCN_ENABLE_LOCALIZATION=0")
             return
 
         if REMOTE_LANG_URL:

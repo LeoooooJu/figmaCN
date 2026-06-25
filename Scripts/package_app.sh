@@ -2,12 +2,12 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-APP_NAME="FigCN Studio Swift"
+APP_NAME="FigmaCN Studio Swift"
 APP_DIR="$ROOT_DIR/release/${APP_NAME}.app"
 CONTENTS="$APP_DIR/Contents"
 MACOS="$CONTENTS/MacOS"
 RESOURCES="$CONTENTS/Resources"
-EXECUTABLE="FigCNStudioSwift"
+EXECUTABLE="FigmaCNStudioSwift"
 
 cd "$ROOT_DIR"
 swift build -c release
@@ -28,7 +28,7 @@ cat > "$CONTENTS/Info.plist" <<PLIST
   <key>CFBundleExecutable</key>
   <string>$EXECUTABLE</string>
   <key>CFBundleIdentifier</key>
-  <string>cn.figcn.studio.swift</string>
+  <string>cn.FigmaCN.studio.swift</string>
   <key>CFBundleInfoDictionaryVersion</key>
   <string>6.0</string>
   <key>CFBundleName</key>

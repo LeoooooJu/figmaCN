@@ -2,7 +2,7 @@ import Foundation
 
 enum AppPaths {
     static var repoRoot: URL {
-        if let override = ProcessInfo.processInfo.environment["FIGCN_REPO_ROOT"], !override.isEmpty {
+        if let override = ProcessInfo.processInfo.environment["FigmaCN_REPO_ROOT"], !override.isEmpty {
             return URL(fileURLWithPath: override)
         }
 
@@ -41,7 +41,7 @@ enum AppPaths {
 
     static var appSupportDir: URL {
         let base = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-        return base.appendingPathComponent("FigCNStudioSwift", isDirectory: true)
+        return base.appendingPathComponent("FigmaCNStudioSwift", isDirectory: true)
     }
 
     static var configPath: URL {

@@ -59,7 +59,7 @@ private struct HeaderView: View {
                 .frame(width: 42, height: 42)
 
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("FigCN Studio")
+                    Text("FigmaCN Studio")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundStyle(theme.primaryText)
                     Text("Swift 原生版")

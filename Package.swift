@@ -2,17 +2,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "FigCNStudioSwift",
+    name: "FigmaCNStudioSwift",
     platforms: [
         .macOS(.v14)
     ],
     products: [
-        .executable(name: "FigCNStudioSwift", targets: ["FigCNStudioSwift"])
+        .executable(name: "FigmaCNStudioSwift", targets: ["FigmaCNStudioSwift"])
     ],
     targets: [
         .executableTarget(
-            name: "FigCNStudioSwift",
-            path: "Sources/FigCNStudioSwift"
+            name: "FigmaCNStudioSwift",
+            path: "Sources/FigmaCNStudioSwift"
         )
     ]
 )

@@ -159,8 +159,8 @@ final class ServiceController: ObservableObject {
         process.currentDirectoryURL = AppPaths.runtimeDir
 
         var env = ProcessInfo.processInfo.environment
-        env["FIGCN_ENABLE_LOCALIZATION"] = state.localizationEnabled ? "1" : "0"
-        env["FIGCN_LANG_FILE"] = AppPaths.langFile.path
+        env["FigmaCN_ENABLE_LOCALIZATION"] = state.localizationEnabled ? "1" : "0"
+        env["FigmaCN_LANG_FILE"] = AppPaths.langFile.path
         process.environment = env
 
         let stdoutPipe = Pipe()

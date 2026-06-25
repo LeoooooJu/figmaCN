@@ -2,7 +2,7 @@ import SwiftUI
 import AppKit
 
 @main
-struct FigCNStudioSwiftApp: App {
+struct FigmaCNStudioSwiftApp: App {
     @StateObject private var controller = ServiceController()
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
 
