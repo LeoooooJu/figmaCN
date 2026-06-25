@@ -17,10 +17,6 @@ enum AppPaths {
             if FileManager.default.fileExists(atPath: current.appendingPathComponent("Runtime/injector.py").path) {
                 return current
             }
-            let swiftProjectRoot = current.appendingPathComponent("SwiftApp")
-            if FileManager.default.fileExists(atPath: swiftProjectRoot.appendingPathComponent("Runtime/injector.py").path) {
-                return swiftProjectRoot
-            }
             current.deleteLastPathComponent()
         }
 

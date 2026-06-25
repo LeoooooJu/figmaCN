@@ -1,0 +1,151 @@
+# FigCN
+
+FigCN 是一个面向 macOS 的 Figma 中文化工具。
+
+它不直接修改 Figma 客户端文件，而是在 Figma 请求官方英文语言包时，通过本地代理把对应请求替换成本地中文语言包，从而让界面显示中文。
+
+## 适合谁用
+
+- 希望在 macOS 上使用中文界面的 Figma 用户
+- 不想手改 Figma 安装文件的用户
+- 已经在使用 Surge、Clash 或其他系统代理工具的用户
+
+## 产品能力
+
+- 一键开启/停止 Figma 中文化
+- 自动检测并复用当前系统代理作为上游代理
+- 自动选择可用本地端口
+- 提供证书安装入口
+- 提供网络修复能力，避免异常退出后代理残留
+- 提供 Figma 缓存清理入口
+- 提供运行日志，便于排查问题
+
+## 它是怎么工作的
+
+核心链路很简单：
+
+```text
+Figma 请求英文语言包
+        ↓
+本 App 启动本地 mitmproxy
+        ↓
+mitmproxy 识别语言包请求
+        ↓
+返回本地中文语言包 zh.json
+        ↓
+Figma 显示中文界面
+```
+
+这意味着：
+
+- App 的核心工作是代理和替换语言包
+- App 本身不改写 Figma 安装目录
+- 停止 App 并恢复系统代理后，Figma 会回到正常网络路径
+
+## 实现技术概览
+
+这个产品主要由四部分组成：
+
+- `SwiftUI`：负责 macOS 原生界面、状态展示、按钮交互和日志
+- `Swift 6 + Swift Package Manager`：负责应用主体、配置持久化、系统命令调度和打包构建
+- `mitmproxy / mitmdump`：负责 HTTPS 中间人代理、证书和请求拦截
+- `Python Runtime`：负责识别 Figma 语言包请求并返回本地中文包
+
+简单说，Swift 负责“桌面应用和系统控制”，mitmproxy 负责“代理能力”，Python 负责“语言包替换规则”。
+
+## 运行要求
+
+- macOS 14 或更高版本
+- 本机可运行 `mitmproxy.app` 或 `mitmdump`
+- 首次使用时允许安装 mitmproxy 证书
+- 修改系统代理时需要管理员权限
+
+## 使用方法
+
+### 首次使用
+
+1. 打开 App。
+2. 点击“开启汉化”。
+3. 如果系统提示证书未安装，先点击“安装证书”。
+4. 按系统提示完成证书安装和信任。
+5. 再次点击“开启汉化”。
+6. 重启 Figma；如仍未生效，点击“清缓存”后重新打开 Figma。
+
+### 日常使用
+
+1. 打开 App。
+2. 点击“开启汉化”。
+3. 使用 Figma。
+4. 用完后点击“停止汉化”。
+
+### 同时使用 Surge / Clash / 其他代理工具
+
+1. 先打开你的代理工具。
+2. 再打开 FigCN。
+3. 点击“开启汉化”。
+
+FigCN 会尽量检测当前系统代理，并把它作为自己的上游代理继续转发。
+
+## 常见问题
+
+### 为什么会要求输入管理员密码
+
+因为 App 需要调用 macOS 的系统网络命令来修改 HTTP/HTTPS 代理，这一步需要管理员权限。
+
+### 为什么安装证书
+
+因为产品依赖 `mitmproxy` 处理 Figma 的 HTTPS 请求。没有证书，代理链路无法正常解密和替换语言包响应。
+
+### 为什么停止后还要“修复网络”
+
+如果 App 或代理进程异常退出，系统代理可能来不及恢复。“修复网络”会尽量把代理设置恢复到 App 接管之前的状态。
+
+### 汉化不生效时先检查什么
+
+1. App 内“mitmproxy”状态是否可用
+2. 证书是否已安装
+3. 服务是否运行中
+4. Figma 缓存是否已清理
+5. 日志里是否出现语言包替换记录
+
+## 项目结构
+
+```text
+figmaCN/
+  README.md
+  TECHNICAL.md
+  Package.swift
+  Sources/FigCNStudioSwift/
+  Runtime/
+  Scripts/
+```
+
+说明：
+
+- `Sources/FigCNStudioSwift/` 是 Swift 应用源码
+- `Runtime/` 是运行时资源目录，包含 Python 注入脚本和语言包
+- `Scripts/package_app.sh` 用于打包 `.app`
+
+## 开发与打包
+
+开发构建：
+
+```bash
+swift build -c release
+```
+
+打包 App：
+
+```bash
+./Scripts/package_app.sh
+```
+
+打包脚本会：
+
+- 构建 Swift 可执行文件
+- 复制 `Runtime/` 到 `.app/Contents/Resources/Runtime`
+- 尝试把本机 `mitmproxy.app` 一起打进安装包
+
+## 额外文档
+
+- 面向实现和维护的技术文档：[`TECHNICAL.md`](./TECHNICAL.md)

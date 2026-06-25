@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "$0")/../.." && pwd)"
-SWIFT_DIR="$ROOT_DIR/SwiftApp"
+ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 APP_NAME="FigCN Studio Swift"
-APP_DIR="$SWIFT_DIR/release/${APP_NAME}.app"
+APP_DIR="$ROOT_DIR/release/${APP_NAME}.app"
 CONTENTS="$APP_DIR/Contents"
 MACOS="$CONTENTS/MacOS"
 RESOURCES="$CONTENTS/Resources"
 EXECUTABLE="FigCNStudioSwift"
 
-cd "$SWIFT_DIR"
+cd "$ROOT_DIR"
 swift build -c release
 
 rm -rf "$APP_DIR"
@@ -52,11 +51,11 @@ cat > "$CONTENTS/Info.plist" <<PLIST
 </plist>
 PLIST
 
-cp "$SWIFT_DIR/Runtime/injector.py" "$RESOURCES/Runtime/injector.py"
-cp "$SWIFT_DIR/Runtime/validate_lang.py" "$RESOURCES/Runtime/validate_lang.py"
-cp "$SWIFT_DIR/Runtime/start_proxy.sh" "$RESOURCES/Runtime/start_proxy.sh"
-cp "$SWIFT_DIR/Runtime/README.md" "$RESOURCES/Runtime/README.md"
-cp "$SWIFT_DIR/Runtime/lang/zh.json" "$RESOURCES/Runtime/lang/zh.json"
+cp "$ROOT_DIR/Runtime/injector.py" "$RESOURCES/Runtime/injector.py"
+cp "$ROOT_DIR/Runtime/validate_lang.py" "$RESOURCES/Runtime/validate_lang.py"
+cp "$ROOT_DIR/Runtime/start_proxy.sh" "$RESOURCES/Runtime/start_proxy.sh"
+cp "$ROOT_DIR/Runtime/README.md" "$RESOURCES/Runtime/README.md"
+cp "$ROOT_DIR/Runtime/lang/zh.json" "$RESOURCES/Runtime/lang/zh.json"
 
 MITMPROXY_APP=""
 if command -v mitmdump >/dev/null 2>&1; then
