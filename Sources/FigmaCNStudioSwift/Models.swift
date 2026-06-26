@@ -7,6 +7,7 @@ enum ServiceAction: String {
     case repair
     case cache
     case cert
+    case downloadLang
 }
 
 struct AppConfig: Codable {

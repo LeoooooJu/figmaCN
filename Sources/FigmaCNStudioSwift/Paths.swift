@@ -27,8 +27,44 @@ enum AppPaths {
         repoRoot.appendingPathComponent("Runtime")
     }
 
+    static var bundledLangDir: URL {
+        runtimeDir.appendingPathComponent("lang")
+    }
+
+    static var cachedLangDir: URL {
+        appSupportDir.appendingPathComponent("lang", isDirectory: true)
+    }
+
     static var langFile: URL {
-        runtimeDir.appendingPathComponent("lang/zh/zh.json")
+        activeLangFile("zh/zh.json")
+    }
+
+    static var authLangFile: URL {
+        activeLangFile("zh/auth-zh.json")
+    }
+
+    static var prototypeLangFile: URL {
+        activeLangFile("zh/prototype_app_beta-zh.json")
+    }
+
+    static var communityLangFile: URL {
+        activeLangFile("zh/community-zh.json")
+    }
+
+    static func cachedLangFile(_ relativePath: String) -> URL {
+        cachedLangDir.appendingPathComponent(relativePath)
+    }
+
+    static func bundledLangFile(_ relativePath: String) -> URL {
+        bundledLangDir.appendingPathComponent(relativePath)
+    }
+
+    private static func activeLangFile(_ relativePath: String) -> URL {
+        let cached = cachedLangFile(relativePath)
+        if FileManager.default.fileExists(atPath: cached.path) {
+            return cached
+        }
+        return bundledLangFile(relativePath)
     }
 
     static var bundledMitmDump: URL {

@@ -146,8 +146,13 @@ private struct ActionGrid: View {
                 }
             }
 
-            SecondaryButton(title: "安装证书", systemImage: "checkmark.shield.fill") {
-                controller.run(.cert)
+            HStack(spacing: 10) {
+                SecondaryButton(title: "安装证书", systemImage: "checkmark.shield.fill") {
+                    controller.run(.cert)
+                }
+                SecondaryButton(title: "下载汉化包", systemImage: "arrow.down.circle.fill") {
+                    controller.run(.downloadLang)
+                }
             }
         }
     }

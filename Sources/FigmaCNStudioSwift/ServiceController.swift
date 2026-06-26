@@ -67,6 +67,9 @@ final class ServiceController: ObservableObject {
                     let message = try await installCertificate()
                     state.certTrusted = true
                     setLastAction(message)
+                case .downloadLang:
+                    let message = try await downloadLatestLanguagePacks()
+                    setLastAction(message)
                 }
             } catch {
                 setLastAction(error.localizedDescription)
@@ -161,6 +164,9 @@ final class ServiceController: ObservableObject {
         var env = ProcessInfo.processInfo.environment
         env["FigmaCN_ENABLE_LOCALIZATION"] = state.localizationEnabled ? "1" : "0"
         env["FigmaCN_LANG_FILE"] = AppPaths.langFile.path
+        env["FigmaCN_AUTH_LANG_FILE"] = AppPaths.authLangFile.path
+        env["FigmaCN_PROTOTYPE_LANG_FILE"] = AppPaths.prototypeLangFile.path
+        env["FigmaCN_COMMUNITY_LANG_FILE"] = AppPaths.communityLangFile.path
         env["FigmaCN_CAPTURE_FILE"] = AppPaths.captureFile.path
         process.environment = env
 
@@ -354,6 +360,110 @@ final class ServiceController: ObservableObject {
             cleared += 1
         }
         return cleared > 0 ? "已清理 \(cleared) 个缓存目录。" : "未找到可清理的缓存目录。"
+    }
+
+    private func downloadLatestLanguagePacks() async throws -> String {
+        appendLog("开始从 GitHub 下载最新汉化包")
+        try FileManager.default.createDirectory(at: AppPaths.appSupportDir, withIntermediateDirectories: true)
+
+        let downloadDir = AppPaths.appSupportDir.appendingPathComponent("lang-download-\(UUID().uuidString)", isDirectory: true)
+        let backupDir = AppPaths.appSupportDir.appendingPathComponent("lang.backup", isDirectory: true)
+        let files = [
+            "manifest.json",
+            "zh/zh.json",
+            "zh/auth-zh.json",
+            "zh/prototype_app_beta-zh.json"
+        ]
+
+        do {
+            for relativePath in files {
+                let data = try await downloadLanguagePackFile(relativePath)
+                if relativePath.hasPrefix("zh/") {
+                    let keys = try validateLanguagePackData(data, label: relativePath)
+                    appendLog("已下载 \(relativePath)：\(keys.formatted()) 个键")
+                } else {
+                    _ = try JSONSerialization.jsonObject(with: data)
+                    appendLog("已下载 \(relativePath)")
+                }
+
+                let target = downloadDir.appendingPathComponent(relativePath)
+                try FileManager.default.createDirectory(at: target.deletingLastPathComponent(), withIntermediateDirectories: true)
+                try data.write(to: target, options: .atomic)
+            }
+
+            if FileManager.default.fileExists(atPath: backupDir.path) {
+                try FileManager.default.removeItem(at: backupDir)
+            }
+            if FileManager.default.fileExists(atPath: AppPaths.cachedLangDir.path) {
+                try FileManager.default.moveItem(at: AppPaths.cachedLangDir, to: backupDir)
+            }
+            try FileManager.default.moveItem(at: downloadDir, to: AppPaths.cachedLangDir)
+            if FileManager.default.fileExists(atPath: backupDir.path) {
+                try FileManager.default.removeItem(at: backupDir)
+            }
+
+            try await refreshStatus()
+            appendLog("汉化包已保存到：\(AppPaths.cachedLangDir.path)")
+            return state.running ? "汉化包已下载，重启汉化后生效" : "汉化包已下载，下次开启汉化生效"
+        } catch {
+            if FileManager.default.fileExists(atPath: downloadDir.path) {
+                try? FileManager.default.removeItem(at: downloadDir)
+            }
+            throw error
+        }
+    }
+
+    private func downloadLanguagePackFile(_ relativePath: String) async throws -> Data {
+        let bases = [
+            "https://raw.githubusercontent.com/LeoooooJu/figmaCN/main/Runtime/lang",
+            "https://cdn.jsdelivr.net/gh/LeoooooJu/figmaCN@main/Runtime/lang"
+        ]
+        var lastError: Error?
+
+        for base in bases {
+            guard var url = URL(string: base) else { continue }
+            for component in relativePath.split(separator: "/") {
+                url.appendPathComponent(String(component))
+            }
+
+            do {
+                var request = URLRequest(url: url)
+                request.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
+                request.timeoutInterval = 45
+
+                let (data, response) = try await URLSession.shared.data(for: request)
+                guard let http = response as? HTTPURLResponse else {
+                    throw AppError.message("下载 \(relativePath) 失败：响应无效")
+                }
+                guard (200..<300).contains(http.statusCode) else {
+                    throw AppError.message("下载 \(relativePath) 失败：HTTP \(http.statusCode)")
+                }
+                return data
+            } catch {
+                lastError = error
+                appendLog("下载源不可用：\(url.absoluteString)：\(error.localizedDescription)")
+            }
+        }
+
+        throw lastError ?? AppError.message("下载 \(relativePath) 失败")
+    }
+
+    private func validateLanguagePackData(_ data: Data, label: String) throws -> Int {
+        let object = try JSONSerialization.jsonObject(with: data)
+        guard let dict = object as? [String: Any] else {
+            throw AppError.message("\(label) 根节点必须是 JSON 对象")
+        }
+        let bad = dict.prefix(10).filter { _, value in
+            guard let item = value as? [String: Any] else { return true }
+            return !(item["string"] is String)
+        }
+        if !bad.isEmpty {
+            appendLog("\(label) 有 \(bad.count) 个可疑条目，将继续保存")
+        }
+        guard !dict.isEmpty else {
+            throw AppError.message("\(label) 为空")
+        }
+        return dict.count
     }
 
     private func installCertificate() async throws -> String {
