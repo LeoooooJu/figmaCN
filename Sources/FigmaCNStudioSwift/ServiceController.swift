@@ -202,7 +202,7 @@ final class ServiceController: ObservableObject {
 
         appendLog("正在启用 Figma 专用 PAC 代理")
         do {
-            try await proxyManager.setSystemProxy(host: host, port: port)
+            try await proxyManager.setSystemProxy(host: host, port: port, fallbackUpstream: upstream)
             state.systemProxyApplied = true
             setLastAction("代理已启动")
         } catch {
@@ -349,17 +349,46 @@ final class ServiceController: ObservableObject {
         }
 
         let profiles = try FileManager.default.contentsOfDirectory(at: base, includingPropertiesForKeys: [.isDirectoryKey])
+        let cacheNames = ["Cache", "Code Cache", "GPUCache", "DawnGraphiteCache", "DawnWebGPUCache"]
         var cleared = 0
+        var failed: [String] = []
         for profile in profiles {
             let values = try profile.resourceValues(forKeys: [.isDirectoryKey])
             guard values.isDirectory == true else { continue }
-            let cache = profile.appendingPathComponent("Cache")
-            guard FileManager.default.fileExists(atPath: cache.path) else { continue }
-            try FileManager.default.removeItem(at: cache)
-            try FileManager.default.createDirectory(at: cache, withIntermediateDirectories: true)
-            cleared += 1
+
+            for cacheName in cacheNames {
+                let cache = profile.appendingPathComponent(cacheName, isDirectory: true)
+                guard FileManager.default.fileExists(atPath: cache.path) else { continue }
+
+                do {
+                    try clearDirectoryContents(cache)
+                    cleared += 1
+                } catch {
+                    failed.append("\(profile.lastPathComponent)/\(cacheName)")
+                    appendLog("缓存目录清理失败：\(profile.lastPathComponent)/\(cacheName)：\(error.localizedDescription)")
+                }
+            }
+        }
+
+        if !failed.isEmpty {
+            let suffix = failed.count > 3 ? "\(failed.prefix(3).joined(separator: "、")) 等 \(failed.count) 个目录" : failed.joined(separator: "、")
+            if cleared > 0 {
+                return "已清理 \(cleared) 个缓存目录，\(suffix) 清理失败；请完全退出 Figma 后重试。"
+            }
+            return "\(suffix) 清理失败；请完全退出 Figma 后重试。"
         }
         return cleared > 0 ? "已清理 \(cleared) 个缓存目录。" : "未找到可清理的缓存目录。"
+    }
+
+    private func clearDirectoryContents(_ directory: URL) throws {
+        let contents = try FileManager.default.contentsOfDirectory(
+            at: directory,
+            includingPropertiesForKeys: nil,
+            options: []
+        )
+        for item in contents {
+            try FileManager.default.removeItem(at: item)
+        }
     }
 
     private func downloadLatestLanguagePacks() async throws -> String {

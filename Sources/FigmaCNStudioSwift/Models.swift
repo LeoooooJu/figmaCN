@@ -55,6 +55,7 @@ struct CurrentSystemProxy {
 struct ProxySnapshot: Codable {
     var web: String
     var secure: String
+    var socks: String?
     var auto: String
     var autoState: String
 }
