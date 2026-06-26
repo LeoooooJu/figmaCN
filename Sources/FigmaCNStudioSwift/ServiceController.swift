@@ -194,15 +194,15 @@ final class ServiceController: ObservableObject {
             throw AppError.message("mitmdump 未能在 \(port) 端口就绪，系统代理未修改。")
         }
 
-        appendLog("正在把系统代理指向本地 MITM 端点")
+        appendLog("正在启用 Figma 专用 PAC 代理")
         do {
             try await proxyManager.setSystemProxy(host: host, port: port)
             state.systemProxyApplied = true
             setLastAction("代理已启动")
         } catch {
             state.systemProxyApplied = false
-            appendLog("系统代理设置失败，但本地代理已启动：\(error.localizedDescription)")
-            appendLog("请手动把 HTTP/HTTPS 代理设置为 \(host):\(port)")
+            appendLog("PAC 代理设置失败，但本地代理已启动：\(error.localizedDescription)")
+            appendLog("请手动启用 PAC 文件：\(AppPaths.pacFile.path)")
             setLastAction("代理已启动，系统代理未自动应用")
         }
     }

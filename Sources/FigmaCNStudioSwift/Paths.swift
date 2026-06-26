@@ -52,6 +52,10 @@ enum AppPaths {
         appSupportDir.appendingPathComponent("system-proxy-backup.json")
     }
 
+    static var pacFile: URL {
+        appSupportDir.appendingPathComponent("figmacn-proxy.pac")
+    }
+
     static var captureFile: URL {
         appSupportDir.appendingPathComponent("captured_language_urls.txt")
     }
