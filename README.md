@@ -19,6 +19,8 @@ FigmaCN 是一个面向 macOS 的 Figma 中文化工具。
 - 提供网络修复能力，避免异常退出后代理残留
 - 提供 Figma 缓存清理入口
 - 提供运行日志，便于排查问题
+- 支持多语言包替换：主界面、登录/账号、原型预览
+- 捕获未覆盖的 Figma 英文语言包 URL，便于继续补全汉化范围
 
 ## 它是怎么工作的
 
@@ -31,7 +33,7 @@ Figma 请求英文语言包
         ↓
 mitmproxy 识别语言包请求
         ↓
-返回本地中文语言包 zh.json
+返回对应的本地中文语言包
         ↓
 Figma 显示中文界面
 ```
@@ -39,6 +41,7 @@ Figma 显示中文界面
 这意味着：
 
 - App 的核心工作是代理和替换语言包
+- 当前已覆盖 `figma_app`、`auth` / `auth_iframe`、`prototype_app` / `prototype_app_beta`
 - App 本身不改写 Figma 安装目录
 - 停止 App 并恢复系统代理后，Figma 会回到正常网络路径
 
@@ -49,7 +52,7 @@ Figma 显示中文界面
 - `SwiftUI`：负责 macOS 原生界面、状态展示、按钮交互和日志
 - `Swift 6 + Swift Package Manager`：负责应用主体、配置持久化、系统命令调度和打包构建
 - `mitmproxy / mitmdump`：负责 HTTPS 中间人代理、证书和请求拦截
-- `Python Runtime`：负责识别 Figma 语言包请求并返回本地中文包
+- `Python Runtime`：负责识别 Figma 语言包请求并返回对应本地中文包
 
 简单说，Swift 负责“桌面应用和系统控制”，mitmproxy 负责“代理能力”，Python 负责“语言包替换规则”。
 
@@ -107,4 +110,4 @@ FigmaCN 会尽量检测当前系统代理，并把它作为自己的上游代理
 3. 服务是否运行中
 4. Figma 缓存是否已清理
 5. 日志里是否出现语言包替换记录
-
+6. 是否捕获到新的 `other` 语言包 URL，需要继续补对应中文包

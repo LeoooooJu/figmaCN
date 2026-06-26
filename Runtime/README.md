@@ -6,7 +6,7 @@
 
 1. 本机启动 `mitmdump` 代理。
 2. Figma 请求英文语言包时，`injector.py` 拦截请求。
-3. 代理直接返回本地 `lang/zh.json`。
+3. 代理按请求类型返回 `lang/` 下对应的本地中文包。
 4. Figma 收到中文语言包后显示中文。
 
 ## 文件说明
@@ -18,7 +18,10 @@ Runtime/
 ├── start_proxy.sh       # 启动代理
 ├── validate_lang.py     # 检查中文包是否可用
 └── lang/
-    └── zh.json          # 当前使用的中文包
+    ├── manifest.json
+    ├── zh.json
+    ├── auth-zh.json
+    └── prototype_app_beta-zh.json
 ```
 
 ## 1. 校验中文包
@@ -26,6 +29,8 @@ Runtime/
 ```bash
 cd Runtime
 python3 validate_lang.py
+python3 validate_lang.py lang/auth-zh.json
+python3 validate_lang.py lang/prototype_app_beta-zh.json
 ```
 
 看到 `OK` 和 key 数量即可。
@@ -105,7 +110,27 @@ rm -rf ~/Library/Application\ Support/Figma/DesktopProfile/*/Cache
 代理终端里出现类似日志，说明已替换成功：
 
 ```text
-[Runtime] 已替换 Figma 语言包: https://www.figma.com/webpack-artifacts/assets/...
+[Runtime] 已替换 Figma main 语言包: https://www.figma.com/webpack-artifacts/assets/...
+[Runtime] 已替换 Figma auth 语言包: https://www.figma.com/webpack-artifacts/assets/...
+[Runtime] 已替换 Figma prototype 语言包: https://www.figma.com/webpack-artifacts/assets/...
+```
+
+捕获到但还没有规则或中文包的语言包会标记为 `other`：
+
+```text
+[Runtime] 捕获 Figma 英文语言包 URL (other): https://www.figma.com/webpack-artifacts/assets/...
+```
+
+桌面 App 启动时，捕获文件会写到：
+
+```text
+~/Library/Application Support/FigmaCNStudioSwift/captured_language_urls.txt
+```
+
+直接运行 `start_proxy.sh` 时，默认写到：
+
+```text
+Runtime/latest/captured_language_urls.txt
 ```
 
 如果没有出现这条日志，通常是：
@@ -114,6 +139,7 @@ rm -rf ~/Library/Application\ Support/Figma/DesktopProfile/*/Cache
 - 证书没有被信任。
 - Figma 用了缓存，没有重新请求语言包。
 - Figma 资源文件名变化，当前正则没有匹配到。
+- 捕获到了 `other`，但还没有生成对应中文包。
 
 ## 7. 恢复系统代理
 
