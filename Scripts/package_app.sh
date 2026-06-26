@@ -13,7 +13,7 @@ cd "$ROOT_DIR"
 swift build -c release
 
 rm -rf "$APP_DIR"
-mkdir -p "$MACOS" "$RESOURCES/Runtime/lang"
+mkdir -p "$MACOS" "$RESOURCES/Runtime"
 
 cp ".build/release/$EXECUTABLE" "$MACOS/$EXECUTABLE"
 chmod +x "$MACOS/$EXECUTABLE"
@@ -55,7 +55,7 @@ cp "$ROOT_DIR/Runtime/injector.py" "$RESOURCES/Runtime/injector.py"
 cp "$ROOT_DIR/Runtime/validate_lang.py" "$RESOURCES/Runtime/validate_lang.py"
 cp "$ROOT_DIR/Runtime/start_proxy.sh" "$RESOURCES/Runtime/start_proxy.sh"
 cp "$ROOT_DIR/Runtime/README.md" "$RESOURCES/Runtime/README.md"
-cp "$ROOT_DIR/Runtime/lang/"*.json "$RESOURCES/Runtime/lang/"
+ditto "$ROOT_DIR/Runtime/lang" "$RESOURCES/Runtime/lang"
 
 MITMPROXY_APP=""
 if command -v mitmdump >/dev/null 2>&1; then

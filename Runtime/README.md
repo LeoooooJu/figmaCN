@@ -19,9 +19,8 @@ Runtime/
 ├── validate_lang.py     # 检查中文包是否可用
 └── lang/
     ├── manifest.json
-    ├── zh.json
-    ├── auth-zh.json
-    └── prototype_app_beta-zh.json
+    ├── en/              # 捕获到的英文源包
+    └── zh/              # 运行时返回给 Figma 的中文包
 ```
 
 ## 1. 校验中文包
@@ -29,8 +28,8 @@ Runtime/
 ```bash
 cd Runtime
 python3 validate_lang.py
-python3 validate_lang.py lang/auth-zh.json
-python3 validate_lang.py lang/prototype_app_beta-zh.json
+python3 validate_lang.py lang/zh/auth-zh.json
+python3 validate_lang.py lang/zh/prototype_app_beta-zh.json
 ```
 
 看到 `OK` 和 key 数量即可。

@@ -9,7 +9,8 @@ from mitmproxy import ctx, http
 
 BASE_DIR = Path(__file__).resolve().parent
 LANG_DIR = BASE_DIR / "lang"
-LANG_FILE = Path(os.environ.get("FigmaCN_LANG_FILE", LANG_DIR / "zh.json"))
+ZH_LANG_DIR = LANG_DIR / "zh"
+LANG_FILE = Path(os.environ.get("FigmaCN_LANG_FILE", ZH_LANG_DIR / "zh.json"))
 REMOTE_LANG_URL = os.environ.get("FigmaCN_LANG_URL", "").strip()
 CAPTURE_FILE = Path(os.environ.get("FigmaCN_CAPTURE_FILE", BASE_DIR / "latest" / "captured_language_urls.txt"))
 
@@ -35,7 +36,7 @@ LANG_RULES = [
             r"^/webpack-artifacts/assets/"
             r"auth(?:_iframe)?(?:__rspack)?-[a-f0-9]+\.min\.en\.json(?:\.br)?$"
         ),
-        "file": Path(os.environ.get("FigmaCN_AUTH_LANG_FILE", LANG_DIR / "auth-zh.json")),
+        "file": Path(os.environ.get("FigmaCN_AUTH_LANG_FILE", ZH_LANG_DIR / "auth-zh.json")),
         "remote_url": os.environ.get("FigmaCN_AUTH_LANG_URL", "").strip(),
     },
     {
@@ -44,7 +45,7 @@ LANG_RULES = [
             r"^/webpack-artifacts/assets/"
             r"prototype_app(?:_beta)?(?:__rspack)?-[a-f0-9]+\.min\.en\.json(?:\.br)?$"
         ),
-        "file": Path(os.environ.get("FigmaCN_PROTOTYPE_LANG_FILE", LANG_DIR / "prototype_app_beta-zh.json")),
+        "file": Path(os.environ.get("FigmaCN_PROTOTYPE_LANG_FILE", ZH_LANG_DIR / "prototype_app_beta-zh.json")),
         "remote_url": os.environ.get("FigmaCN_PROTOTYPE_LANG_URL", "").strip(),
     },
     {
@@ -53,7 +54,7 @@ LANG_RULES = [
             r"^/webpack-artifacts/assets/"
             r"community(?:__rspack)?-[a-f0-9]+\.min\.en\.json(?:\.br)?$"
         ),
-        "file": Path(os.environ.get("FigmaCN_COMMUNITY_LANG_FILE", LANG_DIR / "community-zh.json")),
+        "file": Path(os.environ.get("FigmaCN_COMMUNITY_LANG_FILE", ZH_LANG_DIR / "community-zh.json")),
         "remote_url": os.environ.get("FigmaCN_COMMUNITY_LANG_URL", "").strip(),
     },
 ]

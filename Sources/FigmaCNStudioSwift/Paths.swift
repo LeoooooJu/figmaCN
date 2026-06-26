@@ -28,7 +28,7 @@ enum AppPaths {
     }
 
     static var langFile: URL {
-        runtimeDir.appendingPathComponent("lang/zh.json")
+        runtimeDir.appendingPathComponent("lang/zh/zh.json")
     }
 
     static var bundledMitmDump: URL {

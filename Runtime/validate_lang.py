@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 
-DEFAULT_LANG_FILE = Path(__file__).resolve().parent / "lang" / "zh.json"
+DEFAULT_LANG_FILE = Path(__file__).resolve().parent / "lang" / "zh" / "zh.json"
 
 
 def main() -> int:

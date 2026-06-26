@@ -4,15 +4,15 @@ This folder contains the local language packs used by `Runtime/injector.py`.
 
 ## Runtime Chinese packs
 
-- `zh.json`: main Figma app Chinese pack.
-- `auth-zh.json`: login/account/auth Chinese pack.
-- `prototype_app_beta-zh.json`: prototype preview Chinese pack.
+- `zh/zh.json`: main Figma app Chinese pack.
+- `zh/auth-zh.json`: login/account/auth Chinese pack.
+- `zh/prototype_app_beta-zh.json`: prototype preview Chinese pack.
 
 ## Captured English source packs
 
-- `en_latest.json`: captured from `figma_app_beta-*.min.en.json.br`.
-- `auth_latest.en.json`: captured from `auth-*.min.en.json.br`.
-- `prototype_app_beta_latest.en.json`: captured from `prototype_app_beta-*.min.en.json.br`.
+- `en/en_latest.json`: captured from `figma_app_beta-*.min.en.json.br`.
+- `en/auth_latest.en.json`: captured from `auth-*.min.en.json.br`.
+- `en/prototype_app_beta_latest.en.json`: captured from `prototype_app_beta-*.min.en.json.br`.
 
 ## Metadata
 
