@@ -38130,40 +38130,40 @@
     "string": "颜色选择器"
   },
   "fullscreen.context_menu.add_motion": {
-    "string": "Add motion"
+    "string": "添加动效"
   },
   "fullscreen.context_menu.add_motion.apply_animation_style": {
-    "string": "Apply animation style…"
+    "string": "应用动画样式…"
   },
   "fullscreen.context_menu.add_motion.corner_radius": {
-    "string": "Corner radius"
+    "string": "圆角半径"
   },
   "fullscreen.context_menu.add_motion.drop_shadow": {
-    "string": "Drop shadow"
+    "string": "投影"
   },
   "fullscreen.context_menu.add_motion.fill": {
-    "string": "Fill"
+    "string": "填充"
   },
   "fullscreen.context_menu.add_motion.more": {
-    "string": "More"
+    "string": "更多"
   },
   "fullscreen.context_menu.add_motion.opacity": {
-    "string": "Opacity"
+    "string": "不透明度"
   },
   "fullscreen.context_menu.add_motion.position": {
-    "string": "Position"
+    "string": "位置"
   },
   "fullscreen.context_menu.add_motion.rotation": {
-    "string": "Rotation"
+    "string": "旋转"
   },
   "fullscreen.context_menu.add_motion.scale": {
-    "string": "Scale"
+    "string": "缩放"
   },
   "fullscreen.context_menu.add_motion.stroke_paint": {
-    "string": "Stroke paint"
+    "string": "描边颜色"
   },
   "fullscreen.context_menu.add_motion.stroke_weight": {
-    "string": "Stroke weight"
+    "string": "描边粗细"
   },
   "fullscreen.context_menu.auto_rename_layers": {
     "string": "图层自动重命名"
