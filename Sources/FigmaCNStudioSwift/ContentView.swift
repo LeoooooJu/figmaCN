@@ -119,6 +119,7 @@ private struct StatusRow: View {
 
 private struct ActionGrid: View {
     @EnvironmentObject private var controller: ServiceController
+    @State private var showingRestartConfirmation = false
     private var theme: AppTheme { AppTheme(dark: controller.state.darkModeEnabled) }
 
     var body: some View {
@@ -129,7 +130,11 @@ private struct ActionGrid: View {
                     systemImage: controller.state.running ? "stop.fill" : "play.fill",
                     tint: controller.state.running ? theme.danger : theme.primaryButton
                 ) {
-                    controller.run(controller.state.running ? .stop : .start)
+                    if controller.state.running {
+                        controller.run(.stop)
+                    } else {
+                        showingRestartConfirmation = true
+                    }
                 }
 
                 SecondaryButton(title: "刷新", systemImage: "arrow.clockwise") {
@@ -154,6 +159,14 @@ private struct ActionGrid: View {
                     controller.run(.downloadLang)
                 }
             }
+        }
+        .alert("重启 Figma 并开启汉化？", isPresented: $showingRestartConfirmation) {
+            Button("取消", role: .cancel) {}
+            Button("重启并开启") {
+                controller.run(.start)
+            }
+        } message: {
+            Text("将退出当前 Figma、清理资源缓存，并通过本地汉化代理重新启动。请先确认文件已同步。")
         }
     }
 }

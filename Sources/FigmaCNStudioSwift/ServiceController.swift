@@ -50,7 +50,7 @@ final class ServiceController: ObservableObject {
             do {
                 switch action {
                 case .start:
-                    try await startProxy()
+                    try await startLocalizationSession()
                 case .stop:
                     try await stopProxy()
                 case .refresh:
@@ -97,6 +97,10 @@ final class ServiceController: ObservableObject {
         guard proxyProcess == nil else { return }
         let stale = await proxyManager.isSystemProxyPointingTo(host: state.listenHost, port: state.port)
         guard stale else { return }
+        if await proxyManager.hasRestorableAppProxyBackup(host: state.listenHost, port: state.port) {
+            appendLog("检测到上次 FigmaCN 代理残留，将复用原代理备份继续启动")
+            return
+        }
         guard FileManager.default.fileExists(atPath: AppPaths.proxyBackupPath.path) else {
             appendLog("检测到系统代理仍指向 \(state.listenHost):\(state.port)，但没有备份文件，已跳过自动恢复")
             return
@@ -110,6 +114,15 @@ final class ServiceController: ObservableObject {
         } catch {
             appendLog("网络自修复失败：\(error.localizedDescription)")
         }
+    }
+
+    func startLocalizationSession() async throws {
+        try await startProxy()
+        guard proxyProcess != nil else { return }
+
+        let host = state.listenHost.isEmpty ? "127.0.0.1" : state.listenHost
+        let message = try await relaunchFigmaWithProxy(host: host, port: state.port)
+        setLastAction(message)
     }
 
     func startProxy() async throws {
@@ -211,6 +224,78 @@ final class ServiceController: ObservableObject {
             appendLog("请手动启用 PAC 文件：\(AppPaths.pacFile.path)")
             setLastAction("代理已启动，系统代理未自动应用")
         }
+    }
+
+    private func relaunchFigmaWithProxy(host: String, port: Int) async throws -> String {
+        let proxyServer = explicitProxyServer(host: host, port: port)
+        appendLog("正在重启 Figma 并应用汉化代理：\(proxyServer)")
+
+        let wasRunning = await isFigmaRunning()
+        if wasRunning {
+            appendLog("正在退出 Figma")
+            _ = try? await runCommand("/usr/bin/osascript", ["-e", "tell application \"Figma\" to quit"], timeout: 10)
+            guard await waitForFigmaExit(timeout: 25) else {
+                throw AppError.message("Figma 未能自动退出，请手动退出后重新开启汉化。")
+            }
+        }
+
+        do {
+            let cacheMessage = try clearFigmaCache()
+            appendLog(cacheMessage)
+        } catch {
+            appendLog("缓存清理失败，将继续启动 Figma：\(error.localizedDescription)")
+        }
+
+        try await runCommand("/usr/bin/open", [
+            "-a",
+            "Figma",
+            "--args",
+            "--proxy-server=\(proxyServer)",
+            "--proxy-bypass-list=<-loopback>"
+        ], timeout: 10)
+
+        guard await waitForFigmaLaunch(timeout: 20) else {
+            throw AppError.message("Figma 已请求启动，但未检测到进程，请手动打开 Figma 后重试。")
+        }
+
+        return wasRunning ? "Figma 已通过汉化代理重启" : "Figma 已通过汉化代理启动"
+    }
+
+    private func explicitProxyServer(host: String, port: Int) -> String {
+        let proxyHost = host == "0.0.0.0" || host.isEmpty ? "127.0.0.1" : host
+        let formattedHost = proxyHost.contains(":") && !proxyHost.hasPrefix("[") ? "[\(proxyHost)]" : proxyHost
+        return "http://\(formattedHost):\(port)"
+    }
+
+    private func isFigmaRunning() async -> Bool {
+        do {
+            _ = try await runCommand("/usr/bin/pgrep", ["-f", "/Applications/Figma.app/Contents"], timeout: 5)
+            return true
+        } catch {
+            return false
+        }
+    }
+
+    private func waitForFigmaExit(timeout: TimeInterval) async -> Bool {
+        let deadline = Date().addingTimeInterval(timeout)
+        while Date() < deadline {
+            if !(await isFigmaRunning()) {
+                return true
+            }
+            try? await Task.sleep(for: .milliseconds(300))
+        }
+        return false
+    }
+
+    private func waitForFigmaLaunch(timeout: TimeInterval) async -> Bool {
+        let deadline = Date().addingTimeInterval(timeout)
+        while Date() < deadline {
+            if await isFigmaRunning() {
+                return true
+            }
+            try? await Task.sleep(for: .milliseconds(300))
+        }
+        return false
     }
 
     func stopProxy() async throws {

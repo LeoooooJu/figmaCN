@@ -28,14 +28,23 @@ final class SystemProxyManager: @unchecked Sendable {
 
     func setSystemProxy(host: String, port: Int, fallbackUpstream: String) async throws {
         let services = try await listNetworkServices()
-        var snapshot: [String: ProxySnapshot] = [:]
-        for service in services {
-            snapshot[service] = await snapshotProxyService(service)
-        }
+        let existingBackup = loadSystemProxyBackup()
+        let current = await currentSystemProxy()
+        let currentPointsToApp = isCurrentProxyPointingToApp(current, host: host, port: port)
 
         try FileManager.default.createDirectory(at: AppPaths.appSupportDir, withIntermediateDirectories: true)
         let pacURL = try writePacFile(host: host, port: port, fallbackUpstream: fallbackUpstream)
-        let backup = SystemProxyBackup(platform: "darwin", ts: Date().timeIntervalSince1970, data: snapshot)
+
+        let backup: SystemProxyBackup
+        if currentPointsToApp, let existingBackup {
+            backup = existingBackup
+        } else {
+            var snapshot: [String: ProxySnapshot] = [:]
+            for service in services {
+                snapshot[service] = await snapshotProxyService(service)
+            }
+            backup = SystemProxyBackup(platform: "darwin", ts: Date().timeIntervalSince1970, data: snapshot)
+        }
         let data = try JSONEncoder().encode(backup)
         try data.write(to: AppPaths.proxyBackupPath, options: .atomic)
 
@@ -189,7 +198,16 @@ final class SystemProxyManager: @unchecked Sendable {
         if let upstream = proxyEntryToUpstream(current.socks, listenPort: listenPort, scheme: "socks5"), !upstream.isEmpty {
             return upstream
         }
+        if current.pac?.enabled == true, isAppPacURL(current.pac?.url ?? "") {
+            return detectUpstreamProxyFromBackup(listenPort: listenPort)
+        }
         return ""
+    }
+
+    func hasRestorableAppProxyBackup(host: String, port: Int) async -> Bool {
+        guard loadSystemProxyBackup() != nil else { return false }
+        let current = await currentSystemProxy()
+        return isCurrentProxyPointingToApp(current, host: host, port: port)
     }
 
     private func proxyEntryToUpstream(_ entry: ProxyEntry?, listenPort: Int, scheme: String) -> String? {
@@ -201,6 +219,43 @@ final class SystemProxyManager: @unchecked Sendable {
 
     private func isLoopbackHost(_ host: String) -> Bool {
         host == "127.0.0.1" || host == "localhost" || host == "::1"
+    }
+
+    private func detectUpstreamProxyFromBackup(listenPort: Int) -> String {
+        guard let backup = loadSystemProxyBackup() else { return "" }
+
+        for service in backup.data.keys.sorted() {
+            guard let snap = backup.data[service] else { continue }
+            let secure = ProxyEntry(enabled: parseEnabled(snap.secure), host: parseServer(snap.secure), port: Int(parsePort(snap.secure)))
+            if let upstream = proxyEntryToUpstream(secure, listenPort: listenPort, scheme: "http"), !upstream.isEmpty {
+                return upstream
+            }
+
+            let web = ProxyEntry(enabled: parseEnabled(snap.web), host: parseServer(snap.web), port: Int(parsePort(snap.web)))
+            if let upstream = proxyEntryToUpstream(web, listenPort: listenPort, scheme: "http"), !upstream.isEmpty {
+                return upstream
+            }
+
+            let socks = ProxyEntry(enabled: parseEnabled(snap.socks), host: parseServer(snap.socks), port: Int(parsePort(snap.socks)))
+            if let upstream = proxyEntryToUpstream(socks, listenPort: listenPort, scheme: "socks5"), !upstream.isEmpty {
+                return upstream
+            }
+        }
+
+        return ""
+    }
+
+    private func loadSystemProxyBackup() -> SystemProxyBackup? {
+        guard let data = try? Data(contentsOf: AppPaths.proxyBackupPath) else { return nil }
+        return try? JSONDecoder().decode(SystemProxyBackup.self, from: data)
+    }
+
+    private func isCurrentProxyPointingToApp(_ current: CurrentSystemProxy, host: String, port: Int) -> Bool {
+        guard current.ok else { return false }
+        let httpHit = current.http?.enabled == true && current.http?.host == host && current.http?.port == port
+        let httpsHit = current.https?.enabled == true && current.https?.host == host && current.https?.port == port
+        let pacHit = current.pac?.enabled == true && isAppPacURL(current.pac?.url ?? "")
+        return httpHit || httpsHit || pacHit
     }
 
     private func writePacFile(host: String, port: Int, fallbackUpstream: String) throws -> URL {
