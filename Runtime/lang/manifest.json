@@ -1,0 +1,32 @@
+{
+  "updatedAt": "2026-06-26",
+  "packs": {
+    "main": {
+      "sourceUrl": "https://www.figma.com/webpack-artifacts/assets/figma_app_beta-d118728d86c7518b.min.en.json.br",
+      "english": "lang/en_latest.json",
+      "chinese": "lang/zh.json",
+      "keys": 29904,
+      "matchedExistingZhKeys": 28573,
+      "fallbackEnglishKeys": 1331,
+      "unchangedStringKeys": 925
+    },
+    "auth": {
+      "sourceUrl": "https://www.figma.com/webpack-artifacts/assets/auth-2ca4258629ae6b7a.min.en.json.br",
+      "english": "lang/auth_latest.en.json",
+      "chinese": "lang/auth-zh.json",
+      "keys": 1440,
+      "matchedExistingZhKeys": 1428,
+      "fallbackEnglishKeys": 12,
+      "unchangedStringKeys": 19
+    },
+    "prototype": {
+      "sourceUrl": "https://www.figma.com/webpack-artifacts/assets/prototype_app_beta-0ae2bb48740709c0.min.en.json.br",
+      "english": "lang/prototype_app_beta_latest.en.json",
+      "chinese": "lang/prototype_app_beta-zh.json",
+      "keys": 24155,
+      "matchedExistingZhKeys": 22970,
+      "fallbackEnglishKeys": 1185,
+      "unchangedStringKeys": 739
+    }
+  }
+}

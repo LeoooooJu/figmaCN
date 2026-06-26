@@ -1,13 +1,28 @@
 # Language Packs
 
-Files in this folder:
+This folder contains the local language packs used by `Runtime/injector.py`.
 
-- `zh.json`: Chinese language pack from `kailous/figma-zh-CN-localized`.
-- `en_latest.json`: latest English pack downloaded from `kailous/figma-zh-CN-localized/lang/en_latest.json`.
-- `en_latest.json.br`: downloaded from `kailous/figma-zh-CN-localized/lang/en_latest.json.br`.
-- `auth_latest.en.json`: current public login/auth page English pack detected from Figma.
+## Runtime Chinese packs
 
-Notes:
+- `zh.json`: main Figma app Chinese pack.
+- `auth-zh.json`: login/account/auth Chinese pack.
+- `prototype_app_beta-zh.json`: prototype preview Chinese pack.
 
-- Direct unauthenticated probing of `https://www.figma.com/community` returned an AWS WAF challenge on 2026-06-15, so the main editor pack could not be discovered directly from the public page in this environment.
-- The downloaded `en_latest.json.br` starts with `{`, so this copy is plain JSON content despite the `.br` extension.
+## Captured English source packs
+
+- `en_latest.json`: captured from `figma_app_beta-*.min.en.json.br`.
+- `auth_latest.en.json`: captured from `auth-*.min.en.json.br`.
+- `prototype_app_beta_latest.en.json`: captured from `prototype_app_beta-*.min.en.json.br`.
+
+## Metadata
+
+- `manifest.json`: source URLs, key counts, and merge statistics.
+
+## Merge policy
+
+Chinese packs are generated from the captured English source packs by reusing
+matching entries from the existing Chinese main pack. If a key has no matching
+Chinese entry, the English entry is kept as a fallback so Figma still receives a
+complete language object.
+
+Current fallback counts are recorded in `manifest.json`.

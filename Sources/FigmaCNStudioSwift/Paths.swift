@@ -51,4 +51,8 @@ enum AppPaths {
     static var proxyBackupPath: URL {
         appSupportDir.appendingPathComponent("system-proxy-backup.json")
     }
+
+    static var captureFile: URL {
+        appSupportDir.appendingPathComponent("captured_language_urls.txt")
+    }
 }
