@@ -60,7 +60,7 @@
     "string": "选择要添加至 Figma {appDescriptor} 应用的账户"
   },
   "auth.claim-invite.header": {
-    "string": "Log in or create an account to collaborate"
+    "string": "登录或创建账户以协作"
   },
   "auth.continue-with-the-specific-app": {
     "string": "继续使用 {appDescriptor} 应用"
@@ -81,10 +81,10 @@
     "string": "桌面"
   },
   "auth.document_title.login_figma": {
-    "string": "Login | Figma"
+    "string": "登录 | Figma"
   },
   "auth.document_title.sign_up_for_figma": {
-    "string": "Sign Up for Figma"
+    "string": "注册 Figma"
   },
   "auth.email-domain-suggestion-prompt": {
     "string": "你是不是想输入 {domainSuggestion}？"
@@ -546,7 +546,7 @@
     "string": "移动端"
   },
   "auth.mobile-redeem-handoff-failed": {
-    "string": "Something went wrong when attempting to redirect to the mobile app. Please try again."
+    "string": "尝试重定向到移动应用程序时出现问题。请再试一次。"
   },
   "auth.mobile-redeem-try-again": {
     "string": "Try again"
@@ -690,13 +690,13 @@
     "string": "继续 to Figma"
   },
   "auth.sso-selection.mru-label": {
-    "string": "Previously logged in with"
+    "string": "之前登录方式"
   },
   "auth.sso-selection.unverified-group-label": {
-    "string": "Unverified by your admin"
+    "string": "未由管理员验证"
   },
   "auth.sso-selection.verified-group-label": {
-    "string": "Verified by your admin"
+    "string": "已由管理员验证"
   },
   "auth.sso-selection.view-all-link": {
     "string": "查看全部"
@@ -1377,7 +1377,7 @@
     "string": "ID 为 {parentID} 的父项不存在。"
   },
   "community.sinatra.posts.publish_rate_limit_exceeded": {
-    "string": "You've hit the maximum number of Community publishes allowed right now. Try again in a little while."
+    "string": "您目前已达到允许的最大社区发布数量。稍后再试一次。"
   },
   "community.sinatra.posts.some_referenced_profiles_are_not_valid": {
     "string": "部分引用的资料无效。"
@@ -1401,7 +1401,7 @@
     "string": "该位置已存在链接"
   },
   "community.sinatra.profile_key_links.duplicate_url": {
-    "string": "This URL has already been added"
+    "string": "此 URL 已添加"
   },
   "community.sinatra.profile_key_links.invalid_url": {
     "string": "必须是有效 URL"
@@ -2286,16 +2286,16 @@
     "string": "数量 {value}"
   },
   "fullscreen.canvas.custom_effect_disabled_warning": {
-    "string": "To fix performance issues, check shaders applied to layer"
+    "string": "要修复性能问题，请检查应用到图层的 Shader"
   },
   "fullscreen.canvas.custom_effect_no_webgpu_warning": {
-    "string": "Shaders require WebGPU support. Click to learn more."
+    "string": "Shader 需要 WebGPU 支持。点击了解更多。"
   },
   "fullscreen.canvas.custom_effect_resolution_warning": {
-    "string": "Shaders have a max resolution of {value}px"
+    "string": "Shader 的最大分辨率为 {value}px"
   },
   "fullscreen.canvas.custom_effect_small_resolution_warning": {
-    "string": "Small layers may have low shader resolution"
+    "string": "小层可能具有较低的 Shader 分辨率"
   },
   "fullscreen.canvas.dimension_max_constrained": {
     "string": "{value}（最大）"
@@ -2793,7 +2793,7 @@
     "string": "UX 写作"
   },
   "mcp.error.url_must_be_valid_non_private_url": {
-    "string": "The MCP server URL must be a publicly accessible HTTPS URL that resolves to a public IP address. URLs that resolve to private or internal IP addresses are not allowed."
+    "string": "MCP 服务器URL 必须是可公开访问的HTTPS URL，并解析为公共IP 地址。不允许解析为私有或内部 IP 地址的 URL。"
   },
   "members_table.org_user_name_cell.scim_badge": {
     "string": "SCIM"
@@ -2913,7 +2913,7 @@
     "string": "你没有权限查看该文件。"
   },
   "permissions.sinatra.fmr_migration_in_progress": {
-    "string": "This operation cannot be completed at the moment due to project maintenance operations."
+    "string": "由于项目维护操作，该操作目前无法完成。"
   },
   "permissions.sinatra.generic": {
     "string": "你似乎没有权限执行此操作。"

@@ -177,16 +177,16 @@
     "string": "已为 {orgName} 启用 AI 内容训练"
   },
   "activity_log.ai_credit_request_create": {
-    "string": "Requested access to additional AI credits"
+    "string": "请求获得额外的AI 点数"
   },
   "activity_log.ai_credit_request_reject": {
-    "string": "Rejected {userEmail}’s request for additional AI credits"
+    "string": "拒绝了 {userEmail} 额外 AI 点数的请求"
   },
   "activity_log.ai_credit_request_resolve": {
-    "string": "Approved {userEmail}’s request for AI credits by increasing their user credit limit by {topUpAmount} credits"
+    "string": "批准了 {userEmail} 的 AI 点数请求，将其用户点数上限增加了 {topUpAmount} 点数"
   },
   "activity_log.ai_credit_request_resolve_unlimited": {
-    "string": "Approved {userEmail}’s request for AI credits by granting them unlimited access to paid AI credits"
+    "string": "批准了 {userEmail} 对 AI 点数的请求，授予他们无限制地使用付费 AI 点数的权限"
   },
   "activity_log.ai_features_disable": {
     "string": "已为 {orgName} 禁用 AI 功能"
@@ -303,13 +303,13 @@
     "string": "显示活动日志出错"
   },
   "activity_log.event.agent_built_plugin_create": {
-    "string": "Created generative plugin {pluginName}"
+    "string": "创建生成插件 {pluginName}"
   },
   "activity_log.event.agent_built_plugin_delete": {
-    "string": "Deleted generative plugin {pluginName}"
+    "string": "删除了生成插件 {pluginName}"
   },
   "activity_log.event.agent_built_plugin_update": {
-    "string": "Updated generative plugin {pluginName}"
+    "string": "更新了生成插件 {pluginName}"
   },
   "activity_log.event.bedrock_pinning_enabled_change_disabled": {
     "string": "已移除 AI 功能流量对 Figma AWS 环境的限制"
@@ -438,13 +438,13 @@
     "string": "Figma 支持团队更新了请求转交说明"
   },
   "activity_log.event.default_ai_credit_top_up_amount_change": {
-    "string": "Changed default AI credit increase to {newAmount} credits"
+    "string": "将默认 AI 点数增加更改为 {newAmount} 点数"
   },
   "activity_log.event.default_ai_credit_top_up_amount_change_unlimited": {
-    "string": "Changed default AI credit increase to allow full access to paid credits"
+    "string": "更改了默认 AI 点数增加，以允许完全访问付费点数"
   },
   "activity_log.event.default_ai_credit_top_up_amount_remove": {
-    "string": "Removed default AI credit increase"
+    "string": "删除了默认 AI 点数增加"
   },
   "activity_log.event.default_guest_access_duration_changed": {
     "string": "将默认访客访问时长从 {oldDays} 天更改为 {newDays} 天"
@@ -1214,23 +1214,23 @@
   "activity_log.event.scim_token_revoke": {
     "string": "撤销了 SCIM 令牌"
   },
-  "activity_log.event.shader_effect_create": {
-    "string": "Created shader effect {shaderEffectName}"
+  "activity_log.event.Shader_effect_create": {
+    "string": "创建了Shader效果{ShaderEffectName}"
   },
-  "activity_log.event.shader_effect_delete": {
-    "string": "Deleted shader effect {shaderEffectName}"
+  "activity_log.event.Shader_effect_delete": {
+    "string": "删除了Shader效果{ShaderEffectName}"
   },
-  "activity_log.event.shader_effect_update": {
-    "string": "Updated shader effect {shaderEffectName}"
+  "activity_log.event.Shader_effect_update": {
+    "string": "更新了Shader效果{ShaderEffectName}"
   },
-  "activity_log.event.shader_fill_create": {
-    "string": "Created shader fill {shaderFillName}"
+  "activity_log.event.Shader_fill_create": {
+    "string": "创建Shader填充{ShaderFillName}"
   },
-  "activity_log.event.shader_fill_delete": {
-    "string": "Deleted shader fill {shaderFillName}"
+  "activity_log.event.Shader_fill_delete": {
+    "string": "删除Shader 填充{ShaderFillName}"
   },
-  "activity_log.event.shader_fill_update": {
-    "string": "Updated shader fill {shaderFillName}"
+  "activity_log.event.Shader_fill_update": {
+    "string": "更新了Shader填充{ShaderFillName}"
   },
   "activity_log.event.sites_set_password": {
     "string": "为站点/应用 {name} 设置了密码"
@@ -1419,13 +1419,13 @@
     "string": "添加了工作区管理员"
   },
   "activity_log.filter.agent_built_plugin_created": {
-    "string": "Generative plugin created"
+    "string": "已创建生成插件"
   },
   "activity_log.filter.agent_built_plugin_deleted": {
-    "string": "Generative plugin deleted"
+    "string": "生成插件已删除"
   },
   "activity_log.filter.agent_built_plugin_updated": {
-    "string": "Generative plugin updated"
+    "string": "生成插件已更新"
   },
   "activity_log.filter.agent_built_plugins": {
     "string": "Generative plugins"
@@ -1437,7 +1437,7 @@
     "string": "AI 内容训练设置已更改"
   },
   "activity_log.filter.ai_credit_requests_updated": {
-    "string": "AI credit requests and activity"
+    "string": "AI 点数请求和活动"
   },
   "activity_log.filter.ai_features_setting_change": {
     "string": "启用/禁用了 AI 功能"
@@ -1587,7 +1587,7 @@
     "string": "自定义"
   },
   "activity_log.filter.default_ai_credit_top_up_amount_change": {
-    "string": "Default AI credit increase changed"
+    "string": "默认 AI 点数增加已更改"
   },
   "activity_log.filter.default_guest_access_duration_change": {
     "string": "默认访客访问时长已更改"
@@ -2039,29 +2039,29 @@
   "activity_log.filter.seats_renew.v2": {
     "string": "计划更新"
   },
-  "activity_log.filter.shader_effect_created": {
-    "string": "Shader effect created"
+  "activity_log.filter.Shader_effect_created": {
+    "string": "Shader效果已创建"
   },
-  "activity_log.filter.shader_effect_deleted": {
-    "string": "Shader effect deleted"
+  "activity_log.filter.Shader_effect_deleted": {
+    "string": "Shader效果已删除"
   },
-  "activity_log.filter.shader_effect_updated": {
-    "string": "Shader effect updated"
+  "activity_log.filter.Shader_effect_updated": {
+    "string": "Shader效果已更新"
   },
-  "activity_log.filter.shader_effects": {
-    "string": "Shader effects"
+  "activity_log.filter.Shader_effects": {
+    "string": "Shader 效果"
   },
-  "activity_log.filter.shader_fill_created": {
-    "string": "Shader fill created"
+  "activity_log.filter.Shader_fill_created": {
+    "string": "Shader 填充已创建"
   },
-  "activity_log.filter.shader_fill_deleted": {
-    "string": "Shader fill deleted"
+  "activity_log.filter.Shader_fill_deleted": {
+    "string": "Shader填写已删除"
   },
-  "activity_log.filter.shader_fill_updated": {
-    "string": "Shader fill updated"
+  "activity_log.filter.Shader_fill_updated": {
+    "string": "Shader 填写已更新"
   },
-  "activity_log.filter.shader_fills": {
-    "string": "Shader fills"
+  "activity_log.filter.Shader_fills": {
+    "string": "Shader 填充"
   },
   "activity_log.filter.sites_custom_domain_activated": {
     "string": "已连接自定义域名"
@@ -2706,7 +2706,7 @@
     "string": "了解更多"
   },
   "admin_auto_upgrade_confirmation_modal.body.media_export": {
-    "string": "As a {planName} admin, you can move to a {seatName} seat to export at higher resolutions in {productName} (and you’ll get {otherProducts}, too). "
+    "string": "作为 {planName} 管理员，您可以移至 {seatName} 席位，以便在 {productName} 中以更高分辨率导出（并且您也将获得 {otherProducts}）。"
   },
   "admin_auto_upgrade_confirmation_modal.body.other_products": {
     "string": "其他产品"
@@ -2730,91 +2730,91 @@
     "string": "升级席位时遇到错误。"
   },
   "admin_dashboard.ai_credit_request.access_policy_label": {
-    "string": "AI credit access policy"
+    "string": "AI 点数访问策略"
   },
   "admin_dashboard.ai_credit_request.approve_button": {
-    "string": "Approve AI credit request"
+    "string": "批准 AI 点数请求"
   },
   "admin_dashboard.ai_credit_request.approve_error": {
-    "string": "Failed to approve AI credit request. Try again."
+    "string": "批准 AI 点数请求失败。请重试。"
   },
   "admin_dashboard.ai_credit_request.approved_toast": {
-    "string": "AI credit request approved."
+    "string": "AI 点数请求已批准。"
   },
   "admin_dashboard.ai_credit_request.cancel": {
     "string": "Cancel"
   },
   "admin_dashboard.ai_credit_request.change": {
-    "string": "Change"
+    "string": "更改"
   },
   "admin_dashboard.ai_credit_request.credit_limit_input_label": {
-    "string": "AI credit monthly limit"
+    "string": "AI 每月点数上限"
   },
   "admin_dashboard.ai_credit_request.credit_limit_slider_label": {
-    "string": "AI credit monthly limit"
+    "string": "AI 每月点数上限"
   },
   "admin_dashboard.ai_credit_request.credits_per_month": {
-    "string": "{credits} credits/month"
+    "string": "{credits} 点数/月"
   },
   "admin_dashboard.ai_credit_request.credits_per_month_short": {
-    "string": "{credits}/mo"
+    "string": "{credits}/月"
   },
   "admin_dashboard.ai_credit_request.current_limit_today": {
-    "string": "({limit} today)"
+    "string": "（今天{limit}）"
   },
   "admin_dashboard.ai_credit_request.custom_credit_limit": {
-    "string": "Custom credit limit"
+    "string": "自定义点数上限"
   },
   "admin_dashboard.ai_credit_request.decline_error": {
-    "string": "Failed to decline AI credit request. Try again."
+    "string": "拒绝 AI 点数请求失败。请重试。"
   },
   "admin_dashboard.ai_credit_request.declined_toast": {
-    "string": "AI credit request declined."
+    "string": "AI 点数请求已拒绝。"
   },
   "admin_dashboard.ai_credit_request.details": {
     "string": "Details"
   },
   "admin_dashboard.ai_credit_request.full_access": {
-    "string": "Full access"
+    "string": "完整访问权限"
   },
   "admin_dashboard.ai_credit_request.header_title": {
-    "string": "AI credit limit increase requested by {name}"
+    "string": "{name} 请求提高 AI 点数额度"
   },
   "admin_dashboard.ai_credit_request.limit_delta_helper": {
-    "string": "This will add {credits} credits to their monthly limit going forward."
+    "string": "这将在以后的每月限额中添加 {credits} 点数。"
   },
   "admin_dashboard.ai_credit_request.no_access": {
-    "string": "No access"
+    "string": "无访问权限"
   },
   "admin_dashboard.ai_credit_request.not_available": {
     "string": "Not available"
   },
   "admin_dashboard.ai_credit_request.paid_ai_credit_limit": {
-    "string": "Paid AI credit limit"
+    "string": "付费 AI 点数上限"
   },
   "admin_dashboard.ai_credit_request.paid_ai_credits": {
-    "string": "Paid AI credits"
+    "string": "付费 AI 点数"
   },
   "admin_dashboard.ai_credit_request.requester": {
     "string": "Requester"
   },
   "admin_dashboard.ai_credit_request.reset_date": {
-    "string": "Reset {date, date, ::MMMd}"
+    "string": "重置{date, date, ::MMMd}"
   },
   "admin_dashboard.ai_credit_request.title": {
-    "string": "{name}’s AI credit request"
+    "string": "{name} 的 AI 点数请求"
   },
   "admin_dashboard.ai_credit_request.unlimited_approve_helper": {
-    "string": "This user will have full access to paid credits up to the plan or billing group limit going forward."
+    "string": "该用户将可以完全访问付费点数，直至未来的计划或计费组限制。"
   },
   "admin_dashboard.ai_credit_request.usage_summary": {
-    "string": "{used} / {limit} used"
+    "string": "使用了{used} / {limit}"
   },
   "admin_dashboard.ai_credit_request.usage_summary_unlimited": {
     "string": "{used} used"
   },
   "admin_dashboard.ai_credit_request.working_on": {
-    "string": "Working on"
+    "string": "正在处理"
   },
   "admin_dashboard.all_org_requests.title": {
     "string": "所有 {orgName} 请求"
@@ -2976,7 +2976,7 @@
     "string": "成员 have unlimited credits to use in Make after monthly 席位 credits 运行 out. Trial ends {trialEndDate, date, ::MMMd}."
   },
   "admin_dashboard.plan_ai_credits.make_trial.title": {
-    "string": "Your Figma Make trial impacts credit usage"
+    "string": "您的 Figma Make 试用会影响点数使用"
   },
   "admin_dashboard.plan_ai_credits.manage": {
     "string": "管理"
@@ -3042,7 +3042,7 @@
     "string": "批准"
   },
   "admin_dashboard.request_flyout.approve_seat": {
-    "string": "Approve seat"
+    "string": "批准席位"
   },
   "admin_dashboard.request_flyout.body.billing_group": {
     "string": "账单组"
@@ -3084,7 +3084,7 @@
     "string": "将占用一个可用的 {seatType} 席位"
   },
   "admin_dashboard.request_flyout.seat_requested_by": {
-    "string": "{seatType} seat requested by {name}"
+    "string": "{seatType} 请求的席位 {name}"
   },
   "admin_dashboard.request_flyout.title": {
     "string": "{user} 的请求"
@@ -3249,7 +3249,7 @@
     "string": "{name} 请求了一个 {boldedSeat}"
   },
   "admin_dashboard.requests.requested_by_proxy_for": {
-    "string": "{proxyName} requested a {seatType} for {requesteeName}"
+    "string": "{proxyName} 请求 {requesteeName} 的 {seatType}"
   },
   "admin_dashboard.requests.requested_by_teammate": {
     "string": "一名队友为 {name} 申请了一个 {seatType} 席位"
@@ -4317,7 +4317,7 @@
     "string": "点数将于 {resetDate, date, ::MMMd} 重置。"
   },
   "ai-balance.credits-reset.same-date-reset": {
-    "string": "Credits reset at {resetDate, date, ::hmma}."
+    "string": "点数于 {resetDate, date, ::hmma} 重置。"
   },
   "ai-balance.daily-credits-left-fraction": {
     "string": "剩余 {numAvailableDailyCredits}/{numTotalDailyCredits} 每日积分"
@@ -4335,7 +4335,7 @@
     "string": "最近更新于 {lastUpdated, time, short}。点数将在 {resetDate, date, ::MMMd} 重置。"
   },
   "ai-balance.last-updated-credits-reset.same-date-reset": {
-    "string": "Last updated {lastUpdated, time, short}. Credits reset at {resetDate, date, ::hmma}."
+    "string": "最后更新{lastUpdated, time, short}。点数于 {resetDate, date, ::hmma} 重置。"
   },
   "ai-balance.plan-team-members-share-num-credits-a-month": {
     "string": "{planName} 团队成员每月共享 {numCredits} 个点数。"
@@ -4377,7 +4377,7 @@
     "string": "我们将于 {enforcementDate, date, ::MMMd} 开始强制执行完整席位点数限制。你在 {planName} 的席位将包含每月 {numTotalMonthlyCredits} 个 AI 点数。"
   },
   "ai-balance.soft-limit-not-enforcing-ai-limits-yet": {
-    "string": "We aren’t enforcing AI limits yet."
+    "string": "我们还没有强制执行人工智能限制。"
   },
   "ai-balance.starter-credits-with-daily-limit-and-reset-date": {
     "string": "{planName} 是 Starter 方案，每月包含 {numTotalMonthlyCredits} 积分，且每日限额 {numTotalDailyCredits}。席位积分将于 {resetDate, date, ::MMMd} 重置。"
@@ -4509,13 +4509,13 @@
     "string": "处理中..."
   },
   "ai_assistant.attachments.attach_a_figjam": {
-    "string": "Attach from FigJam"
+    "string": "从 FigJam 附加"
   },
   "ai_assistant.attachments.attach_a_figma_file": {
     "string": "附加 Figma 文件"
   },
   "ai_assistant.attachments.attach_figjam_modal_body": {
-    "string": "Paste a page from FigJam to attach it"
+    "string": "粘贴 FigJam 中的页面以将其附加"
   },
   "ai_assistant.attachments.attach_figma_file_modal_body": {
     "string": "Paste a Figma 文件 link to 附加"
@@ -4524,10 +4524,10 @@
     "string": "Figma Design, FigJam, Slides 文件"
   },
   "ai_assistant.attachments.different_plan": {
-    "string": "You can only attach files from this plan"
+    "string": "您只能附加此计划中的文件"
   },
   "ai_assistant.attachments.figjam_attach_error": {
-    "string": "Couldn’t attach FigJam, try again"
+    "string": "无法附加 FigJam，请重试"
   },
   "ai_assistant.attachments.figjam_url_error": {
     "string": "Paste a FigJam 链接"
@@ -4551,7 +4551,7 @@
     "string": "Link to a Figma Design, Slides, or FigJam 文件"
   },
   "ai_assistant.attachments.no_ai_permission": {
-    "string": "You need edit access to attach this file"
+    "string": "您需要编辑权限才能附加此文件"
   },
   "ai_assistant.canvas.cancel_request_label": {
     "string": "停止"
@@ -4605,7 +4605,7 @@
     "string": "处理附加到当前所选内容的未解决评论。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.address_comments_display_as": {
-    "string": "Address unresolved comments on this selection by creating one or more variations that apply directly actionable feedback."
+    "string": "通过创建一个或多个应用直接可操作反馈的变体来解决对此选择的未解决的评论。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.address_comments_label": {
     "string": "处理评论"
@@ -4632,10 +4632,10 @@
     "string": "布局"
   },
   "ai_assistant.canvas_prompt_suggested_actions.create_variations_pane.aspect_style": {
-    "string": "Style"
+    "string": "风格"
   },
   "ai_assistant.canvas_prompt_suggested_actions.create_variations_pane.aspect_text_images": {
-    "string": "Text / Images"
+    "string": "文字/图片"
   },
   "ai_assistant.canvas_prompt_suggested_actions.create_variations_pane.back": {
     "string": "返回"
@@ -4647,7 +4647,7 @@
     "string": "创建"
   },
   "ai_assistant.canvas_prompt_suggested_actions.create_variations_pane.properties_to_change": {
-    "string": "Properties to change"
+    "string": "要更改的属性"
   },
   "ai_assistant.canvas_prompt_suggested_actions.create_variations_pane.title": {
     "string": "创建 variations"
@@ -4659,22 +4659,22 @@
     "string": "Design 下一步 screen"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.additional": {
-    "string": "Additional instructions: {text}"
+    "string": "附加说明：{text}"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.cohesion": {
-    "string": "When replacing multiple content types, make sure the images, text, and icons support the same theme, subject, audience, and message. Use any additional instructions provided by the user to guide the replacement content."
+    "string": "替换多种内容类型时，请确保图像、文本和图标支持相同的主题、主题、受众和消息。使用用户提供的任何附加说明来指导替换内容。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.display_intro": {
-    "string": "Generate content for this design."
+    "string": "为此设计生成内容。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.display_keep_only": {
-    "string": "Keep the {keptContentTypes}."
+    "string": "保留{keptContentTypes}。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.display_replace_and_keep": {
-    "string": "Replace the {replacedContentTypes}, but keep the {keptContentTypes}."
+    "string": "替换 {replacedContentTypes}，但保留 {keptContentTypes}。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.display_replace_only": {
-    "string": "Replace the {replacedContentTypes}."
+    "string": "替换 {replacedContentTypes}。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.display_type_icons": {
     "string": "icons"
@@ -4683,55 +4683,55 @@
     "string": "images"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.display_type_text_content": {
-    "string": "text content"
+    "string": "文字内容"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.final_with_keep": {
-    "string": "Strictly adhere to the \"Do not change\" section when one is provided."
+    "string": "提供时请严格遵守“请勿更改”部分。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.intro": {
-    "string": "You are a design content generator. Your job is to replace placeholder content — images, text, and icons — with realistic, meaningful alternatives. You will be provided with content types to replace, and may also be provided with content types not to change. Your work should be scoped only to images, text content, and icons based on the sections below; preserve the existing layout, styling, typography, spacing, hierarchy, and overall structure. The goal is to replace placeholder copy and imagery."
+    "string": "您是设计内容生成者。您的工作是用现实、有意义的替代内容替换占位符内容（图像、文本和图标）。我们将向您提供要替换的内容类型，也可能会向您提供不更改的内容类型。您的工作范围应仅限于基于以下部分的图像、文本内容和图标；保留现有的布局、样式、版式、间距、层次结构和整体结构。目标是取代占位符副本和图像。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.keep_header": {
-    "string": "Do not change:"
+    "string": "不要改变："
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.keep_icons": {
-    "string": "Icons: Keep existing icons exactly as they are."
+    "string": "图标：保持现有图标原样。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.keep_images": {
-    "string": "Images: Keep existing images exactly as they are."
+    "string": "图像：保持现有图像原样。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.keep_text_content": {
-    "string": "Text content: Keep existing text content exactly as it is."
+    "string": "文本内容：保持现有文本内容原样。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.replace_header": {
-    "string": "Things to replace:"
+    "string": "需要更换的东西："
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.replace_icons": {
-    "string": "Icons: Generate new icons to replace the existing icons. The new icons should be semantically appropriate for their surrounding content or action, and consistent with the generated or existing text and imagery."
+    "string": "图标：生成新图标来替换现有图标。新图标在语义上应适合其周围的内容或操作，并与生成的或现有的文本和图像一致。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.replace_images": {
-    "string": "Images: Generate new images to replace the existing images. The new images should feel cohesive with the design’s purpose, tone, and surrounding content."
+    "string": "图像：生成新图像来替换现有图像。新图像应该与设计的目的、基调和周围内容保持一致。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content.replace_text_content": {
-    "string": "Text content: Generate new text to replace the existing text content. The new copy should feel polished and natural, fit each text element’s existing role, and align with the generated or existing imagery and icons."
+    "string": "文本内容：生成新的文本来替换现有的文本内容。新的副本应该感觉优美和自然，适合每个文本元素的现有角色，并与生成的或现有的图像和图标保持一致。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content_label": {
-    "string": "Generate content"
+    "string": "生成内容"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content_pane.additional_instructions_placeholder": {
-    "string": "Add instructions"
+    "string": "添加说明"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content_pane.back": {
     "string": "Back"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content_pane.generate_button": {
-    "string": "Generate"
+    "string": "产生"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content_pane.properties_to_change": {
-    "string": "Properties to change"
+    "string": "要更改的属性"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content_pane.title": {
-    "string": "Generate content"
+    "string": "生成内容"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content_pane.type_icons": {
     "string": "Icons"
@@ -4740,25 +4740,25 @@
     "string": "Images"
   },
   "ai_assistant.canvas_prompt_suggested_actions.generate_content_pane.type_text_content": {
-    "string": "Text content"
+    "string": "文本内容"
   },
   "ai_assistant.canvas_prompt_suggested_actions.motion_add_a_bounce_default_prompt": {
-    "string": "Make this feel like it’s landing on a trampoline — anticipate the drop, squash on impact (Y compresses, X widens to preserve volume), then bounce, stretch, and settle."
+    "string": "让它感觉就像降落在蹦床上一样——预测下落，撞击时挤压（Y 压缩，X 扩大以保持体积），然后弹跳、拉伸和稳定。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.motion_add_a_bounce_label": {
-    "string": "Add a bounce"
+    "string": "添加弹跳"
   },
   "ai_assistant.canvas_prompt_suggested_actions.motion_create_animation_variants_default_prompt": {
-    "string": "Generate 3 animated variations driven by different physics: elastic (springy overshoots, bouncy), magnetic (elements snap and lock into place), and fluid (liquid easing, things flow and pour)."
+    "string": "生成由不同物理场驱动的 3 种动画变化：弹性（弹性过冲、有弹性）、磁性（元素卡扣并锁定到位）和流体（液体缓动、物体流动和倾倒）。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.motion_create_animation_variants_label": {
-    "string": "Create 3 animation variants"
+    "string": "创建 3 个动画变体"
   },
   "ai_assistant.canvas_prompt_suggested_actions.motion_learn_keyframes_default_prompt": {
-    "string": "Give me a quick overview of motion keyframes and how specifically they work in Figma Motion Mode."
+    "string": "让我快速概述一下动效关键帧以及它们在 Figma Motion 模式下的具体工作方式。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.motion_learn_keyframes_label": {
-    "string": "Learn keyframes"
+    "string": "学习关键帧"
   },
   "ai_assistant.canvas_prompt_suggested_actions.see_more_label": {
     "string": "See more"
@@ -4803,19 +4803,19 @@
     "string": "layout"
   },
   "ai_assistant.canvas_prompt_suggested_actions.variations.display_aspect_text_content": {
-    "string": "text content"
+    "string": "文字内容"
   },
   "ai_assistant.canvas_prompt_suggested_actions.variations.display_change_and_keep": {
-    "string": "Change the {changedAspects}, but keep the {keptAspects}."
+    "string": "更改 {changedAspects}，但保留 {keptAspects}。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.variations.display_change_only": {
-    "string": "Change the {changedAspects}."
+    "string": "更改{changedAspects}。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.variations.display_intro": {
-    "string": "Create {numVariations} variations of this design."
+    "string": "创建此设计的 {numVariations} 变体。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.variations.display_keep_only": {
-    "string": "Keep the {keptAspects}."
+    "string": "保留{keptAspects}。"
   },
   "ai_assistant.canvas_prompt_suggested_actions.variations.final": {
     "string": "确保生成的变体数量完全正确。"
@@ -4862,8 +4862,8 @@
   "ai_assistant.chat.custom_coder.creating_named": {
     "string": "Creating {name}"
   },
-  "ai_assistant.chat.custom_coder.creating_shader": {
-    "string": "Creating shader"
+  "ai_assistant.chat.custom_coder.creating_Shader": {
+    "string": "创建Shader"
   },
   "ai_assistant.chat.custom_coder.creating_tool": {
     "string": "Creating tool"
@@ -4878,7 +4878,7 @@
     "string": "Pop out 智能体 panel"
   },
   "ai_assistant.chat.hide_planning_next_steps": {
-    "string": "Hide planning details"
+    "string": "隐藏规划详情"
   },
   "ai_assistant.chat.history.chat_access": {
     "string": "聊天 访问权限…"
@@ -4974,7 +4974,7 @@
     "string": "今天"
   },
   "ai_assistant.chat.history.user_answered_question": {
-    "string": "User answered agent question"
+    "string": "用户回答代理问题"
   },
   "ai_assistant.chat.latest_chats": {
     "string": "最近 chats"
@@ -5004,25 +5004,25 @@
     "string": "You can only 查看 this chat."
   },
   "ai_assistant.chat.show_planning_next_steps": {
-    "string": "Show planning details"
+    "string": "显示规划详情"
   },
   "ai_assistant.chat.still_working": {
-    "string": "Still working, please wait…"
+    "string": "仍在处理，请稍候…"
   },
   "ai_assistant.chat.thread_privacy_shared": {
     "string": "已共享"
   },
   "ai_assistant.chat.work_duration_hide_details": {
-    "string": "Hide assistant work details"
+    "string": "隐藏助理工作详细信息"
   },
   "ai_assistant.chat.work_duration_show_details": {
-    "string": "Show assistant work details"
+    "string": "显示助理工作详细信息"
   },
   "ai_assistant.chat.work_duration_suffix_minutes": {
     "string": "持续 {minutes} 分钟"
   },
   "ai_assistant.chat.work_duration_suffix_minutes_seconds": {
-    "string": "for {minutes}m {seconds}s"
+    "string": "持续 {minutes} 米 {seconds} 秒"
   },
   "ai_assistant.chat.work_duration_suffix_seconds": {
     "string": "持续 {seconds} 秒"
@@ -5031,16 +5031,16 @@
     "string": "已工作"
   },
   "ai_assistant.chat_access_callout.description": {
-    "string": "A file’s chats are shared by default, but you can make yours private anytime."
+    "string": "默认情况下，文件的聊天内容是共享的，但您可以随时将其设为私有。"
   },
   "ai_assistant.chat_access_callout.primary_cta": {
     "string": "Got it"
   },
   "ai_assistant.chat_access_callout.secondary_cta": {
-    "string": "Learn more"
+    "string": "了解更多"
   },
   "ai_assistant.chat_access_callout.title": {
-    "string": "Control who sees your chats"
+    "string": "控制谁可以看到您的聊天记录"
   },
   "ai_assistant.chat_attachment.go_to_selection": {
     "string": "前往画布上的选择项"
@@ -5079,13 +5079,13 @@
     "string": "设计检查不可用"
   },
   "ai_assistant.check_designs.cta.collapsed.failure": {
-    "string": "Canceled design check"
+    "string": "取消设计检查"
   },
   "ai_assistant.check_designs.cta.collapsed.pending": {
-    "string": "Starting design check"
+    "string": "开始设计检查"
   },
   "ai_assistant.check_designs.cta.collapsed.success": {
-    "string": "Started design check"
+    "string": "开始设计检查"
   },
   "ai_assistant.check_designs.cta.dismiss_button": {
     "string": "稍后"
@@ -5094,25 +5094,25 @@
     "string": "检查你的设计"
   },
   "ai_assistant.conflict.in_progress_banner": {
-    "string": "Work while you wait"
+    "string": "等待时工作"
   },
   "ai_assistant.conflict.make_a_copy": {
-    "string": "Make a copy"
+    "string": "复印一份"
   },
   "ai_assistant.conflict.send_disabled_tooltip": {
-    "string": "Work in progress, wait to send a new prompt"
+    "string": "工作正在进行中，等待发送新提示"
   },
   "ai_assistant.context_education_callout.description": {
-    "string": "Access the web, add skills, and connect apps to help the agent create what you need."
+    "string": "访问网络、添加技能并连接应用程序以帮助代理创建您需要的内容。"
   },
   "ai_assistant.context_education_callout.image_alt": {
-    "string": "The AI assistant context menu showing options for web search, libraries, and skills."
+    "string": "AI 助手上下文菜单显示网络搜索、库和技能选项。"
   },
   "ai_assistant.context_education_callout.primary_cta": {
     "string": "Got it"
   },
   "ai_assistant.context_education_callout.title": {
-    "string": "Let context guide your agent"
+    "string": "让上下文指导您的代理"
   },
   "ai_assistant.continue": {
     "string": "继续"
@@ -5187,7 +5187,7 @@
     "string": "Searched for 变量"
   },
   "ai_assistant.ds_context.searching": {
-    "string": "Searching design system"
+    "string": "搜索设计系统"
   },
   "ai_assistant.ds_context.searching_components": {
     "string": "Searching for 组件"
@@ -5262,10 +5262,10 @@
     "string": "Importing {repoName}"
   },
   "ai_assistant.empty_state.build_with_code.import_local_folder": {
-    "string": "Upload folder"
+    "string": "上传文件夹"
   },
   "ai_assistant.empty_state.build_with_code.start_from_template": {
-    "string": "Start from a template"
+    "string": "从模板开始"
   },
   "ai_assistant.empty_state.figjam.blank.create_diagrams.flow_chart": {
     "string": "流程图"
@@ -5316,67 +5316,67 @@
     "string": "识别主题"
   },
   "ai_assistant.empty_state.figjam_chat.analyze_board.id_themes_prefill": {
-    "string": "Identify themes and patterns in the content of this board."
+    "string": "确定该板内容中的主题和模式。"
   },
   "ai_assistant.empty_state.figjam_chat.analyze_board.next_steps": {
     "string": "后续步骤"
   },
   "ai_assistant.empty_state.figjam_chat.analyze_board.next_steps_prefill": {
-    "string": "Looking at this board, what would be some logical next steps? Create a prioritized list."
+    "string": "看看这个董事会，接下来的逻辑步骤是什么？创建一个优先列表。"
   },
   "ai_assistant.empty_state.figjam_chat.analyze_board.pull_insights": {
     "string": "拉取 insights"
   },
   "ai_assistant.empty_state.figjam_chat.analyze_board.pull_insights_prefill": {
-    "string": "Review the entire board and pull out the insights/findings that might not be obvious."
+    "string": "审查整个董事会并找出可能不明显的见解/发现。"
   },
   "ai_assistant.empty_state.figjam_chat.analyze_board.summarize": {
     "string": "总结"
   },
   "ai_assistant.empty_state.figjam_chat.analyze_board.summarize_prefill": {
-    "string": "Summarize this board — go deep but include a bulleted executive summary at the top."
+    "string": "总结一下这个董事会——深入但在顶部包括一个项目符号执行摘要。"
   },
   "ai_assistant.empty_state.figjam_chat.analyze_board.title": {
     "string": "分析你的白板"
   },
   "ai_assistant.empty_state.figjam_chat.build_on_this.add_sections_prefill": {
-    "string": "Create additional sections for parking lot discussion topics and action items."
+    "string": "为停车场讨论主题和行动项目创建其他部分。"
   },
   "ai_assistant.empty_state.figjam_chat.build_on_this.add_takeaways": {
     "string": "添加 takeaways"
   },
   "ai_assistant.empty_state.figjam_chat.build_on_this.add_takeaways_prefill": {
-    "string": "Review the board and add a section summarizing the key takeaways."
+    "string": "查看董事会并添加一个总结关键要点的部分。"
   },
   "ai_assistant.empty_state.figjam_chat.build_on_this.generate_image": {
     "string": "Generate an 图像"
   },
   "ai_assistant.empty_state.figjam_chat.build_on_this.generate_image_prefill": {
-    "string": "What would this look like? Generate an image visualizing the concept."
+    "string": "这会是什么样子？生成可视化概念的图像。"
   },
   "ai_assistant.empty_state.figjam_chat.create_diagrams.architecture_diagram": {
     "string": "Architecture diagram"
   },
   "ai_assistant.empty_state.figjam_chat.create_diagrams.architecture_diagram_prefill": {
-    "string": "Diagram the architecture of a microservices system showing the key components and their connections."
+    "string": "绘制微服务系统的架构图，显示关键组件及其连接。"
   },
   "ai_assistant.empty_state.figjam_chat.create_diagrams.gantt_chart_prefill": {
-    "string": "Create a project gantt chart showing tasks, dependencies, and milestones for a product launch."
+    "string": "创建项目甘特图，显示产品发布的任务、依赖关系和里程碑。"
   },
   "ai_assistant.empty_state.figjam_chat.create_diagrams.org_chart": {
     "string": "组织结构图"
   },
   "ai_assistant.empty_state.figjam_chat.create_diagrams.org_chart_prefill": {
-    "string": "Create an org chart for a 20-person engineering team with managers, leads, and reports. Include name, role, location, and space for an image."
+    "string": "为包含经理、领导和报告的 20 人工程团队创建组织结构图。包括图像的名称、角色、位置和空间。"
   },
   "ai_assistant.empty_state.figjam_chat.get_advice.facilitation_tips_prefill": {
-    "string": "What are some tips for facilitating a group workshop using FigJam?"
+    "string": "使用 FigJam 促进小组研讨会有哪些技巧？"
   },
   "ai_assistant.empty_state.figjam_chat.get_advice.figjam_101": {
     "string": "FigJam 101"
   },
   "ai_assistant.empty_state.figjam_chat.get_advice.figjam_101_prefill": {
-    "string": "Give me a quick introduction to FigJam — what it is for and the key features I should know."
+    "string": "请给我快速介绍一下 FigJam — 它的用途以及我应该了解的关键功能。"
   },
   "ai_assistant.empty_state.figjam_chat.get_advice.suggest_improvements": {
     "string": "建议改进"
@@ -5385,7 +5385,7 @@
     "string": "查看我的白板，并建议如何改进其结构和清晰度。"
   },
   "ai_assistant.empty_state.figjam_chat.get_advice.template_showcase_prefill": {
-    "string": "Create some quick examples of common templates like a sprint kickoff, a roadmap review, and a retro."
+    "string": "创建一些常见模板的快速示例，例如冲刺启动、路线图审查和回顾。"
   },
   "ai_assistant.empty_state.figjam_chat.get_advice.title": {
     "string": "获取建议"
@@ -5394,31 +5394,31 @@
     "string": "调整语气"
   },
   "ai_assistant.empty_state.figjam_chat.make_changes.adjust_tone_prefill": {
-    "string": "Rewrite this to be more clear and more concise. Avoid any corporate jargon."
+    "string": "重写它以使其更清晰、更简洁。避免使用任何公司术语。"
   },
   "ai_assistant.empty_state.figjam_chat.make_changes.clean_up_context": {
     "string": "Clean up 上下文"
   },
   "ai_assistant.empty_state.figjam_chat.make_changes.clean_up_context_prefill": {
-    "string": "Review the selected content and clean it up — both spelling/grammar and structure/formatting."
+    "string": "检查所选内容并对其进行清理 - 包括拼写/语法和结构/格式。"
   },
   "ai_assistant.empty_state.figjam_chat.make_changes.organize_this_board_prefill": {
-    "string": "Organize this board so that it’s easier to digest. Group related content together and give it clear visual hierarchy."
+    "string": "整理这个板子，使其更容易理解。将相关内容分组在一起并赋予其清晰的视觉层次结构。"
   },
   "ai_assistant.empty_state.figjam_chat.make_changes.translate_text": {
     "string": "翻译文本"
   },
   "ai_assistant.empty_state.figjam_chat.make_changes.translate_text_prefill": {
-    "string": "Translate this into Spanish. Use Mexican Spanish verbiage and conventions."
+    "string": "将其翻译成西班牙语。使用墨西哥西班牙语的措辞和惯例。"
   },
   "ai_assistant.empty_state.figjam_chat.prep_meeting.brainstorm_prefill": {
-    "string": "Set up a brainstorm session with two rounds of ideation for five people. Include an icebreaker section to start and next steps at the end."
+    "string": "为五人举办两轮创意头脑风暴会议。包括开头的破冰部分和最后的后续步骤。"
   },
   "ai_assistant.empty_state.figjam_chat.prep_meeting.one_on_one": {
     "string": "1:1"
   },
   "ai_assistant.empty_state.figjam_chat.prep_meeting.one_on_one_prefill": {
-    "string": "Set up a board for a weekly 1:1 with sections for an agenda, discussion topics, and action items."
+    "string": "建立一个每周 1:1 的董事会，其中包含议程、讨论主题和行动项目。"
   },
   "ai_assistant.empty_state.figjam_chat.prep_meeting.team_retro": {
     "string": "团队回顾"
@@ -5427,61 +5427,61 @@
     "string": "每周同步"
   },
   "ai_assistant.empty_state.figjam_chat.prep_meeting.weekly_sync_prefill": {
-    "string": "Create a weekly sync template with sections for team updates, blockers, discussion, and action items."
+    "string": "创建每周同步模板，其中包含团队更新、阻碍、讨论和行动项目等部分。"
   },
   "ai_assistant.empty_state.figspec.brainstorm.description": {
-    "string": "Think through open questions, gaps, and alternative approaches."
+    "string": "思考开放性问题、差距和替代方法。"
   },
   "ai_assistant.empty_state.figspec.brainstorm.explore_alternatives": {
     "string": "Explore alternatives"
   },
   "ai_assistant.empty_state.figspec.brainstorm.explore_alternatives_prompt": {
-    "string": "Suggest a few alternative approaches to the core idea in this spec, with the trade-offs of each."
+    "string": "针对本规范中的核心思想提出一些替代方法，并对每种方法进行权衡。"
   },
   "ai_assistant.empty_state.figspec.brainstorm.find_gaps": {
     "string": "Find gaps"
   },
   "ai_assistant.empty_state.figspec.brainstorm.find_gaps_prompt": {
-    "string": "Review this spec and list the missing sections, unanswered questions, and ambiguous or conflicting requirements."
+    "string": "查看此规范并列出缺失的部分、未解答的问题以及不明确或冲突的要求。"
   },
   "ai_assistant.empty_state.figspec.brainstorm.title": {
     "string": "Brainstorm together"
   },
   "ai_assistant.empty_state.figspec.make_new.description": {
-    "string": "Draft a new spec or section from a short description."
+    "string": "根据简短的描述起草新的规范或部分。"
   },
   "ai_assistant.empty_state.figspec.make_new.feature_spec": {
     "string": "Feature spec"
   },
   "ai_assistant.empty_state.figspec.make_new.feature_spec_prompt": {
-    "string": "Draft a product spec scaffold with sections for Overview, Goals, Non-goals, Requirements, Milestones, and Open questions, with a short placeholder line under each heading."
+    "string": "起草一个产品规格框架，其中包含概述、目标、非目标、要求、里程碑和开放问题等部分，每个标题下有一个简短的占位符行。"
   },
   "ai_assistant.empty_state.figspec.make_new.prd_outline": {
     "string": "PRD outline"
   },
   "ai_assistant.empty_state.figspec.make_new.prd_outline_prompt": {
-    "string": "Outline a PRD for a new feature: Problem, Audience, Goals and success metrics, Proposed solution, and Risks. Add a one-line prompt under each heading."
+    "string": "概述新功能的 PRD：问题、受众、目标和成功指标、建议的解决方案和风险。在每个标题下添加一行提示。"
   },
   "ai_assistant.empty_state.figspec.make_new.title": {
     "string": "Make something new"
   },
   "ai_assistant.empty_state.figspec.refine.description": {
-    "string": "Tighten, restructure, or expand what's already in this spec."
+    "string": "收紧、重组或扩展本规范中已有的内容。"
   },
   "ai_assistant.empty_state.figspec.refine.reorganize": {
     "string": "Reorganize"
   },
   "ai_assistant.empty_state.figspec.refine.reorganize_prompt": {
-    "string": "Reorganize this spec into a logical structure with consistent heading levels and a sensible section order."
+    "string": "将此规范重新组织为具有一致标题级别和合理章节顺序的逻辑结构。"
   },
   "ai_assistant.empty_state.figspec.refine.tighten": {
-    "string": "Tighten the writing"
+    "string": "字迹要紧"
   },
   "ai_assistant.empty_state.figspec.refine.tighten_prompt": {
-    "string": "Tighten the writing across this spec so it's clearer and more concise, without changing the meaning or removing any comment markers."
+    "string": "加强本规范的写作，使其更清晰、更简洁，而不改变含义或删除任何注释标记。"
   },
   "ai_assistant.empty_state.figspec.refine.title": {
-    "string": "Refine something existing"
+    "string": "完善现有的东西"
   },
   "ai_assistant.empty_state.greeting.afternoon": {
     "string": "下午好！"
@@ -5499,34 +5499,34 @@
     "string": "Build a landing page"
   },
   "ai_assistant.empty_state.motion.blank.build_landing_page_prompt": {
-    "string": "Build a simple product landing page — hero headline, subhead, and three feature cards — then animate everything in with a staggered, springy rise."
+    "string": "构建一个简单的产品登陆页面——英雄标题、副标题和三张特色卡——然后以交错、弹性的上升方式为所有内容设置动画。"
   },
   "ai_assistant.empty_state.motion.blank.generate_animated_buttons": {
-    "string": "Generate animated buttons"
+    "string": "生成动画按钮"
   },
   "ai_assistant.empty_state.motion.blank.generate_animated_buttons_prompt": {
-    "string": "Create the same three buttons — Squish, Pop In, Glow Pulse — but give each button its own independent Figma Motion timeline. Build each button as a wrapper frame with an inner background layer and a label inside, and animate those inner nodes so the keyframes play on the button’s own timeline, not the container’s."
+    "string": "创建相同的三个按钮 - Squish、Pop In、Glow Pulse - 但为每个按钮提供自己独立的 Figma Motion 时间轴。将每个按钮构建为带有内部背景层和内部标签的包装框架，并对这些内部节点进行动画处理，以便关键帧在按钮自己的时间轴上播放，而不是在容器的时间轴上播放。"
   },
   "ai_assistant.empty_state.motion.content.animate_page": {
     "string": "Animate this page"
   },
   "ai_assistant.empty_state.motion.content.animate_page_prompt": {
-    "string": "Animate everything on the canvas with a cohesive entrance, preserving any existing animations. If there are more than ~5 top-level objects, stop and ask which section to focus on first."
+    "string": "通过具有凝聚力的入口对画布上的所有内容进行动画处理，并保留任何现有的动画。如果顶级对象超过 5 个，请停下来询问首先关注哪个部分。"
   },
   "ai_assistant.empty_state.motion.content.find_motion": {
-    "string": "Find what needs motion"
+    "string": "找到需要动效的东西"
   },
   "ai_assistant.empty_state.motion.content.find_motion_prompt": {
-    "string": "Review this page and suggest which elements would benefit most from animation - also call out any objects that already have motion."
+    "string": "查看此页面并建议哪些元素最能从动画中受益 - 还指出任何已经有动效的对象。"
   },
   "ai_assistant.empty_state.motion.learn_motion": {
-    "string": "Learn motion"
+    "string": "学习动作"
   },
   "ai_assistant.empty_state.motion.learn_motion_prompt": {
-    "string": "Give me a quick overview of motion principles — easing, timing, and staging — with clear instructions for how to actually use those tools inside of Figma Motion."
+    "string": "让我快速概述一下动效原理——缓动、计时和分段——并明确说明如何在 Figma Motion 中实际使用这些工具。"
   },
   "ai_assistant.empty_state.quick.find_type_inconsistencies": {
-    "string": "Find styling inconsistencies"
+    "string": "查找样式不一致的地方"
   },
   "ai_assistant.empty_state.quick.find_type_inconsistencies_prompt": {
     "string": "Scan this page and find places where typography, colors, spacing, or other 样式 are inconsistent with each other or with our design system. List specific frames or 图层 and what to align."
@@ -5547,7 +5547,7 @@
     "string": "为当地水疗中心创建一个温馨、诱人的桌面登陆页面。包括英雄部分、感言、活动、产品、号召性用语和页脚。"
   },
   "ai_assistant.empty_state.quick.generate_design.d.label": {
-    "string": "Explore visual directions"
+    "string": "探索视觉方向"
   },
   "ai_assistant.empty_state.quick.generate_design.d.prompt": {
     "string": "为待办事项应用程序创建 3 种不同的视觉设计，每种设计都具有独特的美学风格，例如简约、友好或奢华，每种设计都采用新框架。"
@@ -5559,64 +5559,64 @@
     "string": "Recap Config 2026"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.agent_skills.description": {
-    "string": "Add skills, attachments, or connectors to give context and guide the agent."
+    "string": "添加技能、附件或连接器以提供上下文并指导代理。"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.agent_skills.name": {
     "string": "Agent skills"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.code_layers.description": {
-    "string": "Prompt interaction ideas, compare directions, and dial in the details—starting from designs or your codebase."
+    "string": "提示交互想法、比较方向并输入细节——从设计或代码库开始。"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.code_layers.name": {
     "string": "Code layers"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.coming_soon.description": {
-    "string": "We also shared updates that are coming soon, like agents in FigJam and Slides and 3D transforms. Sign up to join the beta. Spots are limited."
+    "string": "我们还分享了即将推出的更新，例如 FigJam 中的代理以及幻灯片和 3D 变换。注册加入测试版。名额有限。"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.coming_soon.name": {
     "string": "Coming soon"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.figma_weave_tools.description": {
-    "string": "Transform any visual with Weave tools—style transfer, lighting changes, mockup generation, and more, without leaving Figma."
+    "string": "使用 Weave 工具转换任何视觉效果 — 风格转换、灯光变化、模型生成等等，无需离开 Figma。"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.figma_weave_tools.name": {
     "string": "Figma Weave tools"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.generative_plugins.description": {
-    "string": "Tell the Figma agent what you need and let it build a custom plugin that’s specific to your workflow and lives on the canvas."
+    "string": "告诉 Figma 代理您需要什么，并让它构建一个特定于您的工作流程并存在于画布上的自定义插件。"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.generative_plugins.name": {
     "string": "Generative plugins"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.generative_plugins.try_it_out_prompt": {
-    "string": "Build a tool that generates a configurable stacked, multi-layer shadow on the selected layer with depth and softness controls."
+    "string": "构建一个工具，可在选定的图层上生成可配置的堆叠多层阴影，并具有深度和柔和度控制。"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.intro": {
-    "string": "Here’s what launched at <link>Config 2026</link>:"
+    "string": "以下是 <link>Config 2026</link> 上推出的内容："
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.join_the_waitlist": {
-    "string": "Join the waitlist"
+    "string": "加入候补名单"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.learn_more": {
-    "string": "Learn more"
+    "string": "了解更多"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.motion.description": {
-    "string": "Create precise and expressive animations in a timeline or with the Figma agent. Build out reusable systems, and ship dev-ready animations."
+    "string": "在时间轴中或使用 Figma 代理创建精确且富有表现力的动画。构建可重复使用的系统，并交付开发就绪的动画。"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.motion.name": {
-    "string": "Motion"
+    "string": "动效"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.motion.try_it_out_prompt": {
-    "string": "Create a 15x15 grid of animated squares. Apply a staggered animation to the grid items for the background color, corner rounding, and spacing."
+    "string": "创建一个 15x15 的动画方块网格。将交错动画应用于网格项目的背景颜色、圆角和间距。"
   },
-  "ai_assistant.empty_state.quick.recap_config.drawer.shader_effects_and_fills.description": {
-    "string": "Work with the Figma agent to create shader effects and fills like liquid metal, mesh gradients, and more."
+  "ai_assistant.empty_state.quick.recap_config.drawer.Shader_effects_and_fills.description": {
+    "string": "使用 Figma 代理创建 Shader 效果和填充，例如液态金属、网格渐变等。"
   },
-  "ai_assistant.empty_state.quick.recap_config.drawer.shader_effects_and_fills.name": {
-    "string": "Shader effects and fills"
+  "ai_assistant.empty_state.quick.recap_config.drawer.Shader_effects_and_fills.name": {
+    "string": "Shader 效果和填充"
   },
-  "ai_assistant.empty_state.quick.recap_config.drawer.shader_effects_and_fills.try_it_out_prompt": {
-    "string": "Build me a shader effect that converts the image to halftone, mapping luminance to dot size on a rotated grid. Dark dots on a cream background, grid angled 15°, medium dot scale, high dot density. Create controls for gamma/contrast, dot size, and dot density. Then, create a 512x512px stock photo. Finally, apply the halftone shader to this photo."
+  "ai_assistant.empty_state.quick.recap_config.drawer.Shader_effects_and_fills.try_it_out_prompt": {
+    "string": "为我构建一个 Shader 效果，将图像转换为半色调，将亮度映射到旋转网格上的点大小。奶油色背景上的黑点，网格角度 15°，中等点尺寸，高点密度。创建伽玛/对比度、点大小和点密度的控件。然后，创建一张 512x512 像素的素材照片。最后，对这张照片应用半色调 Shader。"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.try_it_out": {
     "string": "Try it out"
@@ -5637,16 +5637,16 @@
     "string": "Show me 3 alternative layouts of this design in 新建 frames, each with distinct approaches to structure, hierarchy, 颜色, and flow."
   },
   "ai_assistant.empty_state.quick.selected.get_feedback": {
-    "string": "Give design feedback"
+    "string": "提供设计反馈"
   },
   "ai_assistant.empty_state.quick.selected.get_feedback_prompt": {
     "string": "查看 my current 所选内容 and give concise, actionable feedback on layout, hierarchy, 复制 clarity, and polish. Call out the highest-impact improvements first."
   },
   "ai_assistant.empty_state.quick.summarize_page": {
-    "string": "Summarize canvas content"
+    "string": "总结画布内容"
   },
   "ai_assistant.empty_state.quick.summarize_page_prompt": {
-    "string": "Summarize the main content of this page. Call out sections and key takeaways and important information to note."
+    "string": "概括一下本页的主要内容。列出章节和要点以及需要注意的重要信息。"
   },
   "ai_assistant.empty_state.selected.build.description": {
     "string": "创建基于您选择的设计元素的相关屏幕和状态。"
@@ -5727,19 +5727,19 @@
     "string": "返回"
   },
   "ai_assistant.empty_state.tools_effects.effect.chromatic_aberration.label": {
-    "string": "Create a chromatic aberration effect"
+    "string": "创建色差效果"
   },
   "ai_assistant.empty_state.tools_effects.effect.chromatic_aberration.prompt": {
-    "string": "Build me a static chromatic custom effect that adds a color split. I want to control the strength and the direction of the split."
+    "string": "为我构建一个静态彩色自定义效果，添加颜色分割。我想控制分裂的强度和方向。"
   },
   "ai_assistant.empty_state.tools_effects.entry_label": {
     "string": "工具 & effects"
   },
   "ai_assistant.empty_state.tools_effects.fill.curved_stripes.label": {
-    "string": "Create a curved stripes fill"
+    "string": "创建弯曲条纹填充"
   },
   "ai_assistant.empty_state.tools_effects.fill.curved_stripes.prompt": {
-    "string": "Create a static shader fill that resembles curved stripes. The result should feature smooth parallel bands that bend and weave organically across the canvas. I want to control stripe density, thickness, curvature, spacing, and colors."
+    "string": "创建类似于弯曲条纹的静态 Shader 填充。结果应该具有平滑的平行带，在画布上有机地弯曲和编织。我想控制条纹密度、厚度、曲率、间距和颜色。"
   },
   "ai_assistant.empty_state.tools_effects.heading": {
     "string": "Build 工具 and effects"
@@ -5757,7 +5757,7 @@
     "string": "Figma 文件 \"{name}\" is attached"
   },
   "ai_assistant.figma_file_attachment.checking_access": {
-    "string": "Checking access to attached file"
+    "string": "检查对附加文件的访问"
   },
   "ai_assistant.figma_file_attachment.remove": {
     "string": "Remove Figma 文件 attachment"
@@ -5829,7 +5829,7 @@
     "string": "提及建议"
   },
   "ai_assistant.mention_dropdown.type_to_search_placeholder": {
-    "string": "type to search"
+    "string": "输入搜索"
   },
   "ai_assistant.missing_fonts.card.explanation": {
     "string": "The agent ran into 字体 it can’t access in this 文件. Upload them and 重试."
@@ -5844,7 +5844,7 @@
     "string": "Manage missing fonts"
   },
   "ai_assistant.missing_fonts.missing_card.explanation": {
-    "string": "The agent encountered fonts that are not available."
+    "string": "代理遇到不可用的字体。"
   },
   "ai_assistant.missing_fonts.missing_card.heading": {
     "string": "Missing fonts"
@@ -5871,16 +5871,16 @@
     "string": "AI 学分用完"
   },
   "ai_assistant.motion.cta.header": {
-    "string": "Motion was edited"
+    "string": "动议已编辑"
   },
   "ai_assistant.motion.cta.open_motion_button": {
-    "string": "Open in Figma Motion"
+    "string": "在 Figma Motion 中打开"
   },
   "ai_assistant.motion.cta.open_timeline_button": {
-    "string": "Open timeline"
+    "string": "打开时间线"
   },
   "ai_assistant.motion.cta.play_button": {
-    "string": "Play animation"
+    "string": "播放动画"
   },
   "ai_assistant.nav_bar_callout.description": {
     "string": "启动 a 聊天 or select anything on canvas to 创建, refine, and explore. This navigation bar is also where you can now find assets and more."
@@ -6090,10 +6090,10 @@
     "string": "你在 {planName} 教育方案中的 AI 点数已用尽，将于 {resetDate, time, ::h:mma} 重置。{learnMoreLink}"
   },
   "ai_credits_meter.out_of_credits_in_plan": {
-    "string": "You’re out of AI credits in {planName}. Credits reset {resetDate, date, ::MMMd}. {learnMoreLink}"
+    "string": "您在 {planName} 中的 AI 点数已用完。点数重置{resetDate, date, ::MMMd}。 {learnMoreLink}"
   },
   "ai_credits_meter.out_of_credits_in_plan.same_date_reset": {
-    "string": "You’re out of AI credits in {planName}. Credits reset at {resetDate, time, ::h:mma}. {learnMoreLink}"
+    "string": "您在 {planName} 中的 AI 点数已用完。点数于 {resetDate, time, ::h:mma} 重置。 {learnMoreLink}"
   },
   "ai_credits_meter.out_of_credits_in_plan_upgrade_plan": {
     "string": "你在 {planName} 的 AI 积分已用完，将于 {resetDate, date, ::MMMd} 重置。升级方案以获得更多额度。"
@@ -6192,7 +6192,7 @@
     "string": "允许访问付费点数"
   },
   "ai_credits_page.active_users.menu.manage_plan_credit_access": {
-    "string": "Manage paid credit access"
+    "string": "管理付费点数访问"
   },
   "ai_credits_page.active_users.name_column": {
     "string": "姓名"
@@ -6204,7 +6204,7 @@
     "string": "No one using AI 点数"
   },
   "ai_credits_page.active_users.no_active_users_in_license_group_subtitle": {
-    "string": "When they do, you can track how many credits they’ve used each month."
+    "string": "当他们这样做时，您可以跟踪他们每个月使用了多少点数。"
   },
   "ai_credits_page.active_users.no_active_users_subtitle": {
     "string": "当用户开始使用积分后，你将能查看谁的积分已用完、谁的积分不足、谁的积分仍充足。{learnMoreLink}"
@@ -6216,7 +6216,7 @@
     "string": "无匹配的搜索结果"
   },
   "ai_credits_page.active_users.plan_credit_access_column": {
-    "string": "Paid credit access"
+    "string": "付费点数访问"
   },
   "ai_credits_page.active_users.plan_credits_column": {
     "string": "使用的共享积分"
@@ -6378,7 +6378,7 @@
     "string": "追踪你的计费组点数历史"
   },
   "ai_credits_page.license_groups_out_of_credits_banner.message": {
-    "string": "Set aside more so they can use AI features before credits reset on {date, date, ::MMMMd}."
+    "string": "预留更多资金，以便他们可以在 {date, date, ::MMMMd} 点数重置之前使用 AI 功能。"
   },
   "ai_credits_page.license_groups_out_of_credits_banner.title": {
     "string": "{count, plural, one {# billing 组 is out of credits} other {# billing 组 are out of credits}}"
@@ -6444,19 +6444,19 @@
     "string": "Split monthly AI 点数 between billing 组. The rest of {orgName} can use any credits left over."
   },
   "ai_credits_page.onboarding.ai_credits_column.title": {
-    "string": "Make the best of your budget"
+    "string": "充分利用您的预算"
   },
   "ai_credits_page.onboarding.billing_groups_summary.description": {
     "string": "Your monthly 付费 credits are now split: credits given to billing 组, and remaining credits that other 成员 can use."
   },
   "ai_credits_page.onboarding.billing_groups_summary.title": {
-    "string": "More ways to track credits"
+    "string": "更多追踪点数的方法"
   },
   "ai_credits_page.onboarding.billing_groups_tab.description": {
     "string": "See how your billing 组 are using AI, or set aside credits for the 组 who use AI 工具 most."
   },
   "ai_credits_page.onboarding.billing_groups_tab.title": {
-    "string": "More ways to track credits"
+    "string": "更多追踪点数的方法"
   },
   "ai_credits_page.onboarding.full_seat_overages.description": {
     "string": "查看在执行满座限制时您需要多少额外积分。"
@@ -6561,7 +6561,7 @@
     "string": "You can now 添加 a pay as you go budget. Set a monthly maximum and pay per credit, or 添加 it on top of your monthly subscription for flexibility."
   },
   "ai_credits_page.team_payg.title": {
-    "string": "AI, with wiggle room"
+    "string": "AI，有回旋余地"
   },
   "ai_credits_page.title": {
     "string": "AI 积分"
@@ -7110,10 +7110,10 @@
     "string": "转让无法完成，因为该团队已被移动。"
   },
   "asset_transfers.handle_request_modal.cannot_accept_contact_support": {
-    "string": "This transfer can’t be accepted at this time. Please contact support for more details."
+    "string": "目前无法接受此转账。请联系支持人员了解更多详细信息。"
   },
   "asset_transfers.handle_request_modal.cannot_accept_source_missing_nested_folders": {
-    "string": "This transfer can’t be accepted because {sourceName} doesn’t have nested folders enabled."
+    "string": "由于 {sourceName} 未启用嵌套文件夹，因此无法接受此传输。"
   },
   "asset_transfers.handle_request_modal.contact_figma_support": {
     "string": "联系 Figma 支持"
@@ -7602,10 +7602,10 @@
     "string": "停用回退"
   },
   "assistant.debug_settings.disable_fallback_description": {
-    "string": "When enabled, make_edits will not attempt to fallback to a different model if the primary request fails. The request will simply fail."
+    "string": "启用后，如果主请求失败，make_edits 将不会尝试回退到其他模型。该请求将会失败。"
   },
   "assistant.debug_settings.disable_fallback_label": {
-    "string": "Disable fallback to different model"
+    "string": "禁用回退到不同模型"
   },
   "assistant.debug_settings.dropdown.description": {
     "string": "使用内部调试设置"
@@ -7632,7 +7632,7 @@
     "string": "Fallback Configuration"
   },
   "assistant.debug_settings.fallback_model_id_description": {
-    "string": "Override model ID for fallback requests. Leave empty to use the fallback configuration's default model."
+    "string": "覆盖回退请求的模型 ID。留空以使用后备配置的默认模型。"
   },
   "assistant.debug_settings.import_settings": {
     "string": "导入 设置"
@@ -7668,7 +7668,7 @@
     "string": "包含截图"
   },
   "assistant.debug_settings.serialization_options": {
-    "string": "Serialization options (scrollable)"
+    "string": "序列化选项（可滚动）"
   },
   "assistant.debug_settings.simulated_errors.counter_status": {
     "string": "下一步 错误 in {n} messages, randomly chosen from {count} 选中 types"
@@ -7677,7 +7677,7 @@
     "string": "错误 Simulation"
   },
   "assistant.debug_settings.simulated_errors.enable_description": {
-    "string": "When enabled, simulated errors will be injected into assistant responses at the configured frequency."
+    "string": "启用后，模拟错误将以配置的频率注入到助手响应中。"
   },
   "assistant.debug_settings.simulated_errors.enable_label": {
     "string": "Enable 错误 simulation"
@@ -8250,7 +8250,7 @@
     "string": "移动端"
   },
   "auth.mobile-redeem-handoff-failed": {
-    "string": "Something went wrong when attempting to redirect to the mobile app. Please try again."
+    "string": "尝试重定向到移动应用程序时出现问题。请再试一次。"
   },
   "auth.mobile-redeem-try-again": {
     "string": "Try again"
@@ -8301,7 +8301,7 @@
     "string": "提交"
   },
   "auth.prototype_comment_signed_out": {
-    "string": "Log in or create an account to leave comments on {fileName}."
+    "string": "登录或创建帐户即可在 {fileName} 上发表评论。"
   },
   "auth.reset-password.password-retype-error": {
     "string": "两次输入的密码不一致。再试一次？"
@@ -8421,13 +8421,13 @@
     "string": "继续 to Figma"
   },
   "auth.sso-selection.mru-label": {
-    "string": "Previously logged in with"
+    "string": "之前登录方式"
   },
   "auth.sso-selection.unverified-group-label": {
-    "string": "Unverified by your admin"
+    "string": "未由管理员验证"
   },
   "auth.sso-selection.verified-group-label": {
-    "string": "Verified by your admin"
+    "string": "已由管理员验证"
   },
   "auth.sso-selection.view-all-link": {
     "string": "查看全部"
@@ -8841,10 +8841,10 @@
     "string": "这将更新您在 {planName} 的席位 — 可完全访问 Figma Design、Figma 网站、Dev 模式、FigJam 和 Figma 幻灯片。"
   },
   "auto_upgrade_confirmation_modal.body.media_export": {
-    "string": "This will update your seat in {planName}—you’ll get to export at higher resolutions in Figma Motion (and you’ll get {otherProducts}, too)."
+    "string": "这将更新您在 {planName} 中的席位 — 您将能够在 Figma Motion 中以更高的分辨率导出（并且您还将获得 {otherProducts}）。"
   },
   "auto_upgrade_confirmation_modal.body.mode_product": {
-    "string": "This will update your seat in {planName}—you'll get full access to {productName} (and {otherProducts}, too)."
+    "string": "这将更新您在 {planName} 中的席位 — 您将获得对 {productName} 的完全访问权限（以及 {otherProducts}）。"
   },
   "auto_upgrade_confirmation_modal.body.other_products": {
     "string": "其他产品"
@@ -8892,7 +8892,7 @@
     "string": "你即将获得 {licenseType} 的完整访问权限！"
   },
   "auto_upgrade_confirmation_modal.title.media_export_motion": {
-    "string": "You’re about to get access to Figma Motion"
+    "string": "您即将访问 Figma Motion"
   },
   "auto_upgrade_confirmation_modal.title.seat_type": {
     "string": "你即将获得 {seatName} 席位"
@@ -9171,13 +9171,13 @@
     "string": "你已购买此文件。"
   },
   "banner.gen_effects_recovery.body": {
-    "string": "Shaders could be affecting performance. Reloading this file in recovery mode will disable them so you can get things running smoothly."
+    "string": "Shader可能会影响性能。在恢复模式下重新加载此文件将禁用它们，以便您可以顺利运行。"
   },
   "banner.gen_effects_recovery.reload": {
     "string": "Reload in recovery mode"
   },
   "banner.gen_effects_recovery.title": {
-    "string": "File running slowly?"
+    "string": "文件运行缓慢？"
   },
   "banner.guest_expiration_warning": {
     "string": "你在 {orgName} 的访客访问将于 {expirationDate, date, long} 到期。"
@@ -9192,19 +9192,19 @@
     "string": "6 月 24-25 日免费线上参加 Config。"
   },
   "banner.marketing_promo.config_2026_livestream_copy": {
-    "string": "The Config keynote is happening now! Tune in to watch it live."
+    "string": "配置主题演讲正在进行中！请收听直播。"
   },
   "banner.marketing_promo.config_2026_livestream_cta": {
     "string": "Watch live"
   },
   "banner.marketing_promo.config_2026_shortcut_copy": {
-    "string": "Check out everything Figma launched at Config"
+    "string": "查看 Config 中启动的所有 Figma 内容"
   },
   "banner.marketing_promo.config_2026_shortcut_cta": {
-    "string": "Learn more"
+    "string": "了解更多"
   },
   "banner.marketing_promo.config_2026_week_of_copy": {
-    "string": "See you at Config! Join us in SF or virtually"
+    "string": "Config 见！通过 SF 或虚拟方式加入我们"
   },
   "banner.marketing_promo.register": {
     "string": "注册"
@@ -9369,7 +9369,7 @@
     "string": "如需更大的灵活性 "
   },
   "billing.purchase_ai_credits.discount_renewal_info": {
-    "string": "Starting on {renewalDate, date, ::MMMd}, credits will be billed at {price}/mo."
+    "string": "从 {renewalDate, date, ::MMMd} 开始，点数将按每月 {price} 计费。"
   },
   "billing.purchase_ai_credits.generic_error": {
     "string": "出错了，请稍后再试"
@@ -9492,7 +9492,7 @@
     "string": "{creditQuantity, number} 点数/月 • {monthlyPrice}/月"
   },
   "billing.purchase_ai_credits.manage_modal.subheader.subscription_details.monthly.discounted": {
-    "string": "{creditQuantity, number} credits/mo · {monthlyPrice}/mo (introductory rate)"
+    "string": "{creditQuantity, number} 点数/月 · {monthlyPrice}/月（入门费率）"
   },
   "billing.purchase_ai_credits.manage_modal.updated_renewal_banner": {
     "string": "你最近更新了付费点数。你的 {creditQuantity, number}/月订阅将于 {renewalDate, date, medium} 开始。"
@@ -9636,7 +9636,7 @@
     "string": "You'll pay full 价格 for these monthly 付费 credits."
   },
   "billing.purchase_ai_credits.summary.add_on.banner.introductory_rate_not_applied.title": {
-    "string": "Your introductory rate will not be applied to this change"
+    "string": "您的介绍费将不适用于此变更"
   },
   "billing.purchase_ai_credits.summary.add_on.banner.org_renewal_window": {
     "string": "温馨提示，你的方案将于 {renewalDate, date, medium} 续订。你可以前往计费面板查看更新点数如何影响年度成本。"
@@ -9672,7 +9672,7 @@
     "string": "之后"
   },
   "billing.purchase_ai_credits.summary.discount_information": {
-    "string": "{discountedPrice}/mo until {discountEndDate, date, ::MMMd}, {fullPrice}/mo after"
+    "string": "{discountEndDate, date, ::MMMd} 之前为 {discountedPrice}/月，之后​​为 {fullPrice}/月"
   },
   "billing.purchase_ai_credits.summary.estimated_costs_description.add.annual_plan": {
     "string": "由于你处于年度周期中，我们将在 {invoiceDate, date, medium} 的发票上按比例计算点数费用。"
@@ -9759,7 +9759,7 @@
     "string": "查看并确认你的更改"
   },
   "billing.purchase_ai_credits.summary.until_discount_end_date": {
-    "string": "until {discountEndDate, date, ::MMMd}"
+    "string": "直到{discountEndDate, date, ::MMMd}"
   },
   "billing.purchase_ai_credits.summary.unused_days_on_previous_plan": {
     "string": "退还先前购买的点数"
@@ -9894,7 +9894,7 @@
     "string": "每月点数"
   },
   "billing_groups_table.assign_ai_credits_modal_v2.credits_per_month_suffix": {
-    "string": "{credits, number, integer}/month"
+    "string": "{credits, number, integer}/月"
   },
   "billing_groups_table.assign_ai_credits_modal_v2.description": {
     "string": "Set aside some of your plan’s monthly credits for this billing 组. 成员 will have 访问权限 to this amount each month. {learnMoreLink}"
@@ -9906,7 +9906,7 @@
     "string": "如果其他计费组先耗尽了每月点数，{billingGroupName} 可能无法使用全部 {allocatedCredits, number} 个点数。"
   },
   "billing_groups_table.assign_ai_credits_modal_v2.percentage_input_label": {
-    "string": "Percentage of total credits"
+    "string": "占总点数的百分比"
   },
   "billing_groups_table.assign_ai_credits_modal_v2.percentage_of_total_suffix": {
     "string": "占总数的 {percentage}%"
@@ -9918,7 +9918,7 @@
     "string": "恢复分配的点数"
   },
   "billing_groups_table.assign_ai_credits_modal_v2.slider_label": {
-    "string": "Credit allocation slider"
+    "string": "点数分配滑块"
   },
   "billing_groups_table.assign_ai_credits_modal_v2.unassigned_credits_banner": {
     "string": "{billingGroupName} will only use your organization’s 付费 monthly credits 移动 forward."
@@ -11175,7 +11175,7 @@
     "string": "无障碍工具"
   },
   "categories.agent_built_plugins": {
-    "string": "Generative plugins and Weave tools"
+    "string": "生成插件和 Weave 工具"
   },
   "categories.all_ai_workflows": {
     "string": "All AI workflows"
@@ -11352,7 +11352,7 @@
     "string": "Affinity diagrams"
   },
   "categories.navbar.agent_built_plugins.subtitle": {
-    "string": "Explore new creative workflows"
+    "string": "探索新的创意工作流程"
   },
   "categories.navbar.ai_workflows": {
     "string": "AI workflows"
@@ -11468,8 +11468,8 @@
   "categories.navbar.saas": {
     "string": "SaaS"
   },
-  "categories.navbar.shaders.subtitle": {
-    "string": "Expand your visual exploration on canvas"
+  "categories.navbar.Shaders.subtitle": {
+    "string": "在画布上扩展您的视觉探索"
   },
   "categories.navbar.social_media.subtitle": {
     "string": "像专家一样创作内容"
@@ -11487,7 +11487,7 @@
     "string": "预设的按钮、提示框等基础组件"
   },
   "categories.navbar.user_personas": {
-    "string": "User personas"
+    "string": "用户角色"
   },
   "categories.navbar.web_ad": {
     "string": "网页广告"
@@ -11552,7 +11552,7 @@
   "categories.resume_templates": {
     "string": "简历模板"
   },
-  "categories.shaders": {
+  "categories.Shaders": {
     "string": "Shaders"
   },
   "categories.shapes_colors": {
@@ -11751,7 +11751,7 @@
     "string": "导入内容"
   },
   "check_network_compatibility.footer_cta": {
-    "string": "Need help resolving these issues?"
+    "string": "需要帮助解决这些问题吗？"
   },
   "check_network_compatibility.network_settings_compatible": {
     "string": "你的网络已具备运行 Figma 所需的域名访问权限"
@@ -12084,13 +12084,13 @@
     "string": "协作"
   },
   "checkout.solo_first_checkout.modal.seat_type.collab_description": {
-    "string": "Best for teammates who collaborate in FigJam and Slides."
+    "string": "最适合在 FigJam 和幻灯片中协作的队友。"
   },
   "checkout.solo_first_checkout.modal.seat_type.dev": {
     "string": "开发者"
   },
   "checkout.solo_first_checkout.modal.seat_type.dev_description": {
-    "string": "Best for teammates who inspect and implement designs."
+    "string": "最适合检查和实施设计的团队成员。"
   },
   "checkout.solo_first_checkout.modal.seat_type.full": {
     "string": "完整版"
@@ -12237,7 +12237,7 @@
     "string": "继续"
   },
   "churn_friction.modal.cta.downgrade_to_starter": {
-    "string": "Downgrade to Starter"
+    "string": "降级为入门级"
   },
   "churn_friction.modal.cta.keep_plan": {
     "string": "保留 Professional 方案"
@@ -12909,16 +12909,16 @@
     "string": "{count, plural, one {{count} edited 类别} other {{count} edited 类别}}"
   },
   "collaboration.branching_chunk.annotation_categories_summary_added_deleted_label": {
-    "string": "{addedSummary}, {deletedSummary}"
+    "string": "{addedSummary}、{deletedSummary}"
   },
   "collaboration.branching_chunk.annotation_categories_summary_added_edited_label": {
-    "string": "{addedSummary}, {editedSummary}"
+    "string": "{addedSummary}、{editedSummary}"
   },
   "collaboration.branching_chunk.annotation_categories_summary_all_label": {
-    "string": "{addedSummary}, {deletedSummary}, {editedSummary}"
+    "string": "{addedSummary}、{deletedSummary}、{editedSummary}"
   },
   "collaboration.branching_chunk.annotation_categories_summary_deleted_edited_label": {
-    "string": "{deletedSummary}, {editedSummary}"
+    "string": "{deletedSummary}、{editedSummary}"
   },
   "collaboration.branching_chunk.annotation_category_chip_aria_label": {
     "string": "类别颜色：{color}。类别标签：{label}。"
@@ -14391,7 +14391,7 @@
     "string": "添加到版本历史"
   },
   "collaboration.feedback.agent_co_author": {
-    "string": "{user} and {agentName}"
+    "string": "{user} 和 {agentName}"
   },
   "collaboration.feedback.all_filter_text": {
     "string": "全部"
@@ -15099,7 +15099,7 @@
     "string": "稍等片刻…"
   },
   "comments.insert_timeline_timestamp": {
-    "string": "Insert timeline timestamp"
+    "string": "插入时间线时间戳"
   },
   "comments.invited": {
     "string": "已邀请"
@@ -15267,7 +15267,7 @@
     "string": "搜索评论"
   },
   "comments.seek_timeline_to_timestamp": {
-    "string": "Seek timeline to {timestamp}"
+    "string": "寻求 {timestamp} 的时间表"
   },
   "comments.select_cluster": {
     "string": "{numComments, plural, one {展开 {numComments} 条评论的分组} other {展开 {numComments} 条评论的分组}}"
@@ -15327,7 +15327,7 @@
     "string": "{count, plural, one {# comment at {timestamp}} other {# comments at {timestamp}}}"
   },
   "comments.timeline_marker_label": {
-    "string": "Comment by {handle} at {timestamp}"
+    "string": "{handle} 在 {timestamp} 发表的评论"
   },
   "comments.timeline_marker_tooltip": {
     "string": "{handle} at {timestamp}"
@@ -15447,7 +15447,7 @@
     "string": "选择一个选项"
   },
   "common.support_request_id": {
-    "string": "Request ID: {supportRequestId}"
+    "string": "请求 ID：{supportRequestId}"
   },
   "community.access_needed_to_publish_in_org_modal.body": {
     "string": "请联系您的管理员，以个人或代表组织身份发布内容。"
@@ -16428,7 +16428,7 @@
     "string": "继续前往 {externalService}"
   },
   "community.detail_view.copied_to_clipboard": {
-    "string": "Copied to clipboard!"
+    "string": "已复制到剪贴板！"
   },
   "community.detail_view.copy_as_png": {
     "string": "复制为 PNG"
@@ -16530,7 +16530,7 @@
     "string": "Includes Make"
   },
   "community.detail_view.includes_motion": {
-    "string": "Includes Motion"
+    "string": "包括动效"
   },
   "community.detail_view.integration": {
     "string": "一体化"
@@ -17184,7 +17184,7 @@
     "string": "我们喜欢的创作者"
   },
   "community.homepage.featured_creators_section.sub_header": {
-    "string": "Explore some of Figma’s favorite makers producing some of the best work of today."
+    "string": "探索一些 Figma 最受喜爱的制作者，他们创作了当今最好的作品。"
   },
   "community.homepage.featured_partners_section.browse_all": {
     "string": "Browse all partners"
@@ -17255,11 +17255,11 @@
   "community.homepage.profile_banner.title": {
     "string": "重新设计的个人主页"
   },
-  "community.homepage.shaders_promo_banner.description": {
-    "string": "Use the Figma agent to build expressive shader effects and fills"
+  "community.homepage.Shaders_promo_banner.description": {
+    "string": "使用 Figma 代理构建富有表现力的 Shader 效果和填充"
   },
-  "community.homepage.shaders_promo_banner.title": {
-    "string": "Custom shaders on the Figma canvas"
+  "community.homepage.Shaders_promo_banner.title": {
+    "string": "Figma 画布上的自定义 Shader"
   },
   "community.homepage.sites_section.browse_all": {
     "string": "浏览网站模板"
@@ -17280,10 +17280,10 @@
     "string": "寻找可以帮助你快速表达创意的幻灯片模板。不论你是新手还是专家都能轻松使用。"
   },
   "community.homepage.tools_promo_banner.description": {
-    "string": "Expand your palette by generating tools you need and getting inspired by new visual possibilities"
+    "string": "通过生成您需要的工具并从新的视觉可能性中获得灵感来扩展您的调色板"
   },
   "community.homepage.tools_promo_banner.title": {
-    "string": "Generative plugins and Weave tools"
+    "string": "生成插件和 Weave 工具"
   },
   "community.homepage.weave_apps_section.browse": {
     "string": "Browse all Weave tools"
@@ -17292,7 +17292,7 @@
     "string": "Figma Weave tools"
   },
   "community.homepage.weave_apps_section.sub_header": {
-    "string": "AI-powered tools you can run in Figma to generate, edit, and automate creative work."
+    "string": "您可以在 Figma 中运行人工智能驱动的工具来生成、编辑和自动化创意工作。"
   },
   "community.homepage.weave_banner.card_3d": {
     "string": "3D"
@@ -17307,10 +17307,10 @@
     "string": "文本"
   },
   "community.homepage.weave_banner.description.v2": {
-    "string": "Share the work behind your work and let others duplicate it, learn from it, and take it further"
+    "string": "分享你的作品背后的成果，让其他人复制它、从中学习并进一步发展"
   },
   "community.homepage.weave_banner.title.v3": {
-    "string": "Publish your Weave Workflow"
+    "string": "发布您的 Weave 工作流程"
   },
   "community.homepage.widgets.browse_all": {
     "string": "浏览所有组件"
@@ -17406,7 +17406,7 @@
     "string": "Make"
   },
   "community.landing_page.dropdown_filter__design_tool_motion": {
-    "string": "Motion"
+    "string": "动效"
   },
   "community.landing_page.dropdown_filter__design_tools": {
     "string": "Includes"
@@ -17610,10 +17610,10 @@
     "string": "请保持主题相关"
   },
   "community.onboarding.welcome_to_community": {
-    "string": "Welcome to Community"
+    "string": "欢迎来到社区"
   },
   "community.onboarding.welcome_to_community_description": {
-    "string": "We need a few details from you to get started but while you’re here, get comfortable and see what you can do!"
+    "string": "我们需要您提供一些详细信息才能开始，但当您在这里时，请放心，看看您能做什么！"
   },
   "community.onboarding.when_leaving_comments_we_ask_that_you": {
     "string": "发表评论时，我们希望你…"
@@ -17640,7 +17640,7 @@
     "string": "上一页"
   },
   "community.partners_page.subtitle": {
-    "string": "Meet the partners in the Figma ecosystem developing tools and workflows that help teams build better products."
+    "string": "认识 Figma 生态系统中的合作伙伴，开发工具和工作流程，帮助团队构建更好的产品。"
   },
   "community.partners_page.title": {
     "string": "Figma Partners"
@@ -18003,16 +18003,16 @@
     "string": "New"
   },
   "community.plugins_page.promo_banner.description": {
-    "string": "Generate plugins for any purpose, and use Weave-powered tools that expand possibilities—all on the canvas. Get inspired with some examples."
+    "string": "生成用于任何目的的插件，并使用 Weave 支持的工具来扩展可能性 - 一切都在画布上。从一些例子中获得灵感。"
   },
   "community.plugins_page.promo_banner.explore_cta": {
     "string": "Explore examples"
   },
   "community.plugins_page.promo_banner.learn_more_cta": {
-    "string": "Learn more"
+    "string": "了解更多"
   },
   "community.plugins_page.promo_banner.title": {
-    "string": "Express yourself with custom creative tools"
+    "string": "使用定制创意工具表达自己"
   },
   "community.plugins_page.short_description": {
     "string": "使用社区创建的工具扩展你的设计能力。"
@@ -18075,28 +18075,28 @@
     "string": "添加内容"
   },
   "community.posts.publishing.allow_reuse": {
-    "string": "Allow others to riff on this content"
+    "string": "允许其他人重复此内容"
   },
   "community.posts.publishing.beta_modal.body": {
-    "string": "Sharing a riff is currently in beta and is rolling out gradually."
+    "string": "分享即兴演奏目前处于测试阶段，并将逐步推出。"
   },
   "community.posts.publishing.beta_modal.title": {
-    "string": "Publishing access is coming soon."
+    "string": "发布访问即将推出。"
   },
   "community.posts.publishing.carousel_media_guidelines": {
     "string": "Aspect ratio between 9:16 and 16:9. Recommended minimum 宽度: {minPx}px."
   },
   "community.posts.publishing.collect_error_motion_too_long": {
-    "string": "Animations must be 30 seconds or shorter"
+    "string": "动画时长不得超过 30 秒"
   },
   "community.posts.publishing.collect_error_no_selection": {
-    "string": "Select at least one frame to share"
+    "string": "至少选择一帧进行共享"
   },
   "community.posts.publishing.collect_error_too_many": {
-    "string": "Select at most 5 frames to share"
+    "string": "最多选择 5 帧进行共享"
   },
   "community.posts.publishing.collect_error_too_many_motion": {
-    "string": "Select at most 3 animations to share"
+    "string": "最多选择 3 个动画进行分享"
   },
   "community.posts.publishing.deep_link.collect_error": {
     "string": "收集框架时出错。请重试。"
@@ -18405,7 +18405,7 @@
     "string": "建议尺寸：1080 x 1080px"
   },
   "community.profile_refresh.gallery.title_too_long_error": {
-    "string": "Title must be {maxLength} characters or fewer"
+    "string": "标题不得超过 {maxLength} 个字符"
   },
   "community.profile_refresh.github_label": {
     "string": "GitHub"
@@ -18414,7 +18414,7 @@
     "string": "句柄"
   },
   "community.profile_refresh.hide_device_frame": {
-    "string": "Hide the device frame"
+    "string": "隐藏设备框架"
   },
   "community.profile_refresh.instagram_label": {
     "string": "Instagram"
@@ -18507,16 +18507,16 @@
     "string": "失败 to 移除 图像. Please try again."
   },
   "community.profile_refresh.portfolio_image_recommended_size_laptop": {
-    "string": "Recommended size: 1920 x 1253"
+    "string": "建议尺寸：1920 x 1253"
   },
   "community.profile_refresh.portfolio_image_recommended_size_macintosh": {
-    "string": "Recommended size: 1920 x 1415"
+    "string": "建议尺寸：1920 x 1415"
   },
   "community.profile_refresh.portfolio_image_recommended_size_none": {
-    "string": "Recommended size: 1920 x 1253"
+    "string": "建议尺寸：1920 x 1253"
   },
   "community.profile_refresh.portfolio_image_recommended_size_phone": {
-    "string": "Recommended size: 1179 x 2556"
+    "string": "建议尺寸：1179 x 2556"
   },
   "community.profile_refresh.portfolio_image_upload_error": {
     "string": "失败 to upload 图像. Please try again."
@@ -18546,7 +18546,7 @@
     "string": "预览"
   },
   "community.profile_refresh.profile_picture_updated_across_figma": {
-    "string": "Profile picture updated across Figma"
+    "string": "个人资料图片已在 Figma 范围内更新"
   },
   "community.profile_refresh.pronouns_add_custom": {
     "string": "添加你自己的…"
@@ -18723,7 +18723,7 @@
     "string": "新建"
   },
   "community.profiles.no_resources_match_filters": {
-    "string": "No resources match your filters. {resetLink} to see everything!"
+    "string": "没有资源符合您的过滤条件。 {resetLink} 查看一切！"
   },
   "community.profiles.no_resources_published_yet": {
     "string": "尚未发布任何资源"
@@ -19296,7 +19296,7 @@
     "string": "请尝试再次发布。"
   },
   "community.publishing.make_library.failed_to_create_npm_scope": {
-    "string": "Couldn’t set up the npm scope for your kit. Please try again, or contact support if the problem persists."
+    "string": "无法为您的套件设置 npm 范围。请重试，或者如果问题仍然存在，请联系支持人员。"
   },
   "community.publishing.make_library.failed_to_publish": {
     "string": "无法发布工具包"
@@ -19770,10 +19770,10 @@
     "string": "A skill with this 名称 already exists in {planName}."
   },
   "community.publishing.skill_on_its_way": {
-    "string": "{skillName} is on its way to {publishScopeEntityName}."
+    "string": "{skillName} 正在前往 {publishScopeEntityName} 的途中。"
   },
   "community.publishing.skill_publishing_success_header": {
-    "string": "You’re all set"
+    "string": "一切就绪"
   },
   "community.publishing.snapshot_image": {
     "string": "快照图像"
@@ -19875,7 +19875,7 @@
     "string": "Make"
   },
   "community.publishing.tools_motion": {
-    "string": "Motion"
+    "string": "动效"
   },
   "community.publishing.unable_to_connect_profiles": {
     "string": "无法连接个人资料"
@@ -20052,7 +20052,7 @@
     "string": "你的文件即将在社区中开放供所有人复制和共享。感谢你的贡献，你真棒。"
   },
   "community.publishing.your_skill": {
-    "string": "Your skill"
+    "string": "你的技能"
   },
   "community.publishing.your_slides_file_will_soon_be_available_for_everyone": {
     "string": "你的模板即将在社区中开放供所有人复制和共享。感谢你的贡献，你真棒。"
@@ -20208,7 +20208,7 @@
     "string": "编辑此页面"
   },
   "community.resource.edit_workflow": {
-    "string": "Edit workflow"
+    "string": "编辑工作流程"
   },
   "community.resource.free_trial_days": {
     "string": "{days} 天免费试用"
@@ -20235,7 +20235,7 @@
     "string": "发布"
   },
   "community.resource.thumbnail_alt": {
-    "string": "Thumbnail for {name}"
+    "string": "{name} 的缩略图"
   },
   "community.resource.two_authors_and": {
     "string": "{author1} and {author2}"
@@ -21203,14 +21203,14 @@
   "community.seller.youre_all_set_up_to_sell_on_community": {
     "string": "你已准备好在社区中开始销售"
   },
-  "community.shaders_page.feed_title": {
-    "string": "Explore shader effects and fills"
+  "community.Shaders_page.feed_title": {
+    "string": "探索 Shader 效果和填充"
   },
-  "community.shaders_page.headline": {
-    "string": "Build shader effects and fills right on canvas. Prompt the agent, then see it to believe it."
+  "community.Shaders_page.headline": {
+    "string": "构建 Shader 效果并直接在画布上填充。提示代理，然后亲眼所见才相信。"
   },
-  "community.shaders_page.short_description": {
-    "string": "Fill your mind with some great examples"
+  "community.Shaders_page.short_description": {
+    "string": "用一些很棒的例子来充实你的大脑"
   },
   "community.shelves.show_more": {
     "string": "显示更多"
@@ -21642,7 +21642,7 @@
     "string": "ID 为 {parentID} 的父项不存在。"
   },
   "community.sinatra.posts.publish_rate_limit_exceeded": {
-    "string": "You've hit the maximum number of Community publishes allowed right now. Try again in a little while."
+    "string": "您目前已达到允许的最大社区发布数量。稍后再试一次。"
   },
   "community.sinatra.posts.some_referenced_profiles_are_not_valid": {
     "string": "部分引用的资料无效。"
@@ -21666,7 +21666,7 @@
     "string": "该位置已存在链接"
   },
   "community.sinatra.profile_key_links.duplicate_url": {
-    "string": "This URL has already been added"
+    "string": "此 URL 已添加"
   },
   "community.sinatra.profile_key_links.invalid_url": {
     "string": "必须是有效 URL"
@@ -21939,7 +21939,7 @@
     "string": "分享你的技能"
   },
   "community.tools_page.carousel_kind_agent_built_plugin": {
-    "string": "Generative plugin"
+    "string": "生成插件"
   },
   "community.tools_page.carousel_kind_effect": {
     "string": "Effect"
@@ -21954,7 +21954,7 @@
     "string": "浏览所有示例"
   },
   "community.tools_page.headline": {
-    "string": "Assistant-created 工具, shaders, effects — expedite your workflow and expand your visual explorations."
+    "string": "Assistant-created 工具, Shaders, effects — expedite your workflow and expand your visual explorations."
   },
   "community.tools_page.short_description": {
     "string": "试用他们的模板来站稳脚跟"
@@ -21981,7 +21981,7 @@
     "string": "你的组织不允许你在外部空间中创建新文件。"
   },
   "community.try.figjam_disabled_by_admins": {
-    "string": "FigJam disabled by admins"
+    "string": "FigJam 被管理员禁用"
   },
   "community.try.figmake_disabled_by_admins": {
     "string": "Figma Make 被管理员禁用"
@@ -22035,7 +22035,7 @@
     "string": "{num, plural, one {已有 {num} 人使用} other {已有 {num} 人使用}}"
   },
   "community.try.weave_disabled_by_admins": {
-    "string": "Figma Weave disabled by admins"
+    "string": "Figma 编织已被管理员禁用"
   },
   "community.try.widget_requests_disabled_by_your_org": {
     "string": "{orgName} 不允许请求组件"
@@ -22290,13 +22290,13 @@
     "string": "从一个工作流开始，通过复制将其变为你自己的内容"
   },
   "community.workflows.could_not_unpublish_workflow": {
-    "string": "Could not unpublish workflow"
+    "string": "无法取消发布工作流程"
   },
   "community.workflows.remove_workflow_from_community": {
-    "string": "Remove workflow from Community"
+    "string": "从社区中删除工作流程"
   },
   "community.workflows.unpublishing_this_workflow_will_remove_it_from_community": {
-    "string": "Unpublishing this workflow will remove it from Community and prevent people from finding and using it."
+    "string": "取消发布此工作流程会将其从社区中删除，并阻止人们找到和使用它。"
   },
   "community_detail_view.creators_note": {
     "string": "创作者备注："
@@ -22311,94 +22311,94 @@
     "string": "Generative plugins"
   },
   "config2026.announcement_modal.config_item.agent_built_plugins.description": {
-    "string": "Tell the Figma agent what you need and let it build a custom plugin that’s specific to your workflow."
+    "string": "告诉 Figma 代理您需要什么，并让它构建一个特定于您的工作流程的自定义插件。"
   },
   "config2026.announcement_modal.config_item.agent_built_plugins.secondary_cta": {
     "string": "Next: Code layers"
   },
   "config2026.announcement_modal.config_item.agent_built_plugins.title": {
-    "string": "Generate custom tools for your creative work"
+    "string": "为您的创意工作生成自定义工具"
   },
   "config2026.announcement_modal.config_item.design_agent": {
     "string": "Agent skills"
   },
   "config2026.announcement_modal.config_item.design_agent.description": {
-    "string": "Help the Figma agent help you. Add skills, attachments, or connectors to give context and guide the agent."
+    "string": "帮助 Figma 代理帮助您。添加技能、附件或连接器以提供上下文并指导代理。"
   },
   "config2026.announcement_modal.config_item.design_agent.secondary_cta": {
     "string": "Next: Generative plugins"
   },
   "config2026.announcement_modal.config_item.design_agent.title": {
-    "string": "More context and control for the agent"
+    "string": "为代理提供更多上下文和控制"
   },
   "config2026.announcement_modal.config_item.launching_in_beta": {
     "string": "More coming soon"
   },
   "config2026.announcement_modal.config_item.launching_in_beta.description": {
-    "string": "But wait, there’s more! Like agents in FigJam and Slides and 3D transforms—all coming soon. Sign up to join the beta. Spots are limited."
+    "string": "但等等，还有更多！就像 FigJam 中的代理以及幻灯片和 3D 变换一样，所有这些都即将推出。注册加入测试版。名额有限。"
   },
   "config2026.announcement_modal.config_item.launching_in_beta.secondary_cta": {
-    "string": "Close"
+    "string": "关闭"
   },
   "config2026.announcement_modal.config_item.launching_in_beta.title": {
-    "string": "Get early access"
+    "string": "抢先体验"
   },
   "config2026.announcement_modal.config_item.make_updates": {
     "string": "Code layers"
   },
   "config2026.announcement_modal.config_item.make_updates.description": {
-    "string": "Prompt interaction ideas, compare directions, and dial in the details—starting from designs or your codebase."
+    "string": "提示交互想法、比较方向并输入细节——从设计或代码库开始。"
   },
   "config2026.announcement_modal.config_item.make_updates.secondary_cta": {
     "string": "Next: Coming soon"
   },
   "config2026.announcement_modal.config_item.make_updates.title": {
-    "string": "Design in code on the canvas"
+    "string": "在画布上用代码进行设计"
   },
   "config2026.announcement_modal.config_item.motion": {
     "string": "Figma Motion"
   },
   "config2026.announcement_modal.config_item.motion.description": {
-    "string": "With Figma Motion, you can create precise and expressive animations in a timeline or with the Figma agent. Build out reusable systems, and ship dev-ready animations."
+    "string": "使用 Figma Motion，您可以在时间轴中或使用 Figma 代理创建精确且富有表现力的动画。构建可重复使用的系统，并交付开发就绪的动画。"
   },
   "config2026.announcement_modal.config_item.motion.secondary_cta": {
     "string": "Next: Shaders"
   },
   "config2026.announcement_modal.config_item.motion.title": {
-    "string": "Set your designs in motion"
+    "string": "让您的设计动起来"
   },
-  "config2026.announcement_modal.config_item.shaders": {
-    "string": "Shader effects and fills"
+  "config2026.announcement_modal.config_item.Shaders": {
+    "string": "Shader 效果和填充"
   },
-  "config2026.announcement_modal.config_item.shaders.description": {
-    "string": "Describe your vision, and the Figma agent will make it happen right on the canvas. Think liquid metal, mesh gradients, and more."
+  "config2026.announcement_modal.config_item.Shaders.description": {
+    "string": "描述您的愿景，Figma 代理将使其在画布上实现。想想液态金属、网格渐变等等。"
   },
-  "config2026.announcement_modal.config_item.shaders.secondary_cta": {
+  "config2026.announcement_modal.config_item.Shaders.secondary_cta": {
     "string": "Next: Weave tools"
   },
-  "config2026.announcement_modal.config_item.shaders.title": {
-    "string": "Create custom shader effects and fills"
+  "config2026.announcement_modal.config_item.Shaders.title": {
+    "string": "创建自定义 Shader 效果和填充"
   },
   "config2026.announcement_modal.config_item.weave_tools": {
     "string": "Figma Weave tools"
   },
   "config2026.announcement_modal.config_item.weave_tools.description": {
-    "string": "The most popular Weave workflows—style transfer, lighting changes, mockup generation, and more—are now ready to run in Figma."
+    "string": "最流行的 Weave 工作流程（样式传输、灯光更改、模型生成等）现在可以在 Figma 中运行。"
   },
   "config2026.announcement_modal.config_item.weave_tools.secondary_cta": {
     "string": "Next: Agent skills"
   },
   "config2026.announcement_modal.config_item.weave_tools.title": {
-    "string": "Transform visuals with Weave tools"
+    "string": "使用 Weave 工具转变视觉效果"
   },
   "config2026.announcement_modal.config_playground_file.title": {
     "string": "Config 2026 playground"
   },
   "config2026.announcement_modal.header": {
-    "string": "What we launched at Config 2026"
+    "string": "我们在 Config 2026 上推出的内容"
   },
   "config2026.announcement_modal.primary_cta.join_the_waitlist": {
-    "string": "Join the waitlist"
+    "string": "加入候补名单"
   },
   "config2026.announcement_modal.primary_cta.try_it_out": {
     "string": "Try it out"
@@ -22761,7 +22761,7 @@
     "string": "导出 above 1080p and 30fps"
   },
   "consumption_paywalls.high_quality_video_export.starter_limit": {
-    "string": "Up to 1080p and 30fps"
+    "string": "高达 1080p 和 30fps"
   },
   "consumption_paywalls.high_quality_video_export.subtitle": {
     "string": "Your plan exports video up to 1080p and 30fps. Upgrade to 导出 at higher quality."
@@ -24291,7 +24291,7 @@
     "string": "By default, 填充 items on slot's counter axis"
   },
   "design_systems.component_properties.slot_fill_config.disabled_tooltip": {
-    "string": "Slot must have auto layout"
+    "string": "插槽必须具有自动布局"
   },
   "design_systems.component_properties.slot_fill_config.info_tooltip": {
     "string": "If a slot follows a horizontal flow (x-axis), items will stretch along its 高度 (y-axis)."
@@ -24354,7 +24354,7 @@
     "string": "插槽限制"
   },
   "design_systems.component_properties.slot_restrictions.preferred_only": {
-    "string": "Only allow preferred instances"
+    "string": "仅允许首选实例"
   },
   "design_systems.component_properties.slot_restrictions.row_max": {
     "string": "{count, plural, one {1 图层 maximum} other {{count} 图层 maximum}}"
@@ -24450,7 +24450,7 @@
     "string": "新布局指南样式"
   },
   "design_systems.create_style.placeholder_name_motion": {
-    "string": "New animation style"
+    "string": "新的动画风格"
   },
   "design_systems.create_style.placeholder_name_text": {
     "string": "新文本样式"
@@ -25809,7 +25809,7 @@
     "string": "已有字体"
   },
   "design_systems.shared_fonts.family_info_with_version": {
-    "string": "{fontFamily}, {fontStyle} v{fontVersion}"
+    "string": "{fontFamily}、{fontStyle} v{fontVersion}"
   },
   "design_systems.shared_fonts.family_info_without_version": {
     "string": "{fontFamily}，{fontStyle}"
@@ -26670,7 +26670,7 @@
     "string": "plus-darker 通常用于 iOS 应用，目前仅 Safari 支持。请尝试其他设计方案以获得更好的浏览器兼容性。"
   },
   "dev_handoff.code.hints.preserve_3d_clipped": {
-    "string": "This container clips its content, which flattens its 3D scene. Remove clipping to respect transform-style: preserve-3d."
+    "string": "该容器会剪辑其内容，从而使其 3D 场景变平。删除剪裁以尊重变换样式：preserve-3d。"
   },
   "dev_handoff.code.hints.single_paint": {
     "string": "该设计指定了多种颜色，但此属性仅支持单一颜色"
@@ -26790,7 +26790,7 @@
     "string": "通过安装 {figmaForSlackLink} 或 {figmaForTeamsLink} 获取 Figma 文件、项目等的更新。"
   },
   "dev_handoff.comments_panel.slack_teams_hint.slack_link": {
-    "string": "Figma for Slack"
+    "string": "Figma 代表 Slack"
   },
   "dev_handoff.comments_panel.slack_teams_hint.teams_link": {
     "string": "适用于 Microsoft Teams 的 Figma"
@@ -27303,7 +27303,7 @@
     "string": "搜索 for Figma"
   },
   "dev_handoff.mcp.setup.codex.step4": {
-    "string": "Press enter to install"
+    "string": "按回车键安装"
   },
   "dev_handoff.mcp.setup.copy_configuration": {
     "string": "复制配置"
@@ -27342,7 +27342,7 @@
     "string": "打开 Kiro"
   },
   "dev_handoff.mcp.setup.kiro.step2": {
-    "string": "Click the Powers button in the sidebar"
+    "string": "点击侧栏中的“权力”按钮"
   },
   "dev_handoff.mcp.setup.kiro.step3": {
     "string": "搜索 for Figma"
@@ -27432,10 +27432,10 @@
     "string": "Figma Plug-in"
   },
   "dev_handoff.mcp.setup.xcode.step7": {
-    "string": "Once installed, sign in to your Figma account"
+    "string": "安装后，登录您的 Figma 帐户"
   },
   "dev_handoff.mcp.setup.xcode.tile_subtitle": {
-    "string": "Only available in Xcode 27 Beta"
+    "string": "仅在 Xcode 27 Beta 中可用"
   },
   "dev_handoff.mcp.sse_deprecation_banner.main_text": {
     "string": "你当前使用的是 Dev Mode MCP 服务器的旧端点。"
@@ -27774,7 +27774,7 @@
     "string": "获取扩展"
   },
   "dev_handoff.vscode.hint.title": {
-    "string": "Figma for VS Code"
+    "string": "Figma 用于 VS 代码"
   },
   "dev_handoff.workflows.focus_view.comments": {
     "string": "你只能在聚焦的设计上留下评论"
@@ -29286,7 +29286,7 @@
     "string": "{minutesLeft, plural, one {还有 {minutesLeft, number, integer} 分钟可进行协作。} other {还有 {minutesLeft, number, integer} 分钟可进行协作。}}"
   },
   "figmake.add_custom_effect_or_fill_to_node_v2.cta.add": {
-    "string": "Add"
+    "string": "添加"
   },
   "figmake.add_custom_effect_or_fill_to_node_v2.cta.applied": {
     "string": "Applied"
@@ -29298,10 +29298,10 @@
     "string": "{name}"
   },
   "figmake.add_custom_effect_or_fill_to_node_v2.cta.read_only_message.effect": {
-    "string": "Shader effect must be applied in this file for you to use it"
+    "string": "Shader 效果必须应用到此文件中才能使用"
   },
   "figmake.add_custom_effect_or_fill_to_node_v2.cta.read_only_message.fill": {
-    "string": "Shader fill must be applied in this file for you to use it"
+    "string": "Shader 必须填写在此文件中才能使用"
   },
   "figmake.add_custom_effect_or_fill_to_node_v2.cta.view_button": {
     "string": "前往你的效果"
@@ -29310,7 +29310,7 @@
     "string": "取消"
   },
   "figmake.add_payload_backend.cta.collapsed.cancelled": {
-    "string": "Backend creation cancelled"
+    "string": "后端创建已取消"
   },
   "figmake.add_payload_backend.cta.collapsed.failed": {
     "string": "Backend creation 失败"
@@ -29364,7 +29364,7 @@
     "string": "附加设计"
   },
   "figmake.attachments.attach_design_modal.primary_body_text": {
-    "string": "Drag or paste to upload"
+    "string": "拖动或粘贴即可上传"
   },
   "figmake.attachments.attach_design_modal.secondary_body_text": {
     "string": "Documents, 图像, videos, design frames, and more."
@@ -29592,7 +29592,7 @@
     "string": "版本 {version} 的原因说明，{title}"
   },
   "figmake.chat.artifact.a11y_reasoning_section_title_latest": {
-    "string": "Reasoning for the latest version"
+    "string": "最新版本的推理"
   },
   "figmake.chat.artifact.aria_restore_description": {
     "string": "版本 {version}，{title}"
@@ -29787,7 +29787,7 @@
     "string": "技能 and commands"
   },
   "figmake.chat.slash_commands.plan.description": {
-    "string": "Creates and edits plans before building"
+    "string": "在建造之前创建和编辑计划"
   },
   "figmake.chat.slash_commands.tooltip_badge_private": {
     "string": "仅你可见"
@@ -29919,7 +29919,7 @@
     "string": "知道了"
   },
   "figmake.chat_box.mode_picker.plan_intro_modal.title": {
-    "string": "How planning uses credits"
+    "string": "规划如何使用点数"
   },
   "figmake.chat_box.mode_picker.select_mode": {
     "string": "聊天模式"
@@ -30030,7 +30030,7 @@
     "string": "Have additional guidelines? 编辑 this 文件. Otherwise, only guidelines from added Make kits will be used."
   },
   "figmake.comments.enter_make_editor_to_comment": {
-    "string": "Enter Make editor to comment"
+    "string": "输入Make编辑器进行评论"
   },
   "figmake.comments.group_by_version": {
     "string": "按版本分组"
@@ -30039,10 +30039,10 @@
     "string": "隐藏评论"
   },
   "figmake.comments.open_make_editor_context": {
-    "string": "Open Make editor to see comment in context"
+    "string": "打开 Make 编辑器以查看上下文中的注释"
   },
   "figmake.comments.open_make_editor_context_open_button": {
-    "string": "Open"
+    "string": "打开"
   },
   "figmake.comments.page_and_route": {
     "string": "{page} · {route}"
@@ -30771,7 +30771,7 @@
     "string": "需要帮助吗？"
   },
   "figmake.error_overlay.iframe_init.couldnt_load_code_layer": {
-    "string": "Couldn’t load code layer."
+    "string": "无法加载代码层。"
   },
   "figmake.error_overlay.iframe_init.couldnt_load_make": {
     "string": "无法加载 Make。"
@@ -30996,7 +30996,7 @@
     "string": "Something went wrong 正在生成 Storybook stories for your npm 包. You can 继续 without them."
   },
   "figmake.import_progress.npm.section.generate_stories_timeout": {
-    "string": "Timed out waiting for npm visualization generation"
+    "string": "等待 npm 可视化生成超时"
   },
   "figmake.import_progress.npm.section.generated_guidelines": {
     "string": "生成的指南"
@@ -31065,7 +31065,7 @@
     "string": "正在应用自定义配置"
   },
   "figmake.import_progress.section.explore_guidelines": {
-    "string": "Explore your guidelines"
+    "string": "探索您的指导方针"
   },
   "figmake.import_progress.section.explore_guidelines.subtext": {
     "string": "Meet your newly generated guidelines. This Guidelines.md 文件 teaches Make how to use your design system. Once you test your kit, you may want to 编辑 or 添加 guidelines. But for now, just give it a skim."
@@ -31107,7 +31107,7 @@
     "string": "请求修改"
   },
   "figmake.import_progress.section.test_your_kit.list.investigate": {
-    "string": "{label}. If something looks off, describe what’s wrong and ask what could prevent it from happening again."
+    "string": "{label}。如果出现问题，请描述问题所在并询问如何可以防止其再次发生。"
   },
   "figmake.import_progress.section.test_your_kit.list.investigate.label": {
     "string": "调查"
@@ -31161,7 +31161,7 @@
     "string": "准备就绪后，请发布你的工具包以供共享。"
   },
   "figmake.import_progress.style_todo.section.publish_your_kit.subtext_with_test": {
-    "string": "Everything except your test creations will be included in your published kit."
+    "string": "除了您的测试作品之外的所有内容都将包含在您发布的套件中。"
   },
   "figmake.import_progress.style_todo.section.test_everything": {
     "string": "全面测试"
@@ -31179,7 +31179,7 @@
     "string": "3. Ask for 更改."
   },
   "figmake.import_progress.style_todo.section.test_everything.step_investigate": {
-    "string": "{title} If something looks off, describe what’s wrong and ask what could prevent it from happening again."
+    "string": "{title} 如果出现问题，请描述问题所在并询问如何可以防止其再次发生。"
   },
   "figmake.import_progress.style_todo.section.test_everything.step_investigate.title": {
     "string": "2. 调查。"
@@ -31206,16 +31206,16 @@
     "string": "开始聊天来自定义：你可以调整布局、替换组件或添加全新功能。"
   },
   "figmake.langserver.status_connecting": {
-    "string": "Language server: connecting"
+    "string": "语言服务器：正在连接"
   },
   "figmake.langserver.status_error": {
     "string": "Language server: 错误"
   },
   "figmake.langserver.status_ready": {
-    "string": "Language server: ready"
+    "string": "语言服务器：准备就绪"
   },
   "figmake.langserver.status_starting": {
-    "string": "Language server: starting"
+    "string": "语言服务器：启动"
   },
   "figmake.langserver.status_unsupported": {
     "string": "Language server: 不可用"
@@ -31344,7 +31344,7 @@
     "string": "文本"
   },
   "figmake.manual_versions.staged_edit_tooltip_reordered_within": {
-    "string": "Reordered within: {target}"
+    "string": "重新排序时间：{target}"
   },
   "figmake.manual_versions.staged_edit_tooltip_restored": {
     "string": "已恢复元素"
@@ -31581,7 +31581,7 @@
     "string": "您将无法再访问 Figma Make 中的 {serverName} 工具。您可以随时重新连接。"
   },
   "figmake.mcp_clients.disconnect_connector_modal.body_plan_scoped": {
-    "string": "You will no longer have access to {serverName} tools in {planName}. You can reconnect anytime."
+    "string": "您将无法再访问 {planName} 中的 {serverName} 工具。您可以随时重新连接。"
   },
   "figmake.mcp_clients.disconnect_connector_modal.header": {
     "string": "移除 {serverName} 连接器？"
@@ -32013,7 +32013,7 @@
     "string": "Tasks"
   },
   "figmake.point_and_prompt.send_tooltip": {
-    "string": "Send to agent"
+    "string": "发送给代理"
   },
   "figmake.preview.error": {
     "string": "无法获取此版本"
@@ -32025,7 +32025,7 @@
     "string": "正在加载预览"
   },
   "figmake.preview.network.issues.detected": {
-    "string": "Possible network issues detected"
+    "string": "检测到可能的网络问题"
   },
   "figmake.preview.preview_version": {
     "string": "预览版本"
@@ -32040,16 +32040,16 @@
     "string": "取消发布失败"
   },
   "figmake.publish.publish_error.deploy": {
-    "string": "Publishing failed while running {scriptPath}. Ask the agent to fix this for you then try again."
+    "string": "运行 {scriptPath} 时发布失败。请客服人员为您解决此问题，然后重试。"
   },
   "figmake.publish.publish_error.install": {
-    "string": "Publishing failed while installing dependencies. Ask the agent to fix this for you then try again."
+    "string": "安装依赖项时发布失败。请客服人员为您解决此问题，然后重试。"
   },
   "figmake.publish.publish_error.mise_install": {
-    "string": "Publishing failed while setting up the project environment. Ask the agent to fix this for you then try again."
+    "string": "设置项目环境时发布失败。请客服人员为您解决此问题，然后重试。"
   },
   "figmake.publish.publish_error.setup": {
-    "string": "Publishing failed while running {scriptPath}. Ask the agent to fix this for you then try again."
+    "string": "运行 {scriptPath} 时发布失败。请客服人员为您解决此问题，然后重试。"
   },
   "figmake.publish.published_your_site_is_live_at": {
     "string": "已发布！你的应用已上线：{domain}"
@@ -32136,16 +32136,16 @@
     "string": "运行工具"
   },
   "figmake.run_custom_tool.cta.fix_button": {
-    "string": "Fix for me"
+    "string": "帮我修复"
   },
   "figmake.run_custom_tool.cta.fix_prefill_template": {
-    "string": "Investigate and fix {mention} by updating its code — it produced the errors below when I ran it:"
+    "string": "通过更新代码来调查并修复 {mention} — 当我运行它时，它产生了以下错误："
   },
   "figmake.run_custom_tool.cta.loading_label": {
     "string": "Preparing 工具…"
   },
   "figmake.run_custom_tool.cta.read_only_message": {
-    "string": "Plugin must be run in this file for you to use it"
+    "string": "插件必须在此文件中运行才能使用"
   },
   "figmake.run_custom_tool.cta.view_button": {
     "string": "Go to your 工具"
@@ -32163,13 +32163,13 @@
     "string": "用户"
   },
   "figmake.send_to_make.auto_submit.frames_from_design": {
-    "string": "Frames were sent from Figma Design"
+    "string": "帧是从 Figma Design 发送的"
   },
   "figmake.send_to_make.error.max-attachment-exceeded": {
-    "string": "You can send up to {maxAttachments} nodes to Figma Make at a time"
+    "string": "您一次最多可以发送 {maxAttachments} 节点到 Figma Make"
   },
   "figmake.send_to_make.error.no-valid-figjam-selection-v2": {
-    "string": "Select at least one valid node"
+    "string": "选择至少一个有效节点"
   },
   "figmake.send_to_make.error.render-failed": {
     "string": "失败 to render 图像"
@@ -32931,7 +32931,7 @@
     "string": "给我惊喜"
   },
   "figpals.modal.title": {
-    "string": "Customize your FigPal"
+    "string": "定制您的 FigPal"
   },
   "figspec.comments.add_comment": {
     "string": "添加评论"
@@ -32997,7 +32997,7 @@
     "string": "添加 alt 文本"
   },
   "figspec.editor.image_loading": {
-    "string": "Loading image"
+    "string": "加载图片"
   },
   "figspec.editor.image_preview": {
     "string": "图像 preview"
@@ -33057,7 +33057,7 @@
     "string": "项目符号列表"
   },
   "figspec.editor.slash_command.bullet_list_description": {
-    "string": "Unordered list with bullet points"
+    "string": "带有要点的无序列表"
   },
   "figspec.editor.slash_command.code_block": {
     "string": "代码块"
@@ -33099,7 +33099,7 @@
     "string": "标题 6"
   },
   "figspec.editor.slash_command.heading_6_description": {
-    "string": "Lowest level section heading"
+    "string": "最低级别的章节标题"
   },
   "figspec.editor.slash_command.horizontal_rule": {
     "string": "水平分割线"
@@ -33120,7 +33120,7 @@
     "string": "编号列表"
   },
   "figspec.editor.slash_command.numbered_list_description": {
-    "string": "Ordered list with numbers"
+    "string": "带数字的有序列表"
   },
   "figspec.editor.slash_command.table": {
     "string": "表格"
@@ -33132,7 +33132,7 @@
     "string": "待办列表"
   },
   "figspec.editor.slash_command.todo_list_description": {
-    "string": "Task list with checkboxes"
+    "string": "带有复选框的任务列表"
   },
   "figspec.editor.sync_error": {
     "string": "This spec encountered a sync 错误 and is now read-only. 刷新 to resume editing."
@@ -33177,10 +33177,10 @@
     "string": "Ask anything"
   },
   "figspec.view.export_markdown": {
-    "string": "Export as Markdown"
+    "string": "导出为 Markdown"
   },
   "figspec.view.export_markdown_failed": {
-    "string": "Couldn’t export Markdown"
+    "string": "无法导出 Markdown"
   },
   "file_access_row.anyone_at_org_name": {
     "string": "{orgName} 的任何人"
@@ -33285,7 +33285,7 @@
     "string": "最近的智能体"
   },
   "file_browser.ai_chats.empty_state_description": {
-    "string": "Once you do, your chats will show up here"
+    "string": "完成后，您的聊天记录将显示在此处"
   },
   "file_browser.ai_chats.empty_state_title": {
     "string": "你还没有和 AI 聊过天"
@@ -33435,7 +33435,7 @@
     "string": "你无权在此团队中创建项目"
   },
   "file_browser.api_folder.restore_to_another_location": {
-    "string": "Restore to another location"
+    "string": "恢复到另一个位置"
   },
   "file_browser.autocomplete_input.escape": {
     "string": "要关闭菜单，请按 Esc 键"
@@ -33465,46 +33465,46 @@
     "string": "无法移动项目"
   },
   "file_browser.bulk_move_error.cannot_move_branch": {
-    "string": "You cannot move an individual branch."
+    "string": "您不能移动单个分支。"
   },
   "file_browser.bulk_move_error.cross_org": {
-    "string": "You can only move projects between teams in the same organization."
+    "string": "您只能在同一组织的团队之间移动项目。"
   },
   "file_browser.bulk_move_error.cycle": {
-    "string": "Cannot move a folder into one of its own descendants."
+    "string": "无法将文件夹移至其自己的后代文件夹之一。"
   },
   "file_browser.bulk_move_error.depth_exceeded": {
-    "string": "Would exceed the maximum folder depth."
+    "string": "会超过最大文件夹深度。"
   },
   "file_browser.bulk_move_error.destination_connected": {
-    "string": "Cannot move a folder into a connected folder."
+    "string": "无法将文件夹移动到连接的文件夹中。"
   },
   "file_browser.bulk_move_error.file_not_found": {
-    "string": "File not found."
+    "string": "未找到文件。"
   },
   "file_browser.bulk_move_error.folder_not_found": {
-    "string": "Folder not found."
+    "string": "找不到文件夹。"
   },
   "file_browser.bulk_move_error.no_permission_file": {
-    "string": "You don’t have permission to move this file."
+    "string": "您无权移动此文件。"
   },
   "file_browser.bulk_move_error.no_permission_folder": {
-    "string": "You don’t have permission to move this folder."
+    "string": "您无权移动此文件夹。"
   },
   "file_browser.bulk_move_error.pending_asset_transfer": {
-    "string": "This project has a pending transfer request and cannot be moved out of its current team."
+    "string": "该项目有待处理的转移请求，无法移出其当前团队。"
   },
   "file_browser.bulk_move_error.published_hub_file": {
-    "string": "You can’t move a folder that contains files published to the Community hub by a team."
+    "string": "您无法移动包含团队发布到社区中心的文件的文件夹。"
   },
   "file_browser.bulk_move_error.self_move": {
-    "string": "Cannot move a folder into itself."
+    "string": "无法将文件夹移动到其自身中。"
   },
   "file_browser.bulk_move_error.source_connected": {
-    "string": "Cannot move a connected folder into another folder."
+    "string": "无法将连接的文件夹移动到另一个文件夹中。"
   },
   "file_browser.bulk_move_error.tree_size_exceeded": {
-    "string": "Would exceed the maximum folder tree size."
+    "string": "将超过最大文件夹树大小。"
   },
   "file_browser.cant_undo": {
     "string": "此操作无法撤销。"
@@ -33519,13 +33519,13 @@
     "string": "Cancel"
   },
   "file_browser.cms.create_modal.button_create": {
-    "string": "Create CMS"
+    "string": "创建内容管理系统"
   },
   "file_browser.cms.create_modal.button_creating": {
     "string": "Creating..."
   },
   "file_browser.cms.create_modal.error_create_failed": {
-    "string": "Failed to create CMS. Please try again."
+    "string": "创建 CMS 失败。请再试一次。"
   },
   "file_browser.cms.create_modal.error_description_required": {
     "string": "Description is required"
@@ -33537,7 +33537,7 @@
     "string": "URL is required"
   },
   "file_browser.cms.create_modal.helper_host_region": {
-    "string": "For the best performance, pick a region close to the majority of your users."
+    "string": "为了获得最佳性能，请选择靠近大多数用户的区域。"
   },
   "file_browser.cms.create_modal.label_description": {
     "string": "Description"
@@ -33552,7 +33552,7 @@
     "string": "URL"
   },
   "file_browser.cms.create_modal.placeholder_description": {
-    "string": "A brief description of your CMS"
+    "string": "您的 CMS 的简要说明"
   },
   "file_browser.cms.create_modal.placeholder_name": {
     "string": "World Peas CMS 1"
@@ -33561,7 +33561,7 @@
     "string": "worldpeas-cms-1"
   },
   "file_browser.cms.create_modal.title": {
-    "string": "Create a new CMS"
+    "string": "创建新的内容管理系统"
   },
   "file_browser.cms.create_modal.url_available": {
     "string": "Available"
@@ -33588,49 +33588,49 @@
     "string": "Only mine applied"
   },
   "file_browser.cms.list.search_button": {
-    "string": "Search"
+    "string": "搜索"
   },
   "file_browser.cms.list.search_not_applied": {
-    "string": "Search not applied"
+    "string": "未应用搜索"
   },
   "file_browser.cms.list.search_placeholder": {
-    "string": "Search projects"
+    "string": "搜索项目"
   },
   "file_browser.cms.list.searching_all_projects": {
     "string": "Searching all projects"
   },
   "file_browser.cms.list_empty_state.create_button": {
-    "string": "Create new"
+    "string": "创造新的"
   },
   "file_browser.cms.list_empty_state.description": {
-    "string": "Create your own CMS, website, asset manager, and more — fully customizable in code and in Figma."
+    "string": "创建您自己的 CMS、网站、资产管理器等 — 在代码和 Figma 中完全可自定义。"
   },
   "file_browser.cms.list_empty_state.learn_more_button": {
-    "string": "Learn more"
+    "string": "了解更多"
   },
   "file_browser.cms.list_empty_state.title": {
     "string": "Build a Payload app"
   },
   "file_browser.cms.manager.aria_copy_deploy_command": {
-    "string": "Copy deploy command"
+    "string": "复制部署命令"
   },
   "file_browser.cms.manager.aria_copy_help_command": {
-    "string": "Copy help command"
+    "string": "复制帮助命令"
   },
   "file_browser.cms.manager.aria_copy_id": {
-    "string": "Copy ID"
+    "string": "复制身份证件"
   },
   "file_browser.cms.manager.aria_copy_install_command": {
-    "string": "Copy install command"
+    "string": "复制安装命令"
   },
   "file_browser.cms.manager.aria_copy_login_command": {
-    "string": "Copy login command"
+    "string": "复制登录命令"
   },
   "file_browser.cms.manager.aria_copy_url": {
-    "string": "Copy URL"
+    "string": "复制 URL"
   },
   "file_browser.cms.manager.cli_command_copied": {
-    "string": "Command copied to clipboard"
+    "string": "命令已复制到剪贴板"
   },
   "file_browser.cms.manager.cli_commands_title": {
     "string": "CLI Commands"
@@ -33648,22 +33648,22 @@
     "string": "Log in"
   },
   "file_browser.cms.manager.cms_id_copied": {
-    "string": "CMS ID copied to clipboard"
+    "string": "CMS ID 已复制到剪贴板"
   },
   "file_browser.cms.manager.cms_link_copied": {
-    "string": "CMS link copied to clipboard"
+    "string": "CMS 链接已复制到剪贴板"
   },
   "file_browser.cms.manager.copied_to_clipboard": {
-    "string": "Copied to clipboard"
+    "string": "已复制到剪贴板"
   },
   "file_browser.cms.manager.copy_link": {
     "string": "复制链接"
   },
   "file_browser.cms.manager.create_env_modal.access_permission_can_edit": {
-    "string": "Can edit"
+    "string": "可以编辑"
   },
   "file_browser.cms.manager.create_env_modal.access_permission_can_view": {
-    "string": "Can view"
+    "string": "可以查看"
   },
   "file_browser.cms.manager.create_env_modal.access_scope_anyone": {
     "string": "Anyone"
@@ -33672,19 +33672,19 @@
     "string": "Cancel"
   },
   "file_browser.cms.manager.create_env_modal.button_create": {
-    "string": "Create"
+    "string": "创建"
   },
   "file_browser.cms.manager.create_env_modal.button_creating": {
     "string": "Creating..."
   },
   "file_browser.cms.manager.create_env_modal.copy_env_data_description": {
-    "string": "Import an existing environment’s contents into this one."
+    "string": "将现有环境的内容导入到此环境中。"
   },
   "file_browser.cms.manager.create_env_modal.copy_env_data_label": {
-    "string": "Copy environment data"
+    "string": "复制环境数据"
   },
   "file_browser.cms.manager.create_env_modal.error_create_failed": {
-    "string": "Failed to create environment. Please try again."
+    "string": "创建环境失败。请再试一次。"
   },
   "file_browser.cms.manager.create_env_modal.error_name_required": {
     "string": "Name is required"
@@ -33693,10 +33693,10 @@
     "string": "URL is required"
   },
   "file_browser.cms.manager.create_env_modal.host_region_us_east_1": {
-    "string": "Eastern United States (us-east-1)"
+    "string": "美国东部 (us-east-1)"
   },
   "file_browser.cms.manager.create_env_modal.label_access": {
-    "string": "Access"
+    "string": "使用权"
   },
   "file_browser.cms.manager.create_env_modal.label_host_region": {
     "string": "Host region"
@@ -33714,22 +33714,22 @@
     "string": "staging"
   },
   "file_browser.cms.manager.create_env_modal.title": {
-    "string": "Create environment"
+    "string": "创造环境"
   },
   "file_browser.cms.manager.delete_error": {
-    "string": "Failed to delete CMS. Please try again."
+    "string": "删除 CMS 失败。请再试一次。"
   },
   "file_browser.cms.manager.delete_menu_aria_label": {
-    "string": "Open CMS menu"
+    "string": "打开 CMS 菜单"
   },
   "file_browser.cms.manager.delete_menu_option": {
     "string": "Delete"
   },
   "file_browser.cms.manager.delete_modal_body_confirm_delete": {
-    "string": "To confirm, enter the name of the CMS."
+    "string": "要确认，请输入 CMS 的名称。"
   },
   "file_browser.cms.manager.delete_modal_body_permanently_delete": {
-    "string": "This will permanently delete <strong>{name}</strong>, including all of its data and contents."
+    "string": "这将永久删除 <strong>{name}</strong>，包括其所有数据和内容。"
   },
   "file_browser.cms.manager.delete_modal_cancel": {
     "string": "Cancel"
@@ -33747,22 +33747,22 @@
     "string": "Delete {name}?"
   },
   "file_browser.cms.manager.delete_project_modal_body_confirm_delete": {
-    "string": "To confirm, enter the name of the project."
+    "string": "要确认，请输入项目名称。"
   },
   "file_browser.cms.manager.delete_project_modal_body_permanently_delete": {
-    "string": "This will permanently delete <strong>{name}</strong>, including all of its data and contents."
+    "string": "这将永久删除 <strong>{name}</strong>，包括其所有数据和内容。"
   },
   "file_browser.cms.manager.delete_project_modal_confirm": {
-    "string": "Delete project"
+    "string": "删除项目"
   },
   "file_browser.cms.manager.delete_project_modal_placeholder": {
-    "string": "Project name"
+    "string": "项目名称"
   },
   "file_browser.cms.manager.delete_project_modal_title": {
-    "string": "Delete project?"
+    "string": "删除项目？"
   },
   "file_browser.cms.manager.deleted_toast": {
-    "string": "Deleted CMS"
+    "string": "已删除的内容管理系统"
   },
   "file_browser.cms.manager.details_title": {
     "string": "Details"
@@ -33771,34 +33771,34 @@
     "string": "Your domain has incompatible CAA records. 移除 or 更新 them in your DNS 设置 so Figma can issue an SSL certificate for this 网站 domain."
   },
   "file_browser.cms.manager.domains.activation_failure.caa_blocked.title": {
-    "string": "Can’t issue SSL certificate"
+    "string": "无法颁发 SSL 证书"
   },
   "file_browser.cms.manager.domains.activation_failure.conflicting_aaaa.message": {
     "string": "移除 the AAAA record from your root domain {apexDomain} in your DNS 设置."
   },
   "file_browser.cms.manager.domains.activation_failure.conflicting_aaaa.title": {
-    "string": "Conflicting DNS record found"
+    "string": "发现冲突的 DNS 记录"
   },
   "file_browser.cms.manager.domains.activation_failure.dns_not_verified.message": {
-    "string": "Check your DNS host to ensure the following records have been added."
+    "string": "检查您的 DNS 主机以确保已添加以下记录。"
   },
   "file_browser.cms.manager.domains.activation_failure.dns_not_verified.title": {
-    "string": "DNS records not verified"
+    "string": "DNS记录未验证"
   },
   "file_browser.cms.manager.domains.activation_failure.domain_already_activated.title": {
-    "string": "This domain is already connected to another site"
+    "string": "该域已连接到另一个站点"
   },
   "file_browser.cms.manager.domains.activation_failure.plan_limit_reached.message": {
     "string": "This plan has reached its custom domain limit. 移除 another custom domain or 升级 the plan, then re-check this domain."
   },
   "file_browser.cms.manager.domains.activation_failure.plan_limit_reached.title": {
-    "string": "Custom domain limit reached"
+    "string": "已达到自定义域限制"
   },
   "file_browser.cms.manager.domains.activation_failure.proxied_records.message": {
-    "string": "If Cloudflare is your domain provider, your DNS records can’t be proxied. Change the proxy status to DNS only."
+    "string": "如果 Cloudflare 是您的域名提供商，则您的 DNS 记录无法被代理。仅将代理状态更改为 DNS。"
   },
   "file_browser.cms.manager.domains.activation_failure.proxied_records.title": {
-    "string": "Are your DNS records proxied?"
+    "string": "您的 DNS 记录是否经过代理？"
   },
   "file_browser.cms.manager.domains.activation_status.ssl_pending.message": {
     "string": "我们正在为你的域名签发 SSL 证书。这通常需要几分钟。"
@@ -33807,7 +33807,7 @@
     "string": "Issuing SSL certificate"
   },
   "file_browser.cms.manager.domains.add_modal.button_add": {
-    "string": "Add domain"
+    "string": "添加域名"
   },
   "file_browser.cms.manager.domains.add_modal.button_cancel": {
     "string": "Cancel"
@@ -33819,55 +33819,55 @@
     "string": "Domain is required"
   },
   "file_browser.cms.manager.domains.add_modal.redirect_description": {
-    "string": "Using a redirect will make it simpler for people to access your site."
+    "string": "使用重定向将使人们更容易访问您的网站。"
   },
   "file_browser.cms.manager.domains.add_modal.redirect_label": {
-    "string": "Add domain redirect"
+    "string": "添加域重定向"
   },
   "file_browser.cms.manager.domains.add_modal.redirect_option": {
-    "string": "Redirect {source} to {target}"
+    "string": "将 {source} 重定向至 {target}"
   },
   "file_browser.cms.manager.domains.add_modal.title": {
-    "string": "Add custom domain"
+    "string": "添加自定义域"
   },
   "file_browser.cms.manager.domains.create_error": {
-    "string": "Couldn't add custom domain. Try again."
+    "string": "无法添加自定义域。再试一次。"
   },
   "file_browser.cms.manager.domains.delete_custom_domain": {
-    "string": "Remove custom domain"
+    "string": "删除自定义域"
   },
   "file_browser.cms.manager.domains.delete_error": {
-    "string": "Couldn't remove custom domain. Try again."
+    "string": "无法删除自定义域。再试一次。"
   },
   "file_browser.cms.manager.domains.delete_modal.body": {
-    "string": "This will remove <strong>{domain}</strong> from this environment. Visitors will no longer be able to use this custom domain after the change is applied."
+    "string": "这将从该环境中删除 <strong>{domain}</strong>。应用更改后，访问者将无法再使用此自定义域。"
   },
   "file_browser.cms.manager.domains.delete_modal.cancel": {
     "string": "Cancel"
   },
   "file_browser.cms.manager.domains.delete_modal.remove": {
-    "string": "Remove custom domain"
+    "string": "删除自定义域"
   },
   "file_browser.cms.manager.domains.delete_modal.removing": {
     "string": "Removing..."
   },
   "file_browser.cms.manager.domains.delete_modal.title": {
-    "string": "Remove custom domain?"
+    "string": "删除自定义域？"
   },
   "file_browser.cms.manager.domains.dns_help_text": {
-    "string": "Add the following records to the DNS host for your domain."
+    "string": "将以下记录添加到您的域的 DNS 主机。"
   },
   "file_browser.cms.manager.domains.dns_propagation_info": {
-    "string": "It can take up to 24 hours for DNS settings to propagate."
+    "string": "DNS 设置最多可能需要 24 小时才能传播。"
   },
   "file_browser.cms.manager.domains.dns_records": {
     "string": "DNS Records"
   },
   "file_browser.cms.manager.domains.dns_records_empty": {
-    "string": "DNS records are unavailable. Try again later."
+    "string": "DNS 记录不可用。稍后再试。"
   },
   "file_browser.cms.manager.domains.dns_records_loading": {
-    "string": "Loading DNS records..."
+    "string": "正在加载 DNS 记录..."
   },
   "file_browser.cms.manager.domains.dns_status.no_record_found": {
     "string": "No record found"
@@ -33876,7 +33876,7 @@
     "string": "Records don't match"
   },
   "file_browser.cms.manager.domains.dns_table.copy_value": {
-    "string": "Copy value"
+    "string": "复制值"
   },
   "file_browser.cms.manager.domains.dns_table.name": {
     "string": "Name"
@@ -33888,13 +33888,13 @@
     "string": "Value"
   },
   "file_browser.cms.manager.domains.empty_state.add_domain": {
-    "string": "Add domain"
+    "string": "添加域名"
   },
   "file_browser.cms.manager.domains.empty_state.description": {
-    "string": "Add and manage custom domains for this environment."
+    "string": "为此环境添加和管理自定义域。"
   },
   "file_browser.cms.manager.domains.empty_state.description_learn_more": {
-    "string": "Add and manage custom domains for this environment. <link>Learn more</link>"
+    "string": "为此环境添加和管理自定义域。 <link>了解更多</link>"
   },
   "file_browser.cms.manager.domains.empty_state.title": {
     "string": "Set up a domain"
@@ -33921,25 +33921,25 @@
     "string": "Pending"
   },
   "file_browser.cms.manager.domains.status.pending_description": {
-    "string": "Add DNS records"
+    "string": "添加DNS记录"
   },
   "file_browser.cms.manager.domains.verify_error": {
-    "string": "Couldn't re-check custom domain. Try again."
+    "string": "无法重新检查自定义域。再试一次。"
   },
   "file_browser.cms.manager.env.add_variable": {
-    "string": "Add variable"
+    "string": "添加变量"
   },
   "file_browser.cms.manager.env.copied": {
     "string": "Copied!"
   },
   "file_browser.cms.manager.env.copy_value": {
-    "string": "Copy value"
+    "string": "复制值"
   },
   "file_browser.cms.manager.env.delete_error_toast": {
-    "string": "Failed to delete environment variable"
+    "string": "删除环境变量失败"
   },
   "file_browser.cms.manager.env.delete_modal.body": {
-    "string": "This variable will be permanently deleted from this environment and can’t be recovered."
+    "string": "该变量将从该环境中永久删除并且无法恢复。"
   },
   "file_browser.cms.manager.env.delete_modal.button_cancel": {
     "string": "Cancel"
@@ -33954,37 +33954,37 @@
     "string": "Delete variable"
   },
   "file_browser.cms.manager.env.deleted_toast": {
-    "string": "Deleted environment variable"
+    "string": "删除环境变量"
   },
   "file_browser.cms.manager.env.deploy_notice": {
-    "string": "Changes to environment variables do not take effect until the next deployment."
+    "string": "对环境变量的更改要到下次部署才会生效。"
   },
   "file_browser.cms.manager.env.edit_variable": {
-    "string": "Edit variable"
+    "string": "编辑变量"
   },
   "file_browser.cms.manager.env.empty_state.description": {
-    "string": "Manage configurations like API keys, database URLs, and feature flags."
+    "string": "管理 API 键、数据库 URL 和功能标志等配置。"
   },
   "file_browser.cms.manager.env.empty_state.description_learn_more": {
-    "string": "Manage configurations like API keys, database URLs, and feature flags. <link>Learn more</link>"
+    "string": "管理 API 键、数据库 URL 和功能标志等配置。 <link>了解更多</link>"
   },
   "file_browser.cms.manager.env.empty_state.title": {
-    "string": "Set up environment variables"
+    "string": "设置环境变量"
   },
   "file_browser.cms.manager.env.error_value": {
-    "string": "error"
+    "string": "错误"
   },
   "file_browser.cms.manager.env.fetch_value_error": {
-    "string": "Failed to load environment variable value"
+    "string": "加载环境变量值失败"
   },
   "file_browser.cms.manager.env.hide_value": {
-    "string": "Hide value"
+    "string": "隐藏值"
   },
   "file_browser.cms.manager.env.modal.add_title": {
-    "string": "Add environment variable"
+    "string": "添加环境变量"
   },
   "file_browser.cms.manager.env.modal.button_add": {
-    "string": "Add variable"
+    "string": "添加变量"
   },
   "file_browser.cms.manager.env.modal.button_adding": {
     "string": "Adding..."
@@ -33999,13 +33999,13 @@
     "string": "Saving..."
   },
   "file_browser.cms.manager.env.modal.edit_title": {
-    "string": "Edit environment variable"
+    "string": "编辑环境变量"
   },
   "file_browser.cms.manager.env.modal.error_key_required": {
     "string": "Key is required"
   },
   "file_browser.cms.manager.env.modal.error_submit_failed": {
-    "string": "Failed to add environment variable. Please try again."
+    "string": "添加环境变量失败。请再试一次。"
   },
   "file_browser.cms.manager.env.modal.error_value_required": {
     "string": "Value is required"
@@ -34020,10 +34020,10 @@
     "string": "More actions"
   },
   "file_browser.cms.manager.env.search_placeholder": {
-    "string": "Search variables"
+    "string": "搜索变量"
   },
   "file_browser.cms.manager.env.show_value": {
-    "string": "Show value"
+    "string": "显示价值"
   },
   "file_browser.cms.manager.env.updated_at_date": {
     "string": "{date, date, medium}"
@@ -34032,13 +34032,13 @@
     "string": "Building..."
   },
   "file_browser.cms.manager.environments.status.error": {
-    "string": "Error"
+    "string": "错误"
   },
   "file_browser.cms.manager.environments.status.ready": {
-    "string": "Ready"
+    "string": "就绪"
   },
   "file_browser.cms.manager.error_tenant_not_found": {
-    "string": "We couldn’t find what you were requesting, or you may not have the right permissions to view this right now."
+    "string": "我们找不到您所请求的内容，或者您​​现在可能没有正确的权限来查看此内容。"
   },
   "file_browser.cms.manager.id_label": {
     "string": "ID"
@@ -34047,25 +34047,25 @@
     "string": "Clear filters"
   },
   "file_browser.cms.manager.logs_empty_no_filters": {
-    "string": "No runtime logs found in {environment}"
+    "string": "在 {environment} 中找不到运行时日志"
   },
   "file_browser.cms.manager.logs_empty_with_filters": {
-    "string": "No runtime logs found for selected filters"
+    "string": "未找到所选过滤器的运行时日志"
   },
   "file_browser.cms.manager.logs_load_more": {
     "string": "Load more logs"
   },
   "file_browser.cms.manager.logs_loading_more": {
-    "string": "Loading..."
+    "string": "正在加载..."
   },
   "file_browser.cms.manager.logs_no_more": {
-    "string": "No more logs within current selection"
+    "string": "当前选择中没有更多日志"
   },
   "file_browser.cms.manager.logs_refresh_button": {
     "string": "Refresh"
   },
   "file_browser.cms.manager.logs_search_placeholder": {
-    "string": "Search logs"
+    "string": "搜索日志"
   },
   "file_browser.cms.manager.logs_title": {
     "string": "Logs"
@@ -34080,7 +34080,7 @@
     "string": "Debug"
   },
   "file_browser.cms.manager.logs_toolbar.level_error": {
-    "string": "Error"
+    "string": "错误"
   },
   "file_browser.cms.manager.logs_toolbar.level_info": {
     "string": "Info"
@@ -34089,7 +34089,7 @@
     "string": "Level"
   },
   "file_browser.cms.manager.logs_toolbar.level_warning": {
-    "string": "Warning"
+    "string": "警告"
   },
   "file_browser.cms.manager.logs_toolbar.live": {
     "string": "Live"
@@ -34119,7 +34119,7 @@
     "string": "打开"
   },
   "file_browser.cms.manager.overview.add_environment": {
-    "string": "Add environment"
+    "string": "添加环境"
   },
   "file_browser.cms.manager.project_card.deploying": {
     "string": "Deploying..."
@@ -34128,43 +34128,43 @@
     "string": "Last deployed {time}"
   },
   "file_browser.cms.manager.project_card.open_button": {
-    "string": "Open"
+    "string": "打开"
   },
   "file_browser.cms.manager.project_settings.aria_copy_project_description": {
-    "string": "Copy project description"
+    "string": "复制项目描述"
   },
   "file_browser.cms.manager.project_settings.aria_copy_project_id": {
-    "string": "Copy project ID"
+    "string": "复制项目 ID"
   },
   "file_browser.cms.manager.project_settings.aria_copy_project_name": {
-    "string": "Copy project name"
+    "string": "复制项目名称"
   },
   "file_browser.cms.manager.project_settings.delete_project_button": {
-    "string": "Delete project"
+    "string": "删除项目"
   },
   "file_browser.cms.manager.project_settings.delete_project_description": {
-    "string": "Delete this entire project and all of its contents."
+    "string": "删除整个项目及其所有内容。"
   },
   "file_browser.cms.manager.project_settings.delete_project_title": {
-    "string": "Delete project"
+    "string": "删除项目"
   },
   "file_browser.cms.manager.project_settings.project_description_description": {
-    "string": "A brief description of your project."
+    "string": "您的项目的简要描述。"
   },
   "file_browser.cms.manager.project_settings.project_description_title": {
-    "string": "Project description"
+    "string": "项目描述"
   },
   "file_browser.cms.manager.project_settings.project_id_description": {
-    "string": "For pointing to this project in APIs and beyond."
+    "string": "用于在 API 秒及以后指向该项目。"
   },
   "file_browser.cms.manager.project_settings.project_id_title": {
-    "string": "Project ID"
+    "string": "项目编号"
   },
   "file_browser.cms.manager.project_settings.project_name_description": {
-    "string": "For referring to your project in code and throughout Figma."
+    "string": "用于在代码和整个 Figma 中引用您的项目。"
   },
   "file_browser.cms.manager.project_settings.project_name_title": {
-    "string": "Project name"
+    "string": "项目名称"
   },
   "file_browser.cms.manager.settings_link_copied": {
     "string": "设置链接已复制到剪贴板"
@@ -35514,7 +35514,7 @@
     "string": "你当前是 {teamName} 的所有者。请在离开此团队前，在团队成员列表中指定新的所有者。"
   },
   "file_browser.team.you_are_only_admin_assign_new_admin_before_leaving": {
-    "string": "You’re the only admin of {teamName}. Please assign another member as an admin from the team members list before leaving this team."
+    "string": "您是 {teamName} 的唯一管理员。在离开该团队之前，请从团队成员列表中指定另一名成员作为管理员。"
   },
   "file_browser.team.you_will_lose_access_to_close_secret_team_warning": {
     "string": "你将失去对 {teamName} 中项目、文件和库的访问权限"
@@ -35979,7 +35979,7 @@
     "string": "Turn any FigJam 文件 into a reusable 团队 template. Anyone on your 团队 can use it directly from the template picker."
   },
   "file_permissions_modal.figjam_template_publishing_pro.title": {
-    "string": "Publish FigJam templates"
+    "string": "发布 FigJam 模板"
   },
   "file_permissions_modal.file_moved_to_folder": {
     "string": "已移动 \"{file_name}\" to {folder_name}"
@@ -36036,7 +36036,7 @@
     "string": "投屏码"
   },
   "file_permissions_modal.invite_email_sent_again": {
-    "string": "Invite email sent again!"
+    "string": "邀请邮件再次发送！"
   },
   "file_permissions_modal.invite_tab_header.requests": {
     "string": "请求"
@@ -36878,7 +36878,7 @@
   "fullscreen.accessibility.chit_pattern": {
     "string": "图案"
   },
-  "fullscreen.accessibility.chit_shader": {
+  "fullscreen.accessibility.chit_Shader": {
     "string": "Shader"
   },
   "fullscreen.accessibility.chit_solid": {
@@ -36954,7 +36954,7 @@
     "string": "网格"
   },
   "fullscreen.accessibility.design.grid_column": {
-    "string": "Column {position}, {size}"
+    "string": "列 {position}、{size}"
   },
   "fullscreen.accessibility.design.grid_column_count": {
     "string": "{columns, plural, one {# column} other {# columns}}"
@@ -36963,7 +36963,7 @@
     "string": "{count, plural, one {# column 选中} other {# columns 选中}}"
   },
   "fullscreen.accessibility.design.grid_item_position": {
-    "string": "In grid, Row {row}, Column {column}"
+    "string": "在网格中，行 {row}，列 {column}"
   },
   "fullscreen.accessibility.design.grid_row": {
     "string": "Row {position}, {size}"
@@ -37914,16 +37914,16 @@
     "string": "数量 {value}"
   },
   "fullscreen.canvas.custom_effect_disabled_warning": {
-    "string": "To fix performance issues, check shaders applied to layer"
+    "string": "要修复性能问题，请检查应用到图层的 Shader"
   },
   "fullscreen.canvas.custom_effect_no_webgpu_warning": {
-    "string": "Shaders require WebGPU support. Click to learn more."
+    "string": "Shader 需要 WebGPU 支持。点击了解更多。"
   },
   "fullscreen.canvas.custom_effect_resolution_warning": {
-    "string": "Shaders have a max resolution of {value}px"
+    "string": "Shader 的最大分辨率为 {value}px"
   },
   "fullscreen.canvas.custom_effect_small_resolution_warning": {
-    "string": "Small layers may have low shader resolution"
+    "string": "小层可能具有较低的 Shader 分辨率"
   },
   "fullscreen.canvas.dimension_max_constrained": {
     "string": "{value}（最大）"
@@ -38370,7 +38370,7 @@
     "string": "Opens in a new tab"
   },
   "fullscreen.export_panel.provisional_access": {
-    "string": "Export at higher resolutions for up to 3 days while waiting for an admin to review your seat upgrade request."
+    "string": "以更高分辨率导出最多 3 天，同时等待管理员审核您的席位升级请求。"
   },
   "fullscreen.export_panel.request_figma_motion_for_hi_fi_exports": {
     "string": "Request Figma 动效 for hi-fi exports"
@@ -38379,7 +38379,7 @@
     "string": "请求完整访问权限"
   },
   "fullscreen.export_panel.to_export_at_higher_resolutions_professional_plan": {
-    "string": "To export at higher resolutions in Figma Motion, you’ll need to upgrade to the Professional plan."
+    "string": "要在 Figma Motion 中以更高分辨率导出，您需要升级到专业计划。"
   },
   "fullscreen.export_panel.to_export_beyond_1080_and_at_30fps_full_motion_access": {
     "string": "To 导出 beyond 1080 and at 30fps, you need full access to Figma 动效."
@@ -38388,7 +38388,7 @@
     "string": "Upgrade"
   },
   "fullscreen.export_panel.upgrade_to_professional": {
-    "string": "Upgrade to Professional"
+    "string": "升级至专业版"
   },
   "fullscreen.file_import.could_not_convert_file": {
     "string": "无法转换文件"
@@ -40169,44 +40169,44 @@
   "fullscreen.properties_panel.select_item_using_this_color": {
     "string": "{numItems, plural, one {选择使用此颜色的项目} other {选择 {numItems} 个使用此颜色的项目}}"
   },
-  "fullscreen.properties_panel.shader_chooser.create_new": {
+  "fullscreen.properties_panel.Shader_chooser.create_new": {
     "string": "新建"
   },
-  "fullscreen.properties_panel.shader_chooser.created_by_me": {
+  "fullscreen.properties_panel.Shader_chooser.created_by_me": {
     "string": "由你创建"
   },
-  "fullscreen.properties_panel.shader_chooser.custom_fill": {
+  "fullscreen.properties_panel.Shader_chooser.custom_fill": {
     "string": "Shader 填充"
   },
-  "fullscreen.properties_panel.shader_chooser.in_this_file": {
-    "string": "In this file"
+  "fullscreen.properties_panel.Shader_chooser.in_this_file": {
+    "string": "在这个文件中"
   },
-  "fullscreen.properties_panel.shader_chooser.new_shader": {
-    "string": "创建 shader with agents"
+  "fullscreen.properties_panel.Shader_chooser.new_Shader": {
+    "string": "创建 Shader with agents"
   },
-  "fullscreen.properties_panel.shader_chooser.no_results": {
-    "string": "No matching shaders"
+  "fullscreen.properties_panel.Shader_chooser.no_results": {
+    "string": "No matching Shaders"
   },
-  "fullscreen.properties_panel.shader_chooser.search_placeholder": {
+  "fullscreen.properties_panel.Shader_chooser.search_placeholder": {
     "string": "搜索"
   },
-  "fullscreen.properties_panel.shader_chooser.title_effects": {
+  "fullscreen.properties_panel.Shader_chooser.title_effects": {
     "string": "着色器效果"
   },
-  "fullscreen.properties_panel.shader_chooser.title_fills": {
+  "fullscreen.properties_panel.Shader_chooser.title_fills": {
     "string": "着色器填充"
   },
-  "fullscreen.properties_panel.shader_effect_education.callout.body": {
-    "string": "Any shaders that you create with the Figma agent live here. Apply, stack, and tune them like any other effect."
+  "fullscreen.properties_panel.Shader_effect_education.callout.body": {
+    "string": "您使用 Figma 代理创建的任何 Shader 都位于此处。像任何其他效果一样应用、堆叠和调整它们。"
   },
-  "fullscreen.properties_panel.shader_effect_education.callout.title": {
+  "fullscreen.properties_panel.Shader_effect_education.callout.title": {
     "string": "Shaders have moved in"
   },
-  "fullscreen.properties_panel.shader_fill_education.callout.body": {
-    "string": "Ask the Figma agent to create any shader fills you can dream up, then apply them to layers, just as you would with other fills."
+  "fullscreen.properties_panel.Shader_fill_education.callout.body": {
+    "string": "要求 Figma 代理创建您可以想象的任何 Shader 填充，然后将它们应用到图层，就像使用其他填充一样。"
   },
-  "fullscreen.properties_panel.shader_fill_education.callout.title": {
-    "string": "Custom shaders, endless effects"
+  "fullscreen.properties_panel.Shader_fill_education.callout.title": {
+    "string": "自定义Shader，无尽效果"
   },
   "fullscreen.properties_panel.shadows": {
     "string": "阴影"
@@ -40221,13 +40221,13 @@
     "string": "默认"
   },
   "fullscreen.properties_panel.slot_prop_assignment_control.default_tooltip": {
-    "string": "This slot has not been modified."
+    "string": "该插槽尚未修改。"
   },
   "fullscreen.properties_panel.slot_prop_assignment_control.modified": {
     "string": "已修改"
   },
   "fullscreen.properties_panel.slot_prop_assignment_control.modified_tooltip": {
-    "string": "This slot has been modified from its default state."
+    "string": "此插槽的默认状态已被修改。"
   },
   "fullscreen.properties_panel.smoothen": {
     "string": "平滑处理"
@@ -40836,16 +40836,16 @@
     "string": "%"
   },
   "fullscreen.selection_actions.cannot_animate_component": {
-    "string": "Components can’t be animated"
+    "string": "组件无法动画化"
   },
   "fullscreen.selection_actions.cannot_animate_instance_sublayer": {
-    "string": "Layers inside instances can’t be animated"
+    "string": "实例内的图层无法进行动画处理"
   },
   "fullscreen.selection_actions.cannot_animate_layer_type": {
-    "string": "This type of layer can’t be animated"
+    "string": "这种类型的图层无法设置动画"
   },
   "fullscreen.selection_actions.cannot_animate_top_level_frame": {
-    "string": "Top-level frames can’t be animated, but the layers inside them can"
+    "string": "顶层框架无法进行动画处理，但其中的层可以进行动画处理"
   },
   "fullscreen.selection_actions.tooltip_boolean_operations": {
     "string": "布尔运算"
@@ -41211,7 +41211,7 @@
     "string": "缩放至 50%"
   },
   "fullscreen.toolbar_banner.build_in_code_prompt_copied": {
-    "string": "Prompt copied—paste it in Claude Code, Codex, or another coding agent."
+    "string": "提示已复制 - 将其粘贴到 Claude Code、Codex 或其他编码代理中。"
   },
   "fullscreen.toolbar_banner.provisional_access.code_chat": {
     "string": "请求已发送！审核期间可使用提示功能，最长 3 天。"
@@ -41226,22 +41226,22 @@
     "string": "在等待管理员审核时，可享受 {licenseType} 最多 3 天。"
   },
   "fullscreen.toolbar_banner.riff_copied_to_drafts": {
-    "string": "Copied to Drafts—riff and explore without changing the original file."
+    "string": "复制到草稿 - 即兴发挥并探索，而不更改原始文件。"
   },
   "fullscreen.toolbar_banner.riff_default_keyboard_hint": {
-    "string": "Use {commentKey} to comment, {chatKey} to chat, or select a frame for more options."
+    "string": "使用 {commentKey} 发表评论，使用 {chatKey} 聊天，或选择一个框架以获取更多选项。"
   },
   "fullscreen.toolbar_banner.riff_default_view_and_comment": {
-    "string": "You can view and comment. Select a frame for more options."
+    "string": "您可以查看并发表评论。选择一个框架以获得更多选项。"
   },
   "fullscreen.toolbar_banner.riff_frame_selected_build_in_code": {
     "string": "Build this in code"
   },
   "fullscreen.toolbar_banner.riff_frame_selected_make_a_copy": {
-    "string": "Make a copy and riff"
+    "string": "复制并即兴重复"
   },
   "fullscreen.toolbar_banner.riff_frame_selected_make_only_label": {
-    "string": "Riff, explore, play around"
+    "string": "即兴演奏、探索、玩耍"
   },
   "fullscreen.toolbar_banner.riff_frame_selected_turn_into_prototype": {
     "string": "Turn into prototype"
@@ -41730,7 +41730,7 @@
     "string": "Android"
   },
   "fullscreen_actions.copy-as-animated-svg": {
-    "string": "Copy as animated SVG"
+    "string": "复制为动画 SVG"
   },
   "fullscreen_actions.copy-as-code": {
     "string": "复制为代码"
@@ -41817,7 +41817,7 @@
     "string": "复制为文本"
   },
   "fullscreen_actions.copy-unlinked-code-layers": {
-    "string": "Copy unlinked layers"
+    "string": "复制未链接的图层"
   },
   "fullscreen_actions.copy_layer_name": {
     "string": "复制图层名称"
@@ -42882,7 +42882,7 @@
     "string": "调试 Make First Draft 工具包"
   },
   "fullscreen_actions.quick_actions.first-draft-relaunch": {
-    "string": "First Draft"
+    "string": "第一稿"
   },
   "fullscreen_actions.quick_actions.go-to-page": {
     "string": "前往 {pageName}"
@@ -44106,7 +44106,7 @@
     "string": "显示 GPU 指标"
   },
   "fullscreen_actions.toggle-display-metronome-texture-cache": {
-    "string": "Display metronome texture cache"
+    "string": "显示节拍器纹理缓存"
   },
   "fullscreen_actions.toggle-display-node-occluders": {
     "string": "显示节点遮挡"
@@ -44628,7 +44628,7 @@
     "string": "Figma 动效"
   },
   "general.figma_motion_beta": {
-    "string": "Figma Motion (Beta)"
+    "string": "Figma Motion（测试版）"
   },
   "general.figma_rev": {
     "string": "Figma Make"
@@ -44730,7 +44730,7 @@
     "string": "私有文件"
   },
   "general.ps_strategic_success_plan": {
-    "string": "Figma Advisory Services - Strategic Success Plan"
+    "string": "Figma 咨询服务 - 战略成功计划"
   },
   "general.question_mark": {
     "string": "问号"
@@ -44825,11 +44825,11 @@
   "generated_tools.create_chat.prefilled_prompt": {
     "string": "创建 me a 工具 that "
   },
-  "generated_tools.create_chat.shader_effect_prefilled_prompt": {
-    "string": "创建 a 自定义 shader 效果."
+  "generated_tools.create_chat.Shader_effect_prefilled_prompt": {
+    "string": "创建 a 自定义 Shader 效果."
   },
-  "generated_tools.create_chat.shader_fill_prefilled_prompt": {
-    "string": "创建 a 自定义 shader 填充."
+  "generated_tools.create_chat.Shader_fill_prefilled_prompt": {
+    "string": "创建 a 自定义 Shader 填充."
   },
   "generated_tools.effect.default_name": {
     "string": "自定义效果"
@@ -44871,25 +44871,25 @@
     "string": "自定义 填充"
   },
   "generated_tools.import.missing_tools": {
-    "string": "Some content didn’t import, could be due to restricted access."
+    "string": "某些内容未导入，可能是由于访问受限。"
   },
   "generated_tools.onboarding_callout.body": {
-    "string": "Use plugins, shaders, Weave tools, and more to bring (nearly!) any capability to Figma. You can even create your own, all from this navigation bar."
+    "string": "使用插件、Shader、Weave 工具等为 Figma 带来（几乎！）任何功能。您甚至可以通过此导航栏创建您自己的。"
   },
   "generated_tools.onboarding_callout.learn_more": {
-    "string": "Learn more"
+    "string": "了解更多"
   },
   "generated_tools.onboarding_callout.title": {
-    "string": "New tools, woven right in"
+    "string": "新工具，融入其中"
   },
-  "generated_tools.panel.refresh_to_retry.shader_effect": {
-    "string": "This shader effect failed to load. Refresh the page to retry."
+  "generated_tools.panel.refresh_to_retry.Shader_effect": {
+    "string": "此 Shader 效果加载失败。刷新页面重试。"
   },
-  "generated_tools.panel.refresh_to_retry.shader_fill": {
-    "string": "This shader fill failed to load. Refresh the page to retry."
+  "generated_tools.panel.refresh_to_retry.Shader_fill": {
+    "string": "此 Shader 填充加载失败。刷新页面重试。"
   },
-  "generated_tools.panel.shader_not_working": {
-    "string": "Shader having issues"
+  "generated_tools.panel.Shader_not_working": {
+    "string": "Shader 有问题"
   },
   "generated_tools.panel.tool_loading": {
     "string": "加载中…"
@@ -44898,22 +44898,22 @@
     "string": "Some pasted content couldn’t be added because its 代码 文件 are no 更长 available."
   },
   "github_app.connect.error_body": {
-    "string": "Something went wrong while connecting your GitHub account to Figma. Please try again."
+    "string": "将您的 GitHub 帐户连接到 Figma 时出现问题。请再试一次。"
   },
   "github_app.connect.error_title": {
     "string": "出现问题"
   },
   "github_app.connect.plan_mismatch_error_body": {
-    "string": "Make sure the Figma user requesting the app installation is on the same plan as the Figma user approving the app installation."
+    "string": "确保请求应用安装的 Figma 用户与批准应用安装的 Figma 用户采用相同的套餐。"
   },
   "github_app.connect.plan_mismatch_error_title": {
-    "string": "Couldn’t connect to GitHub"
+    "string": "无法连接到GitHub"
   },
   "github_app.connect.state_expired_error_body": {
-    "string": "Figma app installation process timed out. Try again."
+    "string": "Figma 应用程序安装过程超时。再试一次。"
   },
   "github_app.connect.state_expired_error_title": {
-    "string": "Couldn’t connect to GitHub"
+    "string": "无法连接到GitHub"
   },
   "github_app.connect.user_mismatch_error_body": {
     "string": "Make sure you’re signed into a single Figma account across web and desktop, then try again."
@@ -44928,7 +44928,7 @@
     "string": "关闭"
   },
   "github_app.connect_interstitial.finish_button_with_countdown": {
-    "string": "Finish ({remainingSeconds})"
+    "string": "完成 ({remainingSeconds})"
   },
   "github_app.connect_interstitial.illustration_alt": {
     "string": "GitHub 连接 with Figma"
@@ -44943,7 +44943,7 @@
     "string": "GitHub organization avatar 图像 for {githubOrgName}"
   },
   "github_app.connect_interstitial.permission_description_1_not_authorized": {
-    "string": "Verify your GitHub identity"
+    "string": "验证您的GitHub身份"
   },
   "github_app.connect_interstitial.permission_description_2_not_authorized": {
     "string": "Know which resources you can 访问权限"
@@ -44958,7 +44958,7 @@
     "string": "You’ll be asked to authorize these 权限:"
   },
   "github_app.connect_interstitial.permissions_intro_requested": {
-    "string": "Your GitHub admin needs to approve the request"
+    "string": "您的 GitHub 管理员需要批准该请求"
   },
   "github_app.connect_interstitial.permissions_outro": {
     "string": "An admin needs to make the Figma–GitHub 连接 before you can proceed."
@@ -44982,28 +44982,28 @@
     "string": "安装"
   },
   "github_app.connect_interstitial.step_install_title": {
-    "string": "Install Figma app to your GitHub organization"
+    "string": "将 Figma 应用程序安装到您的 GitHub 组织"
   },
   "github_app.connect_interstitial.step_installed_org": {
-    "string": "{githubOrgName} GitHub organization is connected to Figma"
+    "string": "{githubOrgName} GitHub 组织已连接到 Figma"
   },
   "github_app.connect_interstitial.step_installed_user": {
-    "string": "{githubLogin} GitHub account is connected to Figma"
+    "string": "{githubLogin} GitHub 帐户已连接到 Figma"
   },
   "github_app.connect_interstitial.step_request_button": {
     "string": "Admin action 必填"
   },
   "github_app.connect_interstitial.step_requested_title": {
-    "string": "Figma app installation requested for {githubOrgName} GitHub organization"
+    "string": "Figma 请求 {githubOrgName} GitHub 组织安装应用"
   },
   "github_app.connect_interstitial.title_installed": {
-    "string": "Figma is connected to GitHub"
+    "string": "Figma 连接到 GitHub"
   },
   "github_app.connect_interstitial.title_not_installed": {
     "string": "Figma 想要访问您的 GitHub 帐户"
   },
   "github_app.connect_interstitial.title_requested": {
-    "string": "Figma app installation requested"
+    "string": "Figma 请求安装应用程序"
   },
   "github_app.connect_interstitial.user_avatar_alt": {
     "string": "GitHub 用户 avatar 图像 for {githubLogin}"
@@ -45084,7 +45084,7 @@
     "string": "我们已重新发送邮件"
   },
   "guest_expiration.bulk_action.set_expiration": {
-    "string": "Set guest expiration date"
+    "string": "设置访客到期日期"
   },
   "guest_expiration.bulk_modal.description.set": {
     "string": "{count, plural, one {Set an expiration date for 1 guest} other {Set an expiration date for {count} guests}}"
@@ -45615,10 +45615,10 @@
     "string": "对象"
   },
   "image_ai.too_many_running_images": {
-    "string": "You can only work on {count} images at a time"
+    "string": "您一次只能处理 {count} 图像"
   },
   "image_ai.too_many_running_tasks": {
-    "string": "You can only run {count} tasks at a time"
+    "string": "您一次只能运行 {count} 任务"
   },
   "image_ai.upscale_image.failed": {
     "string": "提升分辨率失败"
@@ -46899,7 +46899,7 @@
     "string": "跟踪你的组的 AI 使用情况"
   },
   "license_group_admin.ai_credits.paid_credits_card.subtitle": {
-    "string": "{creditsLeft, number} left for the organization"
+    "string": "{creditsLeft, number} 留给组织"
   },
   "license_group_admin.ai_credits.paid_credits_card.title": {
     "string": "共享点数"
@@ -46917,7 +46917,7 @@
     "string": "管理点数"
   },
   "license_group_admin.ai_credits.warning_banner.org_admin.message": {
-    "string": "Set aside more so {billingGroupName} can keep building with AI before {date, date, ::MMMMd}."
+    "string": "留出更多资金，以便 {billingGroupName} 可以在 {date, date, ::MMMMd} 之前继续使用 AI 进行构建。"
   },
   "license_group_admin.ai_credits.warning_banner.org_admin.title.out": {
     "string": "Out of billing 组 credits"
@@ -46974,37 +46974,37 @@
     "string": "席位类型"
   },
   "lightweight.checkout.payment_method.card.amex": {
-    "string": "AMEX •••• •••••• •{last4}"
+    "string": "美国运通•••••••••••{last4}"
   },
   "lightweight.checkout.payment_method.card.diners": {
-    "string": "DINERS CLUB •••• •••• •••• {last4}"
+    "string": "大莱俱乐部•••••••••••• {last4}"
   },
   "lightweight.checkout.payment_method.card.discover": {
-    "string": "DISCOVER •••• •••• •••• {last4}"
+    "string": "发现•••••••••••• {last4}"
   },
   "lightweight.checkout.payment_method.card.eftpos_au": {
-    "string": "EFTPOS •••• •••• •••• {last4}"
+    "string": "EFTPOS•••••••••••• {last4}"
   },
   "lightweight.checkout.payment_method.card.jcb": {
-    "string": "JCB •••• •••• •••• {last4}"
+    "string": "JCB•••••••••••• {last4}"
   },
   "lightweight.checkout.payment_method.card.mastercard": {
-    "string": "MASTERCARD •••• •••• •••• {last4}"
+    "string": "万事达卡•••••••••••• {last4}"
   },
   "lightweight.checkout.payment_method.card.unionpay": {
-    "string": "UNIONPAY •••• •••• •••• {last4}"
+    "string": "银联•••••••••••• {last4}"
   },
   "lightweight.checkout.payment_method.card.unknown": {
     "string": "•••• •••• •••• {last4}"
   },
   "lightweight.checkout.payment_method.card.visa": {
-    "string": "VISA •••• •••• •••• {last4}"
+    "string": "签证•••••••••••• {last4}"
   },
   "lightweight.checkout.payment_method.sepa_debit": {
-    "string": "SEPA {countryCode} •••• •••• •••• {last4}"
+    "string": "SEPA {countryCode} •••••••••••• {last4}"
   },
   "lightweight.checkout.payment_method.sepa_debit.no_country_code": {
-    "string": "SEPA •••• •••• •••• {last4}"
+    "string": "SEPA •••••••••••• {last4}"
   },
   "lightweight.checkout.sidebar_cta.org": {
     "string": "升级到 Organization"
@@ -47214,7 +47214,7 @@
     "string": "{count, plural, one {# 个 story} other {# 个 story}}"
   },
   "litmus.storybook.tile_aria_label": {
-    "string": "{name} ({storyCount}), connected to {fileName}"
+    "string": "{name} ({storyCount})，连接到 {fileName}"
   },
   "litmus.storybook.tile_aria_label_no_file": {
     "string": "{name} ({storyCount})"
@@ -47259,7 +47259,7 @@
     "string": "Story previews couldn’t be generated. Upload a 新建 build to try again."
   },
   "litmus.storybook_banner.runner_partial_failure_subtitle": {
-    "string": "Some story previews are missing. Stories without previews will show a placeholder."
+    "string": "缺少一些故事预览。没有预览的故事将显示占位符。"
   },
   "litmus.storybook_detail.connected_to_file": {
     "string": "已连接至 {fileName}"
@@ -47640,13 +47640,13 @@
     "string": "删除注释"
   },
   "make_local.auto_mode.contextual_cta": {
-    "string": "Change settings"
+    "string": "更改设置"
   },
   "make_local.auto_mode.contextual_dismiss": {
-    "string": "Dismiss auto-approve suggestion"
+    "string": "拒绝自动批准建议"
   },
   "make_local.auto_mode.contextual_prompt": {
-    "string": "Skip approving tool calls?"
+    "string": "跳过批准工具调用？"
   },
   "make_local.checkout_progress.message": {
     "string": "正在切换到 {branch}"
@@ -47673,7 +47673,7 @@
     "string": "没有repositories match your 搜索."
   },
   "make_local.clone.org_repositories_subheading": {
-    "string": "Your GitHub organization"
+    "string": "您的 GitHub 组织"
   },
   "make_local.clone.repositories_legend": {
     "string": "仓库"
@@ -47691,10 +47691,10 @@
     "string": "https://github.com/owner/repo"
   },
   "make_local.connect_github.blocked_blurb": {
-    "string": "Only Figma admins can connect to GitHub"
+    "string": "只有 Figma 管理员可以连接到 GitHub"
   },
   "make_local.connect_github.connected_blurb": {
-    "string": "Figma is connected to GitHub"
+    "string": "Figma 连接到 GitHub"
   },
   "make_local.connect_github.connected_button": {
     "string": "查看详情"
@@ -47706,7 +47706,7 @@
     "string": "连接到 GitHub"
   },
   "make_local.connect_github.loading_blurb": {
-    "string": "Checking GitHub connection"
+    "string": "检查GitHub连接"
   },
   "make_local.connect_github.requested_blurb": {
     "string": "Waiting for GitHub 管理员 approval"
@@ -47721,7 +47721,7 @@
     "string": "shadow DOM"
   },
   "make_local.dom_tree_panel.shadow_host_tooltip": {
-    "string": "Editing inside shadow DOM isn’t supported yet."
+    "string": "尚不支持在 Shadow DOM 内部进行编辑。"
   },
   "make_local.file_move.cannot_move_local_only_project": {
     "string": "This 文件 is linked to a local-only project on the creator’s machine, so it can’t be moved."
@@ -47775,16 +47775,16 @@
     "string": "径向渐变"
   },
   "make_local.point_and_edit.background_layer_kind.repeating_linear_gradient": {
-    "string": "Repeating linear gradient"
+    "string": "重复线性渐变"
   },
   "make_local.point_and_edit.background_layer_kind.repeating_radial_gradient": {
-    "string": "Repeating radial gradient"
+    "string": "重复径向渐变"
   },
   "make_local.point_and_edit.background_layer_kind.unknown": {
     "string": "背景"
   },
   "make_local.point_and_edit.component_instance_menu": {
-    "string": "Component instance options"
+    "string": "组件实例选项"
   },
   "make_local.point_and_edit.component_props_empty_body": {
     "string": "We’ll 运行 a script so you can edit 组件 properties from here."
@@ -47799,13 +47799,13 @@
     "string": "Mixed"
   },
   "make_local.point_and_edit.go_to_source_code": {
-    "string": "Go to source code"
+    "string": "转到源代码"
   },
   "make_local.point_and_edit.go_to_template_file": {
-    "string": "Go to template file"
+    "string": "转到模板文件"
   },
   "make_local.point_and_edit.jump_to_main_component": {
-    "string": "Jump to main component"
+    "string": "跳转到主要组件"
   },
   "make_local.point_and_edit.page_document_header": {
     "string": "Page 样式"
@@ -47823,7 +47823,7 @@
     "string": "This element only"
   },
   "make_local.scope_selector.toggle_label": {
-    "string": "Toggle multi-select"
+    "string": "切换多选"
   },
   "make_local.tab_title": {
     "string": "Make Local"
@@ -47865,7 +47865,7 @@
     "string": "已使用总内存"
   },
   "marketing_ai_credit_overlay.description": {
-    "string": "Use your AI credits to prompt your way to a functional prototype in Figma Make."
+    "string": "使用您的 AI 点数提示您获得 Figma Make 中的功能原型。"
   },
   "marketing_ai_credit_overlay.title": {
     "string": "{numCredits, plural, one {You have # AI credit} other {You have # AI credits}}"
@@ -47904,7 +47904,7 @@
     "string": "Dev 模式 MCP 服务器已启用，地址：{url}"
   },
   "mcp.error.url_must_be_valid_non_private_url": {
-    "string": "The MCP server URL must be a publicly accessible HTTPS URL that resolves to a public IP address. URLs that resolve to private or internal IP addresses are not allowed."
+    "string": "MCP 服务器URL 必须是可公开访问的HTTPS URL，并解析为公共IP 地址。不允许解析为私有或内部 IP 地址的 URL。"
   },
   "mcp.url_copied_to_clipboard": {
     "string": "MCP 服务器 URL 已复制到剪贴板"
@@ -47931,19 +47931,19 @@
     "string": "已启用付费点数访问权限"
   },
   "member_flyout_modal.ai_credits.paid_credits_disabled": {
-    "string": "Paid credits disabled"
+    "string": "已禁用付费点数"
   },
   "member_flyout_modal.ai_credits.pool_credits_warning.low": {
-    "string": "{poolName} is low on credits"
+    "string": "{poolName} 点数不足"
   },
   "member_flyout_modal.ai_credits.pool_credits_warning.out": {
-    "string": "{poolName} is out of credits"
+    "string": "{poolName} 点数已用完"
   },
   "member_flyout_modal.ai_credits.reset_date": {
     "string": "将在 {date, date, ::MMMMd} 重置"
   },
   "member_flyout_modal.ai_credits.reset_date.popover": {
-    "string": "Credits reset on {date, date, ::MMMMd} at {date, date, ::hmma}"
+    "string": "点数于 {date, date, ::MMMMd} 的 {date, date, ::hmma} 重置"
   },
   "member_flyout_modal.ai_credits.reset_date.with_popover": {
     "string": "Reset {date}"
@@ -47955,7 +47955,7 @@
     "string": "一个 {seatType} 席位包含每月 {credits, number, integer} 个 AI 积分。"
   },
   "member_flyout_modal.ai_credits.set_limit": {
-    "string": "Set limit"
+    "string": "设置限制"
   },
   "member_flyout_modal.ai_credits.shared_credits": {
     "string": "共享点数"
@@ -48789,10 +48789,10 @@
     "string": "Slow"
   },
   "motion.constants.exit_motion_mode_component_properties": {
-    "string": "Exit Motion mode to edit component properties."
+    "string": "退出动效模式以编辑组件属性。"
   },
   "motion.constants.exit_motion_mode_variant_properties": {
-    "string": "Exit Motion mode to edit variant properties."
+    "string": "退出动效模式以编辑变体属性。"
   },
   "motion.constants.toggle_keyframe_timeline": {
     "string": "Toggle keyframe timeline"
@@ -48801,22 +48801,22 @@
     "string": "Toggle recording"
   },
   "motion.constants.toggle_transition_timeline": {
-    "string": "Toggle transition timeline"
+    "string": "切换过渡时间线"
   },
   "motion.panel.add_animation_style": {
-    "string": "Add animation"
+    "string": "添加动画"
   },
   "motion.panel.add_field_keyframe": {
-    "string": "Add {field} keyframe"
+    "string": "添加{field}关键帧"
   },
   "motion.panel.add_keyframe": {
-    "string": "Add keyframe"
+    "string": "添加关键帧"
   },
   "motion.panel.animation_style.default_name": {
-    "string": "Animation"
+    "string": "动画片"
   },
   "motion.panel.animation_style.detach": {
-    "string": "Detach animation style"
+    "string": "分离动画风格"
   },
   "motion.panel.animation_style_picker.basic": {
     "string": "Basic"
@@ -48843,13 +48843,13 @@
     "string": "Custom"
   },
   "motion.panel.edit_animation_code": {
-    "string": "Edit animation code"
+    "string": "编辑动画代码"
   },
   "motion.panel.new_preset": {
     "string": "New preset"
   },
   "motion.panel.remove_animation_style": {
-    "string": "Remove animation style"
+    "string": "删除动画样式"
   },
   "motion.preset_flyout.amount": {
     "string": "Amount"
@@ -48951,28 +48951,28 @@
     "string": "Bottom"
   },
   "motion.preset_flyout.position.direction.from_bottom": {
-    "string": "From bottom"
+    "string": "从底部"
   },
   "motion.preset_flyout.position.direction.from_bottom_left": {
-    "string": "From bottom left"
+    "string": "从左下角开始"
   },
   "motion.preset_flyout.position.direction.from_bottom_right": {
-    "string": "From bottom right"
+    "string": "从右下角开始"
   },
   "motion.preset_flyout.position.direction.from_left": {
-    "string": "From left"
+    "string": "从左起"
   },
   "motion.preset_flyout.position.direction.from_right": {
-    "string": "From right"
+    "string": "从右起"
   },
   "motion.preset_flyout.position.direction.from_top": {
-    "string": "From top"
+    "string": "从顶部"
   },
   "motion.preset_flyout.position.direction.from_top_left": {
-    "string": "From top left"
+    "string": "从左上角开始"
   },
   "motion.preset_flyout.position.direction.from_top_right": {
-    "string": "From top right"
+    "string": "从右上角开始"
   },
   "motion.preset_flyout.position.direction.left": {
     "string": "Left"
@@ -48981,28 +48981,28 @@
     "string": "Right"
   },
   "motion.preset_flyout.position.direction.to_bottom": {
-    "string": "To bottom"
+    "string": "到底部"
   },
   "motion.preset_flyout.position.direction.to_bottom_left": {
-    "string": "To bottom left"
+    "string": "到左下角"
   },
   "motion.preset_flyout.position.direction.to_bottom_right": {
-    "string": "To bottom right"
+    "string": "到右下角"
   },
   "motion.preset_flyout.position.direction.to_left": {
-    "string": "To left"
+    "string": "向左"
   },
   "motion.preset_flyout.position.direction.to_right": {
-    "string": "To right"
+    "string": "向右"
   },
   "motion.preset_flyout.position.direction.to_top": {
-    "string": "To top"
+    "string": "到顶部"
   },
   "motion.preset_flyout.position.direction.to_top_left": {
-    "string": "To top left"
+    "string": "到左上角"
   },
   "motion.preset_flyout.position.direction.to_top_right": {
-    "string": "To top right"
+    "string": "到右上角"
   },
   "motion.preset_flyout.position.direction.top": {
     "string": "Top"
@@ -49092,7 +49092,7 @@
     "string": "Size"
   },
   "motion.preset_name.text": {
-    "string": "Text"
+    "string": "文本"
   },
   "motion.timeline.accessibility.keyframes": {
     "string": "{count, plural, one {1 个关键帧} other {# 个关键帧}}"
@@ -49128,25 +49128,25 @@
     "string": "{count, plural, one {1 个样式} other {# 个样式}}"
   },
   "motion.timeline.accessible.bar": {
-    "string": "Preset from {start} to {end}"
+    "string": "预设从 {start} 到 {end}"
   },
   "motion.timeline.accessible.bar_with_label": {
-    "string": "{label} preset from {start} to {end}"
+    "string": "{label} 预设从 {start} 到 {end}"
   },
   "motion.timeline.accessible.interpolation": {
-    "string": "Interpolation from {start} to {end}"
+    "string": "从 {start} 到 {end} 的插值"
   },
   "motion.timeline.accessible.keyframe": {
     "string": "Keyframe at {time}"
   },
   "motion.timeline.accessible.named_element": {
-    "string": "{objectName}, {content}"
+    "string": "{objectName}、{content}"
   },
   "motion.timeline.accessible.summary_bar": {
-    "string": "Summary from {start} to {end}"
+    "string": "从 {start} 到 {end} 的摘要"
   },
   "motion.timeline.accessible.summary_bar_with_label": {
-    "string": "{label}, {start} to {end}"
+    "string": "{label}、{start} 至 {end}"
   },
   "motion.timeline.collapse_layers": {
     "string": "Collapse layers"
@@ -49155,7 +49155,7 @@
     "string": "Collapse timeline"
   },
   "motion.timeline.context_menu.copy": {
-    "string": "Copy"
+    "string": "复制"
   },
   "motion.timeline.context_menu.delete_all_tracks": {
     "string": "Delete all tracks"
@@ -49167,10 +49167,10 @@
     "string": "Delete track"
   },
   "motion.timeline.context_menu.disable_nested_timeline": {
-    "string": "Disable"
+    "string": "禁用"
   },
   "motion.timeline.context_menu.enable_nested_timeline": {
-    "string": "Enable"
+    "string": "使能够"
   },
   "motion.timeline.context_menu.loop_track": {
     "string": "Loop track"
@@ -49248,13 +49248,13 @@
     "string": "Unknown"
   },
   "motion.timeline.empty_state.body_layers_selected": {
-    "string": "Add a pre-made animation or describe your idea to the Figma agent."
+    "string": "添加预制动画或向 Figma 代理描述您的想法。"
   },
   "motion.timeline.empty_state.body_no_selection": {
-    "string": "Select objects on the canvas to create an animation, or ask the Figma agent to create an idea from scratch."
+    "string": "选择画布上的对象来创建动画，或要求 Figma 代理从头开始创建一个想法。"
   },
   "motion.timeline.empty_state.cta_apply_animation_style": {
-    "string": "Add animation"
+    "string": "添加动画"
   },
   "motion.timeline.empty_state.cta_prompt_an_agent": {
     "string": "Ask agent"
@@ -49263,7 +49263,7 @@
     "string": "{count, plural, one {1 layer selected} other {# layers selected}}"
   },
   "motion.timeline.empty_state.title_no_selection": {
-    "string": "No animations in timeline"
+    "string": "时间轴中没有动画"
   },
   "motion.timeline.expand_layers": {
     "string": "Expand layers"
@@ -49272,7 +49272,7 @@
     "string": "Expand timeline"
   },
   "motion.timeline.inline_color_swatch_label": {
-    "string": "Open color picker"
+    "string": "打开颜色选择器"
   },
   "motion.timeline.inline_value_label": {
     "string": "Value"
@@ -49281,7 +49281,7 @@
     "string": "Align vertically"
   },
   "motion.timeline.keyframe_context_menu.copy": {
-    "string": "Copy"
+    "string": "复制"
   },
   "motion.timeline.keyframe_context_menu.paste": {
     "string": "Paste"
@@ -49290,10 +49290,10 @@
     "string": "Paste here"
   },
   "motion.timeline.keyframes_timeline_aria": {
-    "string": "Keyframes timeline. {trackCount} tracks, {keyframeCount} keyframes. Use Arrow keys or Space + drag to scroll, pinch or Cmd/Ctrl + Wheel to zoom, drag to move keyframes, Shift/Cmd for multi-select, double-click to add keyframes."
+    "string": "关键帧时间线。 {trackCount} 轨道，{keyframeCount} 关键帧。使用箭头键或空格键 + 拖动来滚动，捏合或 Cmd/Ctrl + 滚轮来缩放，拖动来移动关键帧，Shift/Cmd 来进行多选，双击来添加关键帧。"
   },
   "motion.timeline.loading": {
-    "string": "Loading timeline..."
+    "string": "加载时间线..."
   },
   "motion.timeline.nested_timeline": {
     "string": "Nested Timeline"
@@ -49341,13 +49341,13 @@
     "string": "Duration"
   },
   "motion.timeline.time.switch_unit": {
-    "string": "Change time format"
+    "string": "更改时间格式"
   },
   "motion.timeline.time.unit_abbreviation": {
     "string": "{unit, select, s {s} other {ms}}"
   },
   "motion.timeline.toggle_keyframe": {
-    "string": "Add or remove keyframe"
+    "string": "添加或删除关键帧"
   },
   "motion.timeline.track.effect_label": {
     "string": "{effectType} {index} {property}"
@@ -49359,7 +49359,7 @@
     "string": "Stroke {index} Color"
   },
   "motion.timeline.unknown_animation_style": {
-    "string": "Unknown Animation Style"
+    "string": "未知的动画风格"
   },
   "motion.timeline.unnamed_preset": {
     "string": "Unnamed Preset"
@@ -49698,7 +49698,7 @@
     "string": "你想先做什么？"
   },
   "new_user_experience.choose_product.title.use_case": {
-    "string": "What do you want to do right now?"
+    "string": "你现在想做什么？"
   },
   "new_user_experience.choose_product.v2.description.buzz": {
     "string": "在 Figma Buzz 中创建营销资产并进行协作"
@@ -49707,7 +49707,7 @@
     "string": "在 Figma Design 中绘制您的想法并制作原型"
   },
   "new_user_experience.choose_product.v2.description.design_app_website": {
-    "string": "Explore freely in Figma Design"
+    "string": "在Figma Design中自由探索"
   },
   "new_user_experience.choose_product.v2.description.draw": {
     "string": "在 Figma Draw 中创建富有表现力的插图"
@@ -49743,10 +49743,10 @@
     "string": "描述一个想法"
   },
   "new_user_experience.choose_product.v2.title.make_app": {
-    "string": "Build a working app"
+    "string": "构建一个工作应用程序"
   },
   "new_user_experience.choose_product.v2.title.make_website": {
-    "string": "Build a working website"
+    "string": "建立一个工作网站"
   },
   "new_user_experience.choose_product.v2.title.sites": {
     "string": "使用预设块构建"
@@ -49767,25 +49767,25 @@
     "string": "{userName} 的第一个文件"
   },
   "new_user_experience.how_to_get_started.agent.description": {
-    "string": "Describe what you want, then refine it together"
+    "string": "描述你想要什么，然后一起完善它"
   },
   "new_user_experience.how_to_get_started.agent.title": {
-    "string": "Work with the Figma agent"
+    "string": "与 Figma 代理合作"
   },
   "new_user_experience.how_to_get_started.blank.description": {
-    "string": "Start from a blank canvas"
+    "string": "从空白画布开始"
   },
   "new_user_experience.how_to_get_started.blank.title": {
     "string": "Jump right in"
   },
   "new_user_experience.how_to_get_started.template.description": {
-    "string": "Start from an existing design"
+    "string": "从现有设计开始"
   },
   "new_user_experience.how_to_get_started.template.title": {
-    "string": "Use a template"
+    "string": "使用模板"
   },
   "new_user_experience.how_to_get_started.title": {
-    "string": "How do you want to get started?"
+    "string": "您想如何开始？"
   },
   "new_user_experience.language_picker.title": {
     "string": "语言"
@@ -50961,7 +50961,7 @@
     "string": "启用（默认）"
   },
   "org_settings.external_collaboration_controls.go_to_manage_domains": {
-    "string": "Go to manage domains"
+    "string": "转到管理域"
   },
   "org_settings.external_collaboration_controls.header": {
     "string": "外部内容访问权限"
@@ -51183,7 +51183,7 @@
     "string": "{userCount, plural, one {该用户释放的席位将可供他人使用。} other {这些用户释放的席位将可供他人使用。}}"
   },
   "org_settings.remove_user_modal.bullet_drafts": {
-    "string": "Their organization drafts will move to Unassigned drafts"
+    "string": "他们的组织草稿将移至未分配草稿"
   },
   "org_settings.remove_user_modal.bullet_lose_access": {
     "string": "{userCount, plural, one {They will lose 访问权限 to 全部 团队, 项目, 文件, and 组 in this organization} other {They will lose 访问权限 to 全部 团队, 项目, 文件, and 组 in this organization}}"
@@ -51237,7 +51237,7 @@
     "string": "Email: {userEmail}"
   },
   "org_settings.remove_user_modal.user_info_name": {
-    "string": "User: {userName}"
+    "string": "用户：{userName}"
   },
   "org_settings.remove_user_modal.warning_no_username_text_v2": {
     "string": "{userCount, plural, one {移除该用户后，他们将无法再访问 {orgName} 组织中的团队、项目、文件和应用。此操作不可撤销。} other {移除这些用户后，他们将无法再访问 {orgName} 组织中的团队、项目、文件和应用。此操作不可撤销。}}"
@@ -51378,7 +51378,7 @@
     "string": "编辑配置"
   },
   "org_settings.sso.google_workspace": {
-    "string": "Google Workspace"
+    "string": "Google 工作区"
   },
   "org_settings.sso.help_article": {
     "string": "帮助文章"
@@ -51516,7 +51516,7 @@
     "string": "成员 can publish designs to the web without a password."
   },
   "org_settings.web_publishing_container_setting.enabled_label": {
-    "string": "Allow publishing (default)"
+    "string": "允许发布（默认）"
   },
   "org_settings.web_publishing_container_setting.enabled_with_passwords": {
     "string": "需要密码"
@@ -51534,13 +51534,13 @@
     "string": "Sites and apps published without 密码 by 成员 of your organization will be unpublished and taken offline."
   },
   "org_settings.web_publishing_container_setting.success": {
-    "string": "Updated web publishing setting"
+    "string": "更新了网络发布设置"
   },
   "org_settings.web_publishing_container_setting.title": {
     "string": "网站发布"
   },
   "org_settings.web_publishing_container_setting.workspace_success": {
-    "string": "Updated workspace's web publishing setting"
+    "string": "更新了工作区的网络发布设置"
   },
   "org_settings.web_publishing_settings.allow_publishing_without_passwords": {
     "string": "允许无密码发布"
@@ -51615,7 +51615,7 @@
     "string": "为各个工作区更新默认文件导出设置。"
   },
   "org_settings.workspace_controls.sub_header_text_web_publishing": {
-    "string": "Set web publishing for a specific workspace"
+    "string": "为特定工作区设置 Web 发布"
   },
   "org_team_actions.an_error_occurred_while_assigning_team_s_to_a_workspace": {
     "string": "将团队分配到工作区时出错。"
@@ -51948,10 +51948,10 @@
     "string": "我们尚未收到你组织本周期的付款。请尽快联系 {email} 以继续访问 {orgName}。"
   },
   "payments.org_past_due_on_payment_no_date_v2": {
-    "string": "Your invoice is overdue. Pay the invoice in the Billing tab to keep using Figma, or contact {email} for more information."
+    "string": "您的发票已逾期。在“账单”选项卡中支付发票以继续使用 Figma，或联系 {email} 了解更多信息。"
   },
   "payments.org_past_due_on_payment_v2": {
-    "string": "Your invoice is overdue. Pay the {invoiceDate} invoice in the Billing tab to keep using Figma, or contact {email} for more information."
+    "string": "您的发票已逾期。在“账单”选项卡中支付 {invoiceDate} 发票以继续使用 Figma，或联系 {email} 了解更多信息。"
   },
   "payments.outstanding_invoice": {
     "string": "未结发票"
@@ -52341,7 +52341,7 @@
     "string": "链接已复制…"
   },
   "permissions.copy_link_button.visual_bell.see_link_settings": {
-    "string": "See link settings"
+    "string": "查看链接设置"
   },
   "permissions.deprovisioned_users.got_it": {
     "string": "知道了"
@@ -52515,7 +52515,7 @@
     "string": "你没有权限查看该文件。"
   },
   "permissions.sinatra.fmr_migration_in_progress": {
-    "string": "This operation cannot be completed at the moment due to project maintenance operations."
+    "string": "由于项目维护操作，该操作目前无法完成。"
   },
   "permissions.sinatra.generic": {
     "string": "你似乎没有权限执行此操作。"
@@ -52770,7 +52770,7 @@
     "string": "Toggle 年度 billing"
   },
   "plan_comparison.ai_paywall_updates_2.variant_b.edu.description": {
-    "string": "Everything on Professional, for verified Education users"
+    "string": "一切都在专业上，适用于经过验证的教育用户"
   },
   "plan_comparison.ai_paywall_updates_2.variant_b.org.everything_on_pro_header": {
     "string": "包含 Professional 套餐的一切，并新增："
@@ -52977,7 +52977,7 @@
     "string": "FigJam"
   },
   "plan_comparison.campfire.footer_learn_and_applicable_tax": {
-    "string": "{learnMoreLink} about products and features. Applicable taxes will be calculated at checkout."
+    "string": "{learnMoreLink} 关于产品和功能。适用税费将在结账时计算。"
   },
   "plan_comparison.campfire.full.description": {
     "string": "支持你从头到尾构建愿景的产品"
@@ -53115,7 +53115,7 @@
     "string": "联系销售"
   },
   "plan_comparison.variant_a.enterprise_banner_description": {
-    "string": "Built for enhanced security, scalable design processes across companies."
+    "string": "专为跨公司增强安全性、可扩展的设计流程而构建。"
   },
   "plan_comparison.variant_a.enterprise_banner_title": {
     "string": "了解我们的企业计划"
@@ -53169,7 +53169,7 @@
     "string": "完整版"
   },
   "plan_comparison.variant_a.starter_description": {
-    "string": "For anyone who wants to sample Figma"
+    "string": "对于任何想要采样Figma的人"
   },
   "plan_comparison.variant_a.starter_feature_1": {
     "string": "500 AI 点数 per month, 150 per day"
@@ -53211,7 +53211,7 @@
     "string": "Up to 200 MCP 工具调用 per day"
   },
   "plan_comparison.variant_b.enterprise_description": {
-    "string": "For a more custom solution, {contactSales} to learn about the Organization and Enterprise plans."
+    "string": "如需更自定义的解决方案，请{contactSales}了解组织和企业计划。"
   },
   "plan_comparison.variant_b.free": {
     "string": "免费"
@@ -53229,13 +53229,13 @@
     "string": "联系销售。"
   },
   "plan_comparison.variant_b.org_plan_callout_description": {
-    "string": "for SSO, branching & merging, and centralized design systems."
+    "string": "适用于 SSO、分支和合并以及集中式设计系统。"
   },
   "plan_comparison.variant_b.org_plan_callout_description_with_contact_sales": {
-    "string": "for SSO, branching & merging, and centralized design systems. Or {contactSales}"
+    "string": "适用于 SSO、分支和合并以及集中式设计系统。或{contactSales}"
   },
   "plan_comparison.variant_b.org_plan_callout_name": {
-    "string": "Choose the Organization plan"
+    "string": "选择组织计划"
   },
   "plan_comparison.variant_b.professional": {
     "string": "专业版"
@@ -53253,13 +53253,13 @@
     "string": "Up to 200 MCP 工具调用 per day"
   },
   "plan_comparison.variant_b.professional_price_label": {
-    "string": "/ mo for a"
+    "string": "/ 莫为"
   },
   "plan_comparison.variant_b.starter": {
     "string": "入门"
   },
   "plan_comparison.variant_b.starter_description": {
-    "string": "For anyone who wants to sample Figma"
+    "string": "对于任何想要采样Figma的人"
   },
   "plan_comparison.variant_b.starter_feature_ai_credits": {
     "string": "500 AI 点数/month, 150/day"
@@ -54027,10 +54027,10 @@
     "string": "Apple Watch 45mm"
   },
   "presets.apple_watch_series_10_42_mm": {
-    "string": "Apple Watch Series 10 42mm"
+    "string": "Apple Watch 系列 10 42 毫米"
   },
   "presets.apple_watch_series_10_46_mm": {
-    "string": "Apple Watch Series 10 46mm"
+    "string": "Apple Watch 系列 10 46 毫米"
   },
   "presets.desktop": {
     "string": "桌面"
@@ -54636,13 +54636,13 @@
     "string": "知道了"
   },
   "pro_onboarding.product_routing.component_libraries_for_designing_faster": {
-    "string": "Component libraries, for designing faster"
+    "string": "组件库，可加快设计速度"
   },
   "pro_onboarding.product_routing.higher_ai_credit_limits_for_full_seats": {
-    "string": "Higher AI credit limits for Full seats"
+    "string": "全席AI 点数上限更高"
   },
   "pro_onboarding.product_routing.unlimited_files_and_projects": {
-    "string": "Unlimited files and projects"
+    "string": "无限的文件和项目"
   },
   "pro_onboarding.professional": {
     "string": "专业版"
@@ -55299,7 +55299,7 @@
     "string": "缓动持续时间"
   },
   "proto.animation_panel.play_motion": {
-    "string": "Play Motion animations"
+    "string": "播放动效动画"
   },
   "proto.animation_panel.timeline": {
     "string": "时间线"
@@ -55323,7 +55323,7 @@
     "string": "应用变量/属性"
   },
   "proto.apply_assignment_property_named": {
-    "string": "Apply variable/property to {property}"
+    "string": "将变量/属性应用于{property}"
   },
   "proto.apply_variant_unified": {
     "string": "应用变量"
@@ -55389,10 +55389,10 @@
     "string": "缓慢"
   },
   "proto.easing_editor.hold_easing_button_label": {
-    "string": "Change hold easing to a curve"
+    "string": "将保持缓动更改为曲线"
   },
   "proto.easing_editor.hold_easing_change_hint": {
-    "string": "Click to change to curve"
+    "string": "点击以更改为曲线"
   },
   "proto.easing_editor.hold_easing_title": {
     "string": "Hold easing"
@@ -55419,7 +55419,7 @@
     "string": "已编辑 {relativeTime}"
   },
   "proto.embeds.loading": {
-    "string": "Loading…"
+    "string": "加载中…"
   },
   "proto.embeds.visible_to_everyone_in_your_org": {
     "string": "组织内所有人可见"
@@ -55449,7 +55449,7 @@
     "string": "编写条件"
   },
   "proto.file_browser": {
-    "string": "File browser"
+    "string": "文件浏览器"
   },
   "proto.flow_description": {
     "string": "Flow description"
@@ -55458,7 +55458,7 @@
     "string": "填充"
   },
   "proto.header.skip_to_content": {
-    "string": "Skip to content"
+    "string": "跳至内容"
   },
   "proto.interaction.type.after_delay": {
     "string": "延迟后"
@@ -55620,7 +55620,7 @@
     "string": "Total"
   },
   "proto.preload.debug.image_failures": {
-    "string": "Image failures: {transient} transient · {permanent} permanent"
+    "string": "图像故障：{transient} 暂时性 · {permanent} 永久性"
   },
   "proto.preload.debug.load_id": {
     "string": "Load ID: {loadId}"
@@ -55631,23 +55631,23 @@
   "proto.preload.debug.row_images": {
     "string": "Images"
   },
-  "proto.preload.debug.row_shaders": {
+  "proto.preload.debug.row_Shaders": {
     "string": "Shaders"
   },
   "proto.preload.debug.row_videos": {
     "string": "Videos"
   },
-  "proto.preload.debug.shader_failures": {
-    "string": "Shader failures: {transient} transient · {permanent} permanent"
+  "proto.preload.debug.Shader_failures": {
+    "string": "Shader 故障：{transient} 暂时性 · {permanent} 永久性"
   },
   "proto.preload.debug.summary": {
-    "string": "[Internal] Preloading — {state}"
+    "string": "[内部] 预加载 — {state}"
   },
   "proto.preload.debug.updated": {
     "string": "Updated: {time}"
   },
   "proto.preload.debug.video_failures": {
-    "string": "Video failures: {transient} transient · {permanent} permanent"
+    "string": "视频故障：{transient} 暂时性 · {permanent} 永久性"
   },
   "proto.preload.error.tooltip.body": {
     "string": "请检查网络连接，确保在线后重试。"
@@ -56133,10 +56133,10 @@
     "string": "See all tools"
   },
   "qa.tools_panel_announcement.subtitle": {
-    "string": "Describe your idea and the agent will create it for you. Or, browse and run any tool from the Tools panel."
+    "string": "描述您的想法，代理将为您创建它。或者，从“工具”面板浏览并运行任何工具。"
   },
   "qa.tools_panel_announcement.title": {
-    "string": "Build plugins with the Figma agent"
+    "string": "使用 Figma 代理构建插件"
   },
   "qa.unavailable": {
     "string": "当前不可用"
@@ -56190,19 +56190,19 @@
     "string": "文件适合协作，而草稿更偏向个人使用。若分享草稿，其他人仅能查看。"
   },
   "rcs.create_with_figma_upsell.bullet_brainstorm": {
-    "string": "Turn brainstorms into presentations"
+    "string": "将头脑风暴转化为演示"
   },
   "rcs.create_with_figma_upsell.bullet_build": {
-    "string": "Build websites and apps with prompts"
+    "string": "根据提示构建网站和应用程序"
   },
   "rcs.create_with_figma_upsell.bullet_graphics": {
-    "string": "Create polished graphics and animations"
+    "string": "创建精美的图形和动画"
   },
   "rcs.create_with_figma_upsell.get_started": {
     "string": "Get started"
   },
   "rcs.create_with_figma_upsell.title": {
-    "string": "Turn ideas into real products with Figma"
+    "string": "使用 Figma 将想法转化为实际产品"
   },
   "rcs.figjam_onboarding.steps_screenreader_description": {
     "string": "第 {currentStepNum} 步，共 {totalNumSteps} 步"
@@ -56655,7 +56655,7 @@
     "string": "请求 Figma Design 进行文件编辑"
   },
   "request_upgrade.header.design_draw": {
-    "string": "Request Figma Draw to illustrate"
+    "string": "请求Figma画图说明"
   },
   "request_upgrade.header.design_motion": {
     "string": "Request Figma 动效 to animate designs"
@@ -56691,7 +56691,7 @@
     "string": "请求 {licenseType} 以从草稿中共享"
   },
   "request_upgrade.header.media_export_motion": {
-    "string": "Request higher resolution exports in Motion"
+    "string": "请求在 Motion 中导出更高分辨率"
   },
   "request_upgrade.header.more_ai_credits": {
     "string": "请求完整席位以获得更多 AI 积分"
@@ -56754,7 +56754,7 @@
     "string": "请求升级 Figma 设计"
   },
   "request_upgrade.title_product": {
-    "string": "Request upgrade on {productName}"
+    "string": "在 {productName} 请求升级"
   },
   "request_upgrade.title_request_access_to_dev": {
     "string": "申请 Dev Mode 使用权限"
@@ -56802,7 +56802,7 @@
     "string": "如果你想获得 {productName} 的完整访问权限，请向 {planName} 的管理员发送请求。"
   },
   "request_upgrade_modal.body.media_export": {
-    "string": "Send a request to an admin at {planName} for higher resolution exports in Figma Motion."
+    "string": "向 {planName} 的管理员发送请求，以获取 Figma Motion 中更高分辨率的导出。"
   },
   "request_upgrade_modal.body.no_plan_name.license_type": {
     "string": "如果你想获得 {productName} 的完整访问权限，请向管理员发送请求。"
@@ -57954,7 +57954,7 @@
     "string": "作用域不得包含 /"
   },
   "resources_tab.npm_registry.modal_scope_validation_whitespace": {
-    "string": "Scope must not contain spaces or line breaks"
+    "string": "范围不得包含空格或换行符"
   },
   "resources_tab.npm_registry.modal_step_indicator": {
     "string": "{current} / {total}"
@@ -57987,19 +57987,19 @@
     "string": "生成令牌失败。请重试。"
   },
   "resources_tab.npm_registry.view_config_modal_title_v2": {
-    "string": "Figma npm registry configuration"
+    "string": "Figma npm 注册表配置"
   },
   "resources_tab.npm_registry.view_package_details": {
     "string": "查看软件包详情"
   },
   "resources_tab.published_resources.empty": {
-    "string": "No {resourceType} have been published to this organization yet."
+    "string": "尚未向该组织发布任何{resourceType}。"
   },
   "resources_tab.published_resources.search.label_with_ellipsis": {
-    "string": "Search {resourceType}…"
+    "string": "搜索{resourceType}..."
   },
   "resources_tab.published_resources.search.no_results": {
-    "string": "No {resourceType} match your search query. Try your search again."
+    "string": "没有 {resourceType} 与您的搜索查询匹配。再次尝试搜索。"
   },
   "resources_tab.shared_fonts_table.add_font": {
     "string": "添加字体"
@@ -58425,7 +58425,7 @@
     "string": "Ask agent"
   },
   "search.search_bar.ask_agent_disabled_facets_tooltip": {
-    "string": "Clear filters to ask agent"
+    "string": "清除过滤器以询问代理"
   },
   "search.search_bar.clear": {
     "string": "清除"
@@ -58434,7 +58434,7 @@
     "string": "搜索"
   },
   "search.search_bar.search": {
-    "string": "Search"
+    "string": "搜索"
   },
   "search.search_file_users": {
     "string": "查找查看过此文件的用户"
@@ -59259,7 +59259,7 @@
     "string": "移除"
   },
   "settings.account_settings.uploaded_fonts.section_header": {
-    "string": "Your uploaded fonts"
+    "string": "您上传的字体"
   },
   "settings.account_settings.uploaded_fonts.upload_button": {
     "string": "上传字体"
@@ -59403,7 +59403,7 @@
     "string": "代码源"
   },
   "settings_tab.code_sources_can_be_added": {
-    "string": "Code sources that can be added:"
+    "string": "可添加的代码来源："
   },
   "settings_tab.code_sources_copy_command": {
     "string": "复制命令"
@@ -59412,13 +59412,13 @@
     "string": "If disabled, only Figma admins can 连接 code sources."
   },
   "settings_tab.code_sources_disabled": {
-    "string": "Code Sources restricted to admins"
+    "string": "代码源仅限管理员使用"
   },
   "settings_tab.code_sources_enabled": {
     "string": "Code Sources 打开 to everyone"
   },
   "settings_tab.code_sources_getting_started_title": {
-    "string": "How to get started?"
+    "string": "如何开始？"
   },
   "settings_tab.code_sources_github_connected": {
     "string": "已连接"
@@ -59427,7 +59427,7 @@
     "string": "返回"
   },
   "settings_tab.code_sources_label": {
-    "string": "Allow adding code sources to Figma"
+    "string": "允许将代码源添加到 Figma"
   },
   "settings_tab.code_sources_modal_title": {
     "string": "代码源"
@@ -59796,7 +59796,7 @@
     "string": "Read and write 访问权限 to code 文件 and directory structure."
   },
   "settings_tab.github_permissions_workflows_write": {
-    "string": "Workflows: Read and write"
+    "string": "工作流程：读和写"
   },
   "settings_tab.github_permissions_workflows_write_description": {
     "string": "Manage GitHub Actions workflow 文件 and trigger workflow runs."
@@ -59991,7 +59991,7 @@
     "string": "启用精选连接器"
   },
   "settings_tab.make_featured_connectors_enable_banner_title": {
-    "string": "Featured connectors are disabled in Figma Make"
+    "string": "特色连接器在 Figma Make 中被禁用"
   },
   "settings_tab.make_featured_connectors_enable_modal_body": {
     "string": "Once enabled, featured connectors will be on for your 团队. It can’t be turned off again from this 页面."
@@ -60264,7 +60264,7 @@
     "string": "SCIM 自动配置"
   },
   "settings_tab.scim_metadata_modal.change_which_scim_metadata_shows_on_the_people_tab": {
-    "string": "Change which SCIM metadata shows on the people tab"
+    "string": "更改人员选项卡上显示的 SCIM 元数据"
   },
   "settings_tab.scim_metadata_modal.done": {
     "string": "完成"
@@ -61869,7 +61869,7 @@
     "string": "取消"
   },
   "sites.modal.extraction_progress_cancel_confirm_body": {
-    "string": "You won’t be able to resume this generation, but can still keep building your kit. Your kit will only include progress made to this point."
+    "string": "您将无法恢复这一代，但仍然可以继续构建您的套件。您的工具包将仅包含到目前为止取得的进展。"
   },
   "sites.modal.extraction_progress_cancel_confirm_confirm": {
     "string": "Confirm cancelation"
@@ -62049,10 +62049,10 @@
     "string": "正在生成 guidelines based on your npm 包"
   },
   "sites.modal.make_kit_npm_install_progress_heading": {
-    "string": "Setting up your kit"
+    "string": "设置您的套件"
   },
   "sites.modal.make_kit_npm_install_progress_install_fallback_message": {
-    "string": "Resolving and installing dependencies"
+    "string": "解决并安装依赖项"
   },
   "sites.modal.make_kit_npm_install_progress_installing_packages": {
     "string": "{count, plural, one {Installing {count} 包} other {Installing {count} 包}}"
@@ -62559,10 +62559,10 @@
     "string": "发布历史"
   },
   "sites.toolbar.publish_modal.publish_history_dropdown.download_logs": {
-    "string": "Download publish logs"
+    "string": "下载发布日志"
   },
   "sites.toolbar.publish_modal.publish_history_dropdown.download_logs_failed": {
-    "string": "Failed to download publish logs"
+    "string": "下载发布日志失败"
   },
   "sites.toolbar.publish_modal.publish_history_dropdown.from_date": {
     "string": "自 {publishedDate, date, ::MMMdhmma} 起"
@@ -63024,7 +63024,7 @@
     "string": "添加演讲备注…"
   },
   "slides.speaker_notes.someone_else_editing": {
-    "string": "Someone else is editing presenter notes on this slide—only one person can edit at a time"
+    "string": "其他人正在编辑这张幻灯片上的演示者注释 - 一次只有一个人可以编辑"
   },
   "slides.speaker_notes.title": {
     "string": "演讲者备注"
@@ -63051,7 +63051,7 @@
     "string": "最近 decks"
   },
   "slides.templates.ai_template_picker.remove": {
-    "string": "Remove"
+    "string": "移除"
   },
   "slides.templates.ai_template_picker.remove_template_reference": {
     "string": "移除 style reference"
@@ -63063,7 +63063,7 @@
     "string": "选择"
   },
   "slides.templates.ai_template_picker.title": {
-    "string": "Choose a deck to set visual style"
+    "string": "选择一个牌组来设置视觉风格"
   },
   "slides.templates.banner.making_a_template": {
     "string": "正在制作模板"
@@ -64488,10 +64488,10 @@
     "string": "你正在查看由 {madeByPublisherName} 制作的模板"
   },
   "templates.browse.drafts_section_name": {
-    "string": "From people in {planName}"
+    "string": "来自{planName}中的人"
   },
   "templates.browse.drafts_section_no_org_name": {
-    "string": "From people in plan"
+    "string": "来自计划中的人"
   },
   "templates.confirmation.move_from_drafts.button": {
     "string": "移动文件"
@@ -65127,10 +65127,10 @@
     "string": "Read AI 点数 usage data for your 组织, including per-user daily breakdowns by 文件 类型"
   },
   "tokens.scope.org_developer_log_read.impersonal_description": {
-    "string": "Read the organization developer log"
+    "string": "阅读组织开发者日志"
   },
   "tokens.scope.org_developer_log_read.personal_description": {
-    "string": "Read the developer log for your organization, including REST API and MCP server call logs"
+    "string": "阅读您组织的开发人员日志，包括 REST API 和 MCP 服务器调用日志"
   },
   "tokens.scope.org_discovery_read.description": {
     "string": "读取组织文件中的文本交流记录"
@@ -65142,7 +65142,7 @@
     "string": "读取可访问文件中的最近选择"
   },
   "tokens.scope.weave_standalone_api.description": {
-    "string": "Call the Weave Standalone API on behalf of this plan"
+    "string": "代表该计划调用 Weave Standalone API"
   },
   "tokens.scope.webhooks_read.impersonal_description": {
     "string": "读取和列出 Webhook"
@@ -65274,7 +65274,7 @@
     "string": "该令牌将于 {revocationDate, date, ::yMMMMd} 被撤销。"
   },
   "tools_panel.add": {
-    "string": "Add"
+    "string": "添加"
   },
   "tools_panel.apply": {
     "string": "Apply"
@@ -65313,7 +65313,7 @@
     "string": "阅读更多"
   },
   "tools_panel.details_window.updated": {
-    "string": "Updated {relativeTimeStr}"
+    "string": "更新了{relativeTimeStr}"
   },
   "tools_panel.gen_effect.n_layer_selected": {
     "string": "{count, plural, one {已选择 {count} 个图层} other {已选择 {count} 个图层}}"
@@ -65343,7 +65343,7 @@
     "string": "从最近项中移除"
   },
   "tools_panel.try_tool.error_generic": {
-    "string": "Can’t open this tool"
+    "string": "打不开这个工具"
   },
   "tools_panel.weave_app.content_policy_toast": {
     "string": "内容被拦截。请尝试其他输入。"
@@ -65370,16 +65370,16 @@
     "string": "申请更多"
   },
   "tools_panel.weave_app.run_failed": {
-    "string": "{appName} run failed"
+    "string": "{appName}运行失败"
   },
   "tools_panel.weave_app.run_failed_with_error": {
-    "string": "{appName} run failed with error: {error}"
+    "string": "{appName} 运行失败，错误：{error}"
   },
   "tools_panel.weave_app.runs_failed": {
     "string": "{totalCount, plural, one {{failedCount} of {totalCount} {appName} run failed} other {{failedCount} of {totalCount} {appName} runs failed}}"
   },
   "tools_panel.weave_app.select_single_node": {
-    "string": "Select a single node"
+    "string": "选择单个节点"
   },
   "tools_panel.weave_app.view_policy": {
     "string": "查看 policy"
@@ -65526,7 +65526,7 @@
     "string": "弹簧 (Spring)"
   },
   "transition_overrides.timeline.binding.effect_row": {
-    "string": "Effect {index}: {property}"
+    "string": "效果{index}：{property}"
   },
   "transition_overrides.timeline.binding.fill_color": {
     "string": "Fill {index}: Color"
@@ -65634,7 +65634,7 @@
     "string": "Border Top Weight"
   },
   "transition_overrides.timeline.parameter.cms_serialized_rich_text_data": {
-    "string": "Rich Text"
+    "string": "富文本"
   },
   "transition_overrides.timeline.parameter.corner_radius": {
     "string": "Corner Radius"
@@ -65649,7 +65649,7 @@
     "string": "Font Size"
   },
   "transition_overrides.timeline.parameter.font_style": {
-    "string": "Font Style"
+    "string": "字体样式"
   },
   "transition_overrides.timeline.parameter.font_variations": {
     "string": "Font Variations"
@@ -65730,10 +65730,10 @@
     "string": "Position"
   },
   "transition_overrides.timeline.parameter.rectangle_bottom_left_corner_radius": {
-    "string": "Bottom Left Corner Radius"
+    "string": "左下角半径"
   },
   "transition_overrides.timeline.parameter.rectangle_bottom_right_corner_radius": {
-    "string": "Bottom Right Corner Radius"
+    "string": "右下角半径"
   },
   "transition_overrides.timeline.parameter.rectangle_top_left_corner_radius": {
     "string": "Top Left Corner Radius"
@@ -65763,7 +65763,7 @@
     "string": "Size"
   },
   "transition_overrides.timeline.parameter.slot_content_id": {
-    "string": "Slot Content"
+    "string": "老虎机内容"
   },
   "transition_overrides.timeline.parameter.stack_counter_spacing": {
     "string": "Stack Counter Spacing"
@@ -65787,7 +65787,7 @@
     "string": "Stroke Weight"
   },
   "transition_overrides.timeline.parameter.text_data": {
-    "string": "Text"
+    "string": "文本"
   },
   "transition_overrides.timeline.parameter.transform_3d_perspective": {
     "string": "Perspective"
@@ -66423,7 +66423,7 @@
     "string": "生成 visuals and vectors with Figma Weave, now 可用 下一步 to Assets in this 新建 navigation bar."
   },
   "ui3_editor.navigation_bar.weave_tools_onboarding_overlay.learn_more": {
-    "string": "Learn more about Weave"
+    "string": "了解有关编织的更多信息"
   },
   "ui3_editor.navigation_bar.weave_tools_onboarding_overlay.title": {
     "string": "Introducing Weave 工具"
@@ -66498,7 +66498,7 @@
     "string": "移除"
   },
   "universal_insert.remove_from_recent": {
-    "string": "Remove from recents"
+    "string": "从最近使用的内容中删除"
   },
   "universal_insert.remove_local_version": {
     "string": "移除本地版本"
@@ -67503,7 +67503,7 @@
     "string": "UX 写作"
   },
   "user_onboarding_signals.v2.answer.animation": {
-    "string": "Animation"
+    "string": "动画片"
   },
   "user_onboarding_signals.v2.answer.app": {
     "string": "应用程序"
@@ -68541,13 +68541,13 @@
     "string": "切换渲染树打印"
   },
   "viewer.flows_sidebar.close_sidebar": {
-    "string": "Close sidebar"
+    "string": "关闭侧边栏"
   },
   "viewer.flows_sidebar.close_sidebar_label": {
-    "string": "Close flows list"
+    "string": "关闭流列表"
   },
   "viewer.flows_sidebar.copy_link_to_flow": {
-    "string": "Copy link to flow"
+    "string": "将链接复制到流程"
   },
   "viewer.flows_sidebar.flows": {
     "string": "Flows"
@@ -68556,10 +68556,10 @@
     "string": "No description"
   },
   "viewer.flows_sidebar.open_sidebar": {
-    "string": "Open sidebar"
+    "string": "打开侧边栏"
   },
   "viewer.flows_sidebar.open_sidebar_label": {
-    "string": "Open flows list"
+    "string": "打开流列表"
   },
   "viewer.flows_sidebar.recording": {
     "string": "Recording"
@@ -68589,16 +68589,16 @@
     "string": "步进器"
   },
   "viewer.loading_overlay.can_t_connect_to_the_internet": {
-    "string": "Can't connect to the internet"
+    "string": "无法连接到互联网"
   },
   "viewer.loading_overlay.check_your_connection_to_continue_with_the_prototype": {
-    "string": "Check your connection to continue with the prototype."
+    "string": "检查您的连接以继续原型。"
   },
   "viewer.loading_overlay.reload": {
     "string": "Reload"
   },
   "viewer.loading_overlay.this_is_taking_some_time_hang_on_while_this_finishes_loading": {
-    "string": "This is taking some time… Hang on while this finishes loading."
+    "string": "这需要一些时间……加载完成后请稍候。"
   },
   "viewer.loading_overlay.try_again": {
     "string": "Try again"
@@ -68607,34 +68607,34 @@
     "string": "Prototype controls"
   },
   "viewer.menu_bar.add_comment": {
-    "string": "Add comment{padding}{shortcut}"
+    "string": "添加评论{padding}{shortcut}"
   },
   "viewer.menu_bar.enter_full_screen": {
-    "string": "Enter full screen ({shortcut})"
+    "string": "进入全屏 ({shortcut})"
   },
   "viewer.menu_bar.exit_full_screen": {
-    "string": "Exit full screen ({shortcut})"
+    "string": "退出全屏 ({shortcut})"
   },
   "viewer.menu_bar.full_screen_is_not_supported_by_this_browser": {
-    "string": "Full screen is not supported by this browser"
+    "string": "该浏览器不支持全屏"
   },
   "viewer.menu_bar.log_in": {
     "string": "Log in"
   },
   "viewer.menu_bar.log_in_or_create_account": {
-    "string": "Log in or create account"
+    "string": "登录或创建帐户"
   },
   "viewer.menu_bar.open_in_editor": {
-    "string": "Open in editor"
+    "string": "在编辑器中打开"
   },
   "viewer.menu_bar.open_in_figma_slides": {
-    "string": "Open in Figma Slides"
+    "string": "在 Figma Slides 中打开"
   },
   "viewer.menu_bar.record": {
     "string": "Record interaction"
   },
   "viewer.menu_bar.record_unavailable": {
-    "string": "Recording unavailable: no file loaded"
+    "string": "录音不可用：未加载文件"
   },
   "viewer.menu_bar.share": {
     "string": "Share"
@@ -68646,10 +68646,10 @@
     "string": "Share prototype"
   },
   "viewer.options.accessible_dom_disabled": {
-    "string": "No longer adapting content for screen readers"
+    "string": "不再针对屏幕阅读器调整内容"
   },
   "viewer.options.accessible_dom_enabled": {
-    "string": "Now adapting content for screen readers"
+    "string": "现在正在为屏幕阅读器调整内容"
   },
   "viewer.options.default_keyboard_navigation_disabled": {
     "string": "已禁用 Figma 快捷键"
@@ -68757,7 +68757,7 @@
     "string": "Delete session"
   },
   "viewer.prototype_recorder.delete_session_confirm": {
-    "string": "Are you sure you want to delete Session {sessionNumber}?"
+    "string": "您确定要删除会话 {sessionNumber} 吗？"
   },
   "viewer.prototype_recorder.download_json": {
     "string": "Download recording"
@@ -68769,10 +68769,10 @@
     "string": "Hover"
   },
   "viewer.prototype_recorder.invalid_json_file": {
-    "string": "Please select a valid JSON file."
+    "string": "请选择有效的 JSON 文件。"
   },
   "viewer.prototype_recorder.json_parse_error": {
-    "string": "Error parsing JSON file. Please ensure it contains valid session data with a \"sessions\" array."
+    "string": "解析 JSON 文件时出错。请确保它包含带有“sessions”数组的有效会话数据。"
   },
   "viewer.prototype_recorder.misclick": {
     "string": "Misclick"
@@ -68790,7 +68790,7 @@
     "string": "Mouse Up"
   },
   "viewer.prototype_recorder.no_file_available": {
-    "string": "No file available for recording."
+    "string": "没有可用于录制的文件。"
   },
   "viewer.prototype_recorder.play_all": {
     "string": "Play all"
@@ -68799,7 +68799,7 @@
     "string": "Press"
   },
   "viewer.prototype_recorder.recording_session": {
-    "string": "Recording Session {sessionNumber}"
+    "string": "录制会话{sessionNumber}"
   },
   "viewer.prototype_recorder.reset_all": {
     "string": "Reset all"
@@ -68823,7 +68823,7 @@
     "string": "Upload recording"
   },
   "viewer.prototype_recorder.upload_warning": {
-    "string": "Uploading a recording will overwrite any unsaved recordings."
+    "string": "上传录音将覆盖所有未保存的录音。"
   },
   "viewer_restricted_tooltip.get_upgraded_seat": {
     "string": "获取升级席位"
@@ -68886,7 +68886,7 @@
     "string": "无法为所有选中对象添加自动布局"
   },
   "visual_bell.bulk_move_moved_count": {
-    "string": "{successCount} of {totalCount} items moved."
+    "string": "已移动 {successCount} 项（共 {totalCount} 项）。"
   },
   "visual_bell.button_text": {
     "string": "发布组件"
@@ -69918,7 +69918,7 @@
     "string": "清除"
   },
   "weave_ai_models.filters.close": {
-    "string": "Close"
+    "string": "关闭"
   },
   "weave_ai_models.filters.option_all_types": {
     "string": "全部类型"
@@ -69999,10 +69999,10 @@
     "string": "无法更新设置。请重试。"
   },
   "weave_ai_models.status_verified_by_figma": {
-    "string": "Verified by Figma"
+    "string": "由 Figma 验证"
   },
   "weave_ai_models.status_verified_by_figma_weave": {
-    "string": "Verified by Figma Weave"
+    "string": "由 Figma 编织验证"
   },
   "weave_ai_models.toggle_disabled_toast": {
     "string": "已停用 {modelName}"
@@ -70017,7 +70017,7 @@
     "string": "Try it out"
   },
   "weave_file_creation_promos.description": {
-    "string": "Build an AI workflow in Weave—and run with it. Generate quality images and videos without leaving the canvas."
+    "string": "在 Weave 中构建 AI 工作流程并运行它。无需离开画布即可生成优质图像和视频。"
   },
   "weave_file_creation_promos.title": {
     "string": "Try Figma Weave"
