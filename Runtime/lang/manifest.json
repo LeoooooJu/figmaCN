@@ -6,9 +6,9 @@
       "english": "lang/en/en_latest.json",
       "chinese": "lang/zh/zh.json",
       "keys": 29904,
-      "matchedExistingZhKeys": 29867,
-      "fallbackEnglishKeys": 37,
-      "unchangedStringKeys": 1265
+      "matchedExistingZhKeys": 29869,
+      "fallbackEnglishKeys": 35,
+      "unchangedStringKeys": 1229
     },
     "auth": {
       "sourceUrl": "https://www.figma.com/webpack-artifacts/assets/auth-2ca4258629ae6b7a.min.en.json.br",
@@ -17,16 +17,16 @@
       "keys": 1440,
       "matchedExistingZhKeys": 1440,
       "fallbackEnglishKeys": 0,
-      "unchangedStringKeys": 16
+      "unchangedStringKeys": 14
     },
     "prototype": {
       "sourceUrl": "https://www.figma.com/webpack-artifacts/assets/prototype_app_beta-0ae2bb48740709c0.min.en.json.br",
       "english": "lang/en/prototype_app_beta_latest.en.json",
       "chinese": "lang/zh/prototype_app_beta-zh.json",
       "keys": 24155,
-      "matchedExistingZhKeys": 24124,
-      "fallbackEnglishKeys": 31,
-      "unchangedStringKeys": 1106
+      "matchedExistingZhKeys": 24126,
+      "fallbackEnglishKeys": 29,
+      "unchangedStringKeys": 1072
     }
   }
 }

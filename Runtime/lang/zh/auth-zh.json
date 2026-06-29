@@ -549,7 +549,7 @@
     "string": "尝试重定向到移动应用程序时出现问题。请再试一次。"
   },
   "auth.mobile-redeem-try-again": {
-    "string": "Try again"
+    "string": "重试"
   },
   "auth.no-account": {
     "string": "没有账号？"
@@ -3303,7 +3303,7 @@
     "string": "签名无效"
   },
   "tools_panel.gen_more_menu.rename_failed": {
-    "string": "Could not rename {name}"
+    "string": "无法重命名 {name}"
   },
   "unsaved_changes.prompt.changes_may_not_be_saved": {
     "string": "你所做的更改可能不会被保存。"

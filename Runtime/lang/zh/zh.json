@@ -1229,23 +1229,23 @@
   "activity_log.event.scim_token_revoke": {
     "string": "撤销了 SCIM 令牌"
   },
-  "activity_log.event.Shader_effect_create": {
-    "string": "创建了Shader效果{ShaderEffectName}"
+  "activity_log.event.shader_effect_create": {
+    "string": "创建了着色器效果 {shaderEffectName}"
   },
-  "activity_log.event.Shader_effect_delete": {
-    "string": "删除了Shader效果{ShaderEffectName}"
+  "activity_log.event.shader_effect_delete": {
+    "string": "删除了着色器效果 {shaderEffectName}"
   },
-  "activity_log.event.Shader_effect_update": {
-    "string": "更新了Shader效果{ShaderEffectName}"
+  "activity_log.event.shader_effect_update": {
+    "string": "更新了着色器效果 {shaderEffectName}"
   },
-  "activity_log.event.Shader_fill_create": {
-    "string": "创建Shader填充{ShaderFillName}"
+  "activity_log.event.shader_fill_create": {
+    "string": "创建了着色器填充 {shaderFillName}"
   },
-  "activity_log.event.Shader_fill_delete": {
-    "string": "删除Shader 填充{ShaderFillName}"
+  "activity_log.event.shader_fill_delete": {
+    "string": "删除了着色器填充 {shaderFillName}"
   },
-  "activity_log.event.Shader_fill_update": {
-    "string": "更新了Shader填充{ShaderFillName}"
+  "activity_log.event.shader_fill_update": {
+    "string": "更新了着色器填充 {shaderFillName}"
   },
   "activity_log.event.sites_set_password": {
     "string": "为站点/应用 {name} 设置了密码"
@@ -2054,29 +2054,29 @@
   "activity_log.filter.seats_renew.v2": {
     "string": "计划更新"
   },
-  "activity_log.filter.Shader_effect_created": {
-    "string": "Shader效果已创建"
+  "activity_log.filter.shader_effect_created": {
+    "string": "着色器效果已创建"
   },
-  "activity_log.filter.Shader_effect_deleted": {
-    "string": "Shader效果已删除"
+  "activity_log.filter.shader_effect_deleted": {
+    "string": "着色器效果已删除"
   },
-  "activity_log.filter.Shader_effect_updated": {
-    "string": "Shader效果已更新"
+  "activity_log.filter.shader_effect_updated": {
+    "string": "着色器效果已更新"
   },
-  "activity_log.filter.Shader_effects": {
-    "string": "Shader 效果"
+  "activity_log.filter.shader_effects": {
+    "string": "着色器效果"
   },
-  "activity_log.filter.Shader_fill_created": {
-    "string": "Shader 填充已创建"
+  "activity_log.filter.shader_fill_created": {
+    "string": "着色器填充已创建"
   },
-  "activity_log.filter.Shader_fill_deleted": {
-    "string": "Shader填写已删除"
+  "activity_log.filter.shader_fill_deleted": {
+    "string": "着色器填充已删除"
   },
-  "activity_log.filter.Shader_fill_updated": {
-    "string": "Shader 填写已更新"
+  "activity_log.filter.shader_fill_updated": {
+    "string": "着色器填充已更新"
   },
-  "activity_log.filter.Shader_fills": {
-    "string": "Shader 填充"
+  "activity_log.filter.shader_fills": {
+    "string": "着色器填充"
   },
   "activity_log.filter.sites_custom_domain_activated": {
     "string": "已连接自定义域名"
@@ -4910,8 +4910,8 @@
   "ai_assistant.chat.custom_coder.creating_named": {
     "string": "Creating {name}"
   },
-  "ai_assistant.chat.custom_coder.creating_Shader": {
-    "string": "创建Shader"
+  "ai_assistant.chat.custom_coder.creating_shader": {
+    "string": "正在创建着色器"
   },
   "ai_assistant.chat.custom_coder.creating_tool": {
     "string": "Creating tool"
@@ -5726,14 +5726,14 @@
   "ai_assistant.empty_state.quick.recap_config.drawer.motion.try_it_out_prompt": {
     "string": "创建一个 15x15 的动画方块网格。将交错动画应用于网格项目的背景颜色、圆角和间距。"
   },
-  "ai_assistant.empty_state.quick.recap_config.drawer.Shader_effects_and_fills.description": {
-    "string": "使用 Figma 代理创建 Shader 效果和填充，例如液态金属、网格渐变等。"
+  "ai_assistant.empty_state.quick.recap_config.drawer.shader_effects_and_fills.description": {
+    "string": "使用 Figma 代理创建着色器效果和填充，例如液态金属、网格渐变等。"
   },
-  "ai_assistant.empty_state.quick.recap_config.drawer.Shader_effects_and_fills.name": {
-    "string": "Shader 效果和填充"
+  "ai_assistant.empty_state.quick.recap_config.drawer.shader_effects_and_fills.name": {
+    "string": "着色器效果和填充"
   },
-  "ai_assistant.empty_state.quick.recap_config.drawer.Shader_effects_and_fills.try_it_out_prompt": {
-    "string": "为我构建一个 Shader 效果，将图像转换为半色调，将亮度映射到旋转网格上的点大小。奶油色背景上的黑点，网格角度 15°，中等点尺寸，高点密度。创建伽玛/对比度、点大小和点密度的控件。然后，创建一张 512x512 像素的素材照片。最后，对这张照片应用半色调 Shader。"
+  "ai_assistant.empty_state.quick.recap_config.drawer.shader_effects_and_fills.try_it_out_prompt": {
+    "string": "为我构建一个着色器效果，将图像转换为半色调，并把亮度映射到旋转网格上的点大小。奶油色背景上的深色圆点，网格角度为 15°，中等点大小，高点密度。创建伽马/对比度、点大小和点密度控件。然后创建一张 512x512px 的素材照片。最后，将半色调着色器应用到这张照片。"
   },
   "ai_assistant.empty_state.quick.recap_config.drawer.try_it_out": {
     "string": "Try it out"
@@ -8433,7 +8433,7 @@
     "string": "尝试重定向到移动应用程序时出现问题。请再试一次。"
   },
   "auth.mobile-redeem-try-again": {
-    "string": "Try again"
+    "string": "重试"
   },
   "auth.no-account": {
     "string": "没有账号？"
@@ -12533,8 +12533,8 @@
   "categories.navbar.saas": {
     "string": "SaaS"
   },
-  "categories.navbar.Shaders.subtitle": {
-    "string": "在画布上扩展您的视觉探索"
+  "categories.navbar.shaders.subtitle": {
+    "string": "在画布上扩展你的视觉探索"
   },
   "categories.navbar.social_media.subtitle": {
     "string": "像专家一样创作内容"
@@ -12617,8 +12617,8 @@
   "categories.resume_templates": {
     "string": "简历模板"
   },
-  "categories.Shaders": {
-    "string": "Shaders"
+  "categories.shaders": {
+    "string": "着色器"
   },
   "categories.shapes_colors": {
     "string": "形状与颜色"
@@ -15153,7 +15153,7 @@
     "string": "连接器"
   },
   "collaboration.branching_node_treatments.value.node_type.custom_effect_instance": {
-    "string": "Custom effect instance"
+    "string": "自定义效果实例"
   },
   "collaboration.branching_node_treatments.value.node_type.document": {
     "string": "文档"
@@ -18695,11 +18695,11 @@
   "community.homepage.profile_banner.title": {
     "string": "重新设计的个人主页"
   },
-  "community.homepage.Shaders_promo_banner.description": {
-    "string": "使用 Figma 代理构建富有表现力的 Shader 效果和填充"
+  "community.homepage.shaders_promo_banner.description": {
+    "string": "使用 Figma 代理构建富有表现力的着色器效果和填充"
   },
-  "community.homepage.Shaders_promo_banner.title": {
-    "string": "Figma 画布上的自定义 Shader"
+  "community.homepage.shaders_promo_banner.title": {
+    "string": "Figma 画布上的自定义着色器"
   },
   "community.homepage.sites_section.browse_all": {
     "string": "浏览网站模板"
@@ -22697,14 +22697,14 @@
   "community.seller.youre_all_set_up_to_sell_on_community": {
     "string": "你已准备好在社区中开始销售"
   },
-  "community.Shaders_page.feed_title": {
-    "string": "探索 Shader 效果和填充"
+  "community.shaders_page.feed_title": {
+    "string": "探索着色器效果和填充"
   },
-  "community.Shaders_page.headline": {
-    "string": "构建 Shader 效果并直接在画布上填充。提示代理，然后亲眼所见才相信。"
+  "community.shaders_page.headline": {
+    "string": "直接在画布上构建着色器效果和填充。向代理输入提示，然后亲眼见证效果。"
   },
-  "community.Shaders_page.short_description": {
-    "string": "用一些很棒的例子来充实你的大脑"
+  "community.shaders_page.short_description": {
+    "string": "从精彩示例中获取灵感"
   },
   "community.shelves.show_more": {
     "string": "显示更多"
@@ -23873,17 +23873,17 @@
   "config2026.announcement_modal.config_item.motion.title": {
     "string": "让您的设计动起来"
   },
-  "config2026.announcement_modal.config_item.Shaders": {
-    "string": "Shader 效果和填充"
+  "config2026.announcement_modal.config_item.shaders": {
+    "string": "着色器效果和填充"
   },
-  "config2026.announcement_modal.config_item.Shaders.description": {
-    "string": "描述您的愿景，Figma 代理将使其在画布上实现。想想液态金属、网格渐变等等。"
+  "config2026.announcement_modal.config_item.shaders.description": {
+    "string": "描述你的愿景，Figma 代理会直接在画布上实现它。比如液态金属、网格渐变等。"
   },
-  "config2026.announcement_modal.config_item.Shaders.secondary_cta": {
-    "string": "Next: Weave tools"
+  "config2026.announcement_modal.config_item.shaders.secondary_cta": {
+    "string": "下一步：Weave 工具"
   },
-  "config2026.announcement_modal.config_item.Shaders.title": {
-    "string": "创建自定义 Shader 效果和填充"
+  "config2026.announcement_modal.config_item.shaders.title": {
+    "string": "创建自定义着色器效果和填充"
   },
   "config2026.announcement_modal.config_item.weave_tools": {
     "string": "Figma Weave tools"
@@ -41400,7 +41400,7 @@
     "string": "Name"
   },
   "file_browser.cms.manager.domains.dns_table.type": {
-    "string": "Type"
+    "string": "类型"
   },
   "file_browser.cms.manager.domains.dns_table.value": {
     "string": "Value"
@@ -44516,8 +44516,8 @@
   "fullscreen.accessibility.chit_pattern": {
     "string": "图案"
   },
-  "fullscreen.accessibility.chit_Shader": {
-    "string": "Shader"
+  "fullscreen.accessibility.chit_shader": {
+    "string": "着色器"
   },
   "fullscreen.accessibility.chit_solid": {
     "string": "纯色十六进制值：{hexValue}"
@@ -44604,7 +44604,7 @@
     "string": "在网格中，行 {row}，列 {column}"
   },
   "fullscreen.accessibility.design.grid_row": {
-    "string": "Row {position}, {size}"
+    "string": "第 {position} 行，{size}"
   },
   "fullscreen.accessibility.design.grid_row_count": {
     "string": "{rows, plural, one {# row} other {# rows}}"
@@ -47934,7 +47934,7 @@
     "string": "网格尺寸"
   },
   "fullscreen.properties_panel.grid.grid_dimensions_picker": {
-    "string": "Grid dimensions picker"
+    "string": "网格尺寸选择器"
   },
   "fullscreen.properties_panel.grid.horizontal_span": {
     "string": "横向跨度"
@@ -48386,44 +48386,44 @@
   "fullscreen.properties_panel.select_item_using_this_color": {
     "string": "{numItems, plural, one {选择使用此颜色的项目} other {选择 {numItems} 个使用此颜色的项目}}"
   },
-  "fullscreen.properties_panel.Shader_chooser.create_new": {
+  "fullscreen.properties_panel.shader_chooser.create_new": {
     "string": "新建"
   },
-  "fullscreen.properties_panel.Shader_chooser.created_by_me": {
+  "fullscreen.properties_panel.shader_chooser.created_by_me": {
     "string": "由你创建"
   },
-  "fullscreen.properties_panel.Shader_chooser.custom_fill": {
-    "string": "Shader 填充"
-  },
-  "fullscreen.properties_panel.Shader_chooser.in_this_file": {
-    "string": "在这个文件中"
-  },
-  "fullscreen.properties_panel.Shader_chooser.new_Shader": {
-    "string": "创建 Shader with agents"
-  },
-  "fullscreen.properties_panel.Shader_chooser.no_results": {
-    "string": "No matching Shaders"
-  },
-  "fullscreen.properties_panel.Shader_chooser.search_placeholder": {
-    "string": "搜索"
-  },
-  "fullscreen.properties_panel.Shader_chooser.title_effects": {
-    "string": "着色器效果"
-  },
-  "fullscreen.properties_panel.Shader_chooser.title_fills": {
+  "fullscreen.properties_panel.shader_chooser.custom_fill": {
     "string": "着色器填充"
   },
-  "fullscreen.properties_panel.Shader_effect_education.callout.body": {
-    "string": "您使用 Figma 代理创建的任何 Shader 都位于此处。像任何其他效果一样应用、堆叠和调整它们。"
+  "fullscreen.properties_panel.shader_chooser.in_this_file": {
+    "string": "在此文件中"
   },
-  "fullscreen.properties_panel.Shader_effect_education.callout.title": {
-    "string": "Shaders have moved in"
+  "fullscreen.properties_panel.shader_chooser.new_shader": {
+    "string": "使用代理创建"
   },
-  "fullscreen.properties_panel.Shader_fill_education.callout.body": {
-    "string": "要求 Figma 代理创建您可以想象的任何 Shader 填充，然后将它们应用到图层，就像使用其他填充一样。"
+  "fullscreen.properties_panel.shader_chooser.no_results": {
+    "string": "没有匹配的着色器"
   },
-  "fullscreen.properties_panel.Shader_fill_education.callout.title": {
-    "string": "自定义Shader，无尽效果"
+  "fullscreen.properties_panel.shader_chooser.search_placeholder": {
+    "string": "搜索"
+  },
+  "fullscreen.properties_panel.shader_chooser.title_effects": {
+    "string": "着色器效果"
+  },
+  "fullscreen.properties_panel.shader_chooser.title_fills": {
+    "string": "着色器填充"
+  },
+  "fullscreen.properties_panel.shader_effect_education.callout.body": {
+    "string": "你使用 Figma 代理创建的所有着色器都会显示在这里。像处理其他效果一样应用、叠加并调整它们。"
+  },
+  "fullscreen.properties_panel.shader_effect_education.callout.title": {
+    "string": "着色器现已加入"
+  },
+  "fullscreen.properties_panel.shader_fill_education.callout.body": {
+    "string": "让 Figma 代理创建你能想到的任何着色器填充，然后像使用其他填充一样将其应用到图层。"
+  },
+  "fullscreen.properties_panel.shader_fill_education.callout.title": {
+    "string": "自定义着色器，无限效果"
   },
   "fullscreen.properties_panel.shadows": {
     "string": "阴影"
@@ -53852,11 +53852,11 @@
   "generated_tools.create_chat.prefilled_prompt": {
     "string": "创建 me a 工具 that "
   },
-  "generated_tools.create_chat.Shader_effect_prefilled_prompt": {
-    "string": "创建 a 自定义 Shader 效果."
+  "generated_tools.create_chat.shader_effect_prefilled_prompt": {
+    "string": "创建一个着色器效果，"
   },
-  "generated_tools.create_chat.Shader_fill_prefilled_prompt": {
-    "string": "创建 a 自定义 Shader 填充."
+  "generated_tools.create_chat.shader_fill_prefilled_prompt": {
+    "string": "创建自定义着色器填充。"
   },
   "generated_tools.effect.default_name": {
     "string": "自定义效果"
@@ -53924,14 +53924,14 @@
   "generated_tools.panel.refresh_to_retry.agent_built_plugin": {
     "string": "此生成插件无法加载。刷新页面重试。"
   },
-  "generated_tools.panel.refresh_to_retry.Shader_effect": {
-    "string": "此 Shader 效果加载失败。刷新页面重试。"
+  "generated_tools.panel.refresh_to_retry.shader_effect": {
+    "string": "此着色器效果加载失败。请刷新页面后重试。"
   },
-  "generated_tools.panel.refresh_to_retry.Shader_fill": {
-    "string": "此 Shader 填充加载失败。刷新页面重试。"
+  "generated_tools.panel.refresh_to_retry.shader_fill": {
+    "string": "此着色器填充加载失败。请刷新页面后重试。"
   },
-  "generated_tools.panel.Shader_not_working": {
-    "string": "Shader 有问题"
+  "generated_tools.panel.shader_not_working": {
+    "string": "着色器出现问题"
   },
   "generated_tools.panel.show_more": {
     "string": "显示更多{remaining}"
@@ -56405,7 +56405,7 @@
   "left_rail.code_view_empty_state.card_carousel": {
     "string": "卡片轮播"
   },
-  "left_rail.code_view_empty_state.gradient_Shader": {
+  "left_rail.code_view_empty_state.gradient_shader": {
     "string": "渐变着色器"
   },
   "left_rail.code_view_empty_state.start_from_scratch": {
@@ -59934,13 +59934,13 @@
     "string": "Exit"
   },
   "motion.panel.custom_presets_section": {
-    "string": "Custom"
+    "string": "自定义"
   },
   "motion.panel.edit_animation_code": {
     "string": "编辑动画代码"
   },
   "motion.panel.interpolation": {
-    "string": "Easing"
+    "string": "缓动"
   },
   "motion.panel.new_preset": {
     "string": "New preset"
@@ -60015,16 +60015,16 @@
     "string": "Round out"
   },
   "motion.preset_flyout.delay": {
-    "string": "Delay"
+    "string": "延迟"
   },
   "motion.preset_flyout.direction": {
-    "string": "Direction"
+    "string": "方向"
   },
   "motion.preset_flyout.duration": {
-    "string": "Duration"
+    "string": "持续时间"
   },
   "motion.preset_flyout.easing": {
-    "string": "Easing"
+    "string": "缓动"
   },
   "motion.preset_flyout.end": {
     "string": "End"
@@ -60132,13 +60132,13 @@
     "string": "Top"
   },
   "motion.preset_flyout.position.distance": {
-    "string": "Distance"
+    "string": "距离"
   },
   "motion.preset_flyout.position.type.slide_in": {
-    "string": "Slide in"
+    "string": "滑入"
   },
   "motion.preset_flyout.position.type.slide_out": {
-    "string": "Slide out"
+    "string": "滑出"
   },
   "motion.preset_flyout.rotation.direction.clockwise": {
     "string": "Clockwise"
@@ -60177,10 +60177,10 @@
     "string": "Top right"
   },
   "motion.preset_flyout.type": {
-    "string": "Type"
+    "string": "类型"
   },
   "motion.preset_flyout.type.custom": {
-    "string": "Custom"
+    "string": "自定义"
   },
   "motion.preset_flyout.w": {
     "string": "W"
@@ -60204,7 +60204,7 @@
     "string": "Path"
   },
   "motion.preset_name.position": {
-    "string": "Position"
+    "string": "位置"
   },
   "motion.preset_name.rotation": {
     "string": "Rotation"
@@ -60462,7 +60462,7 @@
     "string": "Current time"
   },
   "motion.timeline.time.duration": {
-    "string": "Duration"
+    "string": "持续时间"
   },
   "motion.timeline.time.switch_unit": {
     "string": "更改时间格式"
@@ -66819,7 +66819,7 @@
     "string": "点击以更改为曲线"
   },
   "proto.easing_editor.hold_easing_title": {
-    "string": "Hold easing"
+    "string": "保持缓动"
   },
   "proto.easing_editor.spring_damping": {
     "string": "阻尼"
@@ -66837,7 +66837,7 @@
     "string": "Presets"
   },
   "proto.easing_picker.title": {
-    "string": "Easing"
+    "string": "缓动"
   },
   "proto.else": {
     "string": "否则"
@@ -67190,14 +67190,14 @@
   "proto.preload.debug.row_images": {
     "string": "Images"
   },
-  "proto.preload.debug.row_Shaders": {
-    "string": "Shaders"
+  "proto.preload.debug.row_shaders": {
+    "string": "着色器"
   },
   "proto.preload.debug.row_videos": {
     "string": "Videos"
   },
-  "proto.preload.debug.Shader_failures": {
-    "string": "Shader 故障：{transient} 暂时性 · {permanent} 永久性"
+  "proto.preload.debug.shader_failures": {
+    "string": "着色器失败：{transient} 次暂时性 · {permanent} 次永久性"
   },
   "proto.preload.debug.summary": {
     "string": "[内部] 预加载 — {state}"
@@ -80567,11 +80567,11 @@
   "tools_panel.create_menu.plugin": {
     "string": "插件"
   },
-  "tools_panel.create_menu.Shader_effect": {
-    "string": "Shader 效果"
+  "tools_panel.create_menu.shader_effect": {
+    "string": "着色器效果"
   },
-  "tools_panel.create_menu.Shader_fill": {
-    "string": "Shader 填充"
+  "tools_panel.create_menu.shader_fill": {
+    "string": "着色器填充"
   },
   "tools_panel.created_by_me.aria_label": {
     "string": "由你创建"
@@ -80676,7 +80676,7 @@
     "string": "Rename"
   },
   "tools_panel.gen_more_menu.rename_failed": {
-    "string": "Could not rename {name}"
+    "string": "无法重命名 {name}"
   },
   "tools_panel.generated_effect.aria_label": {
     "string": "已生成效果"
@@ -80718,7 +80718,7 @@
     "string": "{current} of {total}"
   },
   "tools_panel.left_rail_nux.slide_roledescription": {
-    "string": "slide"
+    "string": "幻灯片"
   },
   "tools_panel.left_rail_nux.weave_card.body": {
     "string": "每次都使用 Weave 工具创建精美的视觉效果。每个工具都由人工智能工作流程支持，为您带来一致的输出。"
@@ -80789,11 +80789,11 @@
   "tools_panel.resource_type_filter.option_plugin": {
     "string": "插件"
   },
-  "tools_panel.resource_type_filter.option_Shader_effect": {
-    "string": "Shader 效果"
+  "tools_panel.resource_type_filter.option_shader_effect": {
+    "string": "着色器效果"
   },
-  "tools_panel.resource_type_filter.option_Shader_fill": {
-    "string": "Shader 填充"
+  "tools_panel.resource_type_filter.option_shader_fill": {
+    "string": "着色器填充"
   },
   "tools_panel.resource_type_filter.option_weave": {
     "string": "Weave"
@@ -81294,10 +81294,10 @@
     "string": "Font Variations"
   },
   "transition_overrides.timeline.parameter.grid_column_gap": {
-    "string": "Grid Column Gap"
+    "string": "网格列间距"
   },
   "transition_overrides.timeline.parameter.grid_row_gap": {
-    "string": "Grid Row Gap"
+    "string": "网格行间距"
   },
   "transition_overrides.timeline.parameter.height": {
     "string": "Height"
@@ -81339,13 +81339,13 @@
     "string": "Shear"
   },
   "transition_overrides.timeline.parameter.motion_translation_x": {
-    "string": "Position X"
+    "string": "X 位置"
   },
   "transition_overrides.timeline.parameter.motion_translation_xy": {
-    "string": "Position"
+    "string": "位置"
   },
   "transition_overrides.timeline.parameter.motion_translation_y": {
-    "string": "Position Y"
+    "string": "Y 位置"
   },
   "transition_overrides.timeline.parameter.overridden_symbol_id": {
     "string": "Overridden Symbol"
@@ -81366,7 +81366,7 @@
     "string": "Polygon Count"
   },
   "transition_overrides.timeline.parameter.position": {
-    "string": "Position"
+    "string": "位置"
   },
   "transition_overrides.timeline.parameter.rectangle_bottom_left_corner_radius": {
     "string": "左下角半径"
@@ -81384,10 +81384,10 @@
     "string": "Relative Rotation"
   },
   "transition_overrides.timeline.parameter.relative_x_position": {
-    "string": "Relative X Position"
+    "string": "相对 X 位置"
   },
   "transition_overrides.timeline.parameter.relative_y_position": {
-    "string": "Relative Y Position"
+    "string": "相对 Y 位置"
   },
   "transition_overrides.timeline.parameter.scene_3d_perspective": {
     "string": "Perspective"
@@ -83586,7 +83586,7 @@
     "string": "颜色"
   },
   "variables.authoring_modal.filters.easing": {
-    "string": "Easing"
+    "string": "缓动"
   },
   "variables.authoring_modal.filters.extended_collection_filter": {
     "string": "扩展"
@@ -83931,7 +83931,7 @@
     "string": "Spring"
   },
   "variables.create_modal.easing_type_legend": {
-    "string": "Easing type"
+    "string": "缓动类型"
   },
   "variables.create_modal.invalid_variable_name": {
     "string": "无效的变量名"
